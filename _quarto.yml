@@ -3,29 +3,26 @@ project:
   
 website: 
   page-navigation: true
-  title: "Making sharable documents with Quarto" 
-  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
-  repo-url: https://github.com/openscapes/quarto-website-tutorial 
+  title: "Data Management & Storage Best Practices for Long-term and Archival Passive Acoustic Monitoring (PAM) Data" 
+  site-url: "https://rwscollab.github.io/pam-data-mgmt/" 
+  repo-url: https://github.com/RWSCollab/pam-data-mgmt 
   repo-actions: [edit, issue]
   
   page-footer:
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Openscapes, 2022"
+    right: 
+    left: "images/RWSC_Logo_Typography.png" "&copy; CC-By RWSC, 2022"
     
   sidebar:
-    logo: "images/openscapes_hex.png"
+    logo: "images/MM.png"
     pinned: true
     align: center
     tools: 
       - icon: globe
-        href: https://openscapes.org
-        text: "Openscapes.org"
+        href: https://rwsc.org
+        text: "rwsc.org"
       - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
-        text: "Quarto website tutorial"
-      - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
+        href: https://github.com/RWSCollab/pam-data-mgmt
+        text: "PAM Data Management"
 
     style: "docked"
     search: true
