@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Data Management &amp; Storage Best Practices for Long-term and Archival Passive Acoustic Monitoring (PAM) Data - Planning Steps</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./deployment-data.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Planning Steps</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/MM.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">PAM Data Management Best Practices</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://rwsc.org" title="rwsc.org" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/RWSCollab/pam-data-mgmt" title="PAM Data Management" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./planning.html" class="sidebar-item-text sidebar-link active">Planning Steps</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./deployment-data.html" class="sidebar-item-text sidebar-link">Deployment &amp; Data Collection</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#i.-engage-with-the-rwsc-marine-mammal-subcommittee" id="toc-i.-engage-with-the-rwsc-marine-mammal-subcommittee" class="nav-link active" data-scroll-target="#i.-engage-with-the-rwsc-marine-mammal-subcommittee">I. Engage with the RWSC Marine Mammal Subcommittee</a></li>
+  <li><a href="#ii.-codeployment-of-other-sensors" id="toc-ii.-codeployment-of-other-sensors" class="nav-link" data-scroll-target="#ii.-codeployment-of-other-sensors">II. Codeployment of other sensors</a></li>
+  <li><a href="#iii.-best-practices-to-minimize-bottom-disturbance-from-underwater-mooring-systems" id="toc-iii.-best-practices-to-minimize-bottom-disturbance-from-underwater-mooring-systems" class="nav-link" data-scroll-target="#iii.-best-practices-to-minimize-bottom-disturbance-from-underwater-mooring-systems">III. Best Practices to minimize bottom disturbance from underwater mooring systems</a></li>
+  <li><a href="#iv.-best-practices-to-minimize-self-noise-from-underwater-mooring-systems" id="toc-iv.-best-practices-to-minimize-self-noise-from-underwater-mooring-systems" class="nav-link" data-scroll-target="#iv.-best-practices-to-minimize-self-noise-from-underwater-mooring-systems">IV. Best Practices to minimize self-noise from underwater mooring systems</a></li>
+  <li><a href="#v.-navy-awareness-of-pam-deployments-on-the-atlantic-ocs" id="toc-v.-navy-awareness-of-pam-deployments-on-the-atlantic-ocs" class="nav-link" data-scroll-target="#v.-navy-awareness-of-pam-deployments-on-the-atlantic-ocs">V. Navy Awareness of PAM deployments on the Atlantic OCS</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/RWSCollab/pam-data-mgmt/edit/main/planning.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/RWSCollab/pam-data-mgmt/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Planning Steps</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Planning steps include pre-deployment coordination and communication best practices that help ensure that any new deployments are responsive to PAM data gaps and needs in the region (to the extent practicable), and that individuals or entities responsible for deployments and data are connected to the existing network of experts and can benefit from lessons learned and other existing bodies of knowledge.</p>
+<section id="i.-engage-with-the-rwsc-marine-mammal-subcommittee" class="level2">
+<h2 class="anchored" data-anchor-id="i.-engage-with-the-rwsc-marine-mammal-subcommittee">I. Engage with the RWSC Marine Mammal Subcommittee</h2>
+<p>Groups or individuals planning to deploy PAM devices on the Atlantic OCS for the purposes of detecting cetaceans or characterizing ocean noise are encouraged to attend RWSC Marine Mammal Subcommittee meetings to introduce their project, discuss their deployment plan with experts, and receive input on optimal location and other considerations (visit https://rwsc.org/events to view the Subcommittee meeting schedule). In collaboration with the NOAA Passive Acoustics Research Group, the Subcommittee is maintaining an understanding of PAM devices deployed on the Atlantic OCS and periodically updating maps that show current deployments on the Northeast Ocean Data Portal and Mid-Atlantic Ocean Data Portal (see figure below).</p>
+<p>The Portal maps are developed from location and deployment information shared with NOAA. The following best practices ensure that information about new and completed deployments is shared with NOAA so that the Portal maps maintain their accuracy and relevance.</p>
+<p>The Portals also contain data products that may assist funders and researchers in selecting locations for PAM deployment. For example, the Portals contain data products representing monthly and annual vessel traffic for several classes of vessels; commercial fishing activity; offshore wind planning and leasing areas; bathymetry and seafloor composition information; and monthly density model outputs for 29 cetacean species/guilds. The Subcommittee encourages users to examine these data to inform PAM deployment site selection.</p>
+</section>
+<section id="ii.-codeployment-of-other-sensors" class="level2">
+<h2 class="anchored" data-anchor-id="ii.-codeployment-of-other-sensors">II. Codeployment of other sensors</h2>
+<p>Introducing new PAM instruments and moorings into the environment presents an opportunity to co-locate other sensors and equipment. For example, several active and planned PAM deployments include support for VEMCO receivers or other acoustic telemetry receiver devices. This type of co-deployment builds the receiver network for studies of other taxa such as sea turtles and highly migratory fish species, and is strongly encouraged.</p>
+<p>While the location of PAM instruments and moored PAM arrays may not represent ideal receiver locations needed to address research questions answered with acoustic telemetry for other taxa, RWSC and its partners encourage the deployment of multiple sensors per mooring, when practicable, while research questions and best practices for acoustic telemetry are under development.</p>
+<p>In August 2022, the RWSC Sea Turtle Subcommittee recommended that acoustic telemetry receivers be included on each new PAM deployment as the RWSC Marine Mammal Subcommittee considers the design and implementation of a regional PAM network.</p>
+</section>
+<section id="iii.-best-practices-to-minimize-bottom-disturbance-from-underwater-mooring-systems" class="level2">
+<h2 class="anchored" data-anchor-id="iii.-best-practices-to-minimize-bottom-disturbance-from-underwater-mooring-systems">III. Best Practices to minimize bottom disturbance from underwater mooring systems</h2>
+<p>Participants in the June 2021 BOEM/NOAA Workshop “Improving Monitoring, Data Consistency, Archiving, and Access for Improved Regional Integration of Renewable Energy Science” recommended that best management practices (BMPs) be developed for any moored or bottom-mounted equipment used for mitigation, monitoring, and regional science associated with offshore wind development. These recommended BMPs are intended to address identified issues but are voluntary and should be considered supplemental to any other requirements that may be included under federal or state permits and authorizations. The purpose of the following BMPs is to provide reasonable conditions to avoid ocean use conflicts and minimize any potential environmental impacts associated with scientific devices on or attached to the seafloor.</p>
+<ol type="1">
+<li>Review information in ocean data portals and confer with offshore wind developers to ensure device deployment areas do not conflict with existing or planned cable locations, rights of way, or foundation locations.</li>
+<li>Properly label all buoys and devices with the responsible operator name and contact information.</li>
+<li>Avoid known locations of possible unexploded ordnance (UXO).<br>
+</li>
+<li>Avoid historical or archeological sites.<br>
+</li>
+<li>Avoid known live bottom (corals, seagrasses, etc.) and sensitive hard-bottom features.<br>
+</li>
+<li>Reduce entanglement or entrapment risk to marine protected species.</li>
+</ol>
+<p><u>Utilize ocean data portals and coordinate with offshore wind developers.</u> To the greatest reasonable extent practicable, deployment locations should be deconflicted prior to deploying any research or monitoring equipment on the seafloor. Coordination should occur with offshore leaseholders within lease boundaries and cable rights of way to ensure current or planned development activities do not conflict with the deployment or operation of the device.</p>
+<p><u>Properly label all equipment with the responsible operator name and contact information.</u> Including identification information on equipment will assist with identifying the responsible parties for any equipment that is lost, damaged, or otherwise recovered that is separated from its moorings.</p>
+<p><u>Avoid UXO.</u> Avoidance should be the primary strategy to ensure potential locations of UXO are not interacted with during the deployment, maintenance, and recovery of scientific devices. Information for known ordnance areas are available at https://marinecadastre.gov/data/ and should be checked when identifying potential device locations and prior to equipment re-deployment. New potential UXO may also be identified by geophysical and magnetometer surveys associated with offshore wind data collection.</p>
+<p><u>Avoid known Historical and archeaological sites.</u> If the mooring system, anchoring, or equipment (any portion of bottom disturbance) is to be placed in an area known to be clear or otherwise was previously surveyed and cleared, then no additional surveys are required. If the area was previously surveyed and the equipment is associated with proposed actions under an OCS lease, the lessee should coordinate with BOEM on any necessary requirements under a lease or approval conditions of plans.</p>
+<p><u>Avoid live-bottom features.</u> Mooring systems or equipment sleds should occur at least 150 m from any known locations of threatened or endangered coral species. All sensitive live bottom habitats (eelgrass, cold-water corals, etc.) should be avoided as practicable. Hard-bottom features including pavement, scarp walls, and deep/cold-water coral reefs and shallow/mesophotic reefs as defined in the CMECS Geologic Substrate Classifications) should also be avoided.</p>
+<p><u>Reduce entanglement and entrapment risk.</u> Mooring or retrieval systems should have a discountable risk of entangling or entrapping any marine protected species. Operators should ensure that any buoys attached to the seafloor use the best available mooring systems. Buoys, lines (chains, cables, or coated rope systems), swivels, shackles, and anchor designs should prevent any potential entanglement of listed species while ensuring the purpose, safety, and integrity of the structure or device. All mooring lines and ancillary attachment lines should use one or more of the following measures to reduce entanglement risk: shortest practicable line length, rubber sleeves, weak-links, chains, cables, or similar equipment types that prevent lines from looping, wrapping, or entrapping protected species. Any equipment should be attached by a line within a rubber sleeve for rigidity. The length of the line should be as short as necessary to meet its intended purpose.</p>
+</section>
+<section id="iv.-best-practices-to-minimize-self-noise-from-underwater-mooring-systems" class="level2">
+<h2 class="anchored" data-anchor-id="iv.-best-practices-to-minimize-self-noise-from-underwater-mooring-systems">IV. Best Practices to minimize self-noise from underwater mooring systems</h2>
+<p>Precautions should be taken to avoid interference of self-noise caused by current flow around the hydrophone and movement of the device and its components. This is especially important in areas with currents greater than 0.1 m/s; to estimate bottom currents for a potential site use the HYCOM model provided by NOAA (https://coastwatch.pfeg.noaa.gov/erddap/griddap/). Flow shields and/or wraps that protect hydrophones and other device components can also be used to decrease self-noise by disrupting the turbulent boundary layers (ADEON Hardware Specification ). An example of quiet mooring design is described in Baumgartner 2019:</p>
+<blockquote class="blockquote">
+<p><em>We utilized a mature mooring design that allowed both quiet operation as well as delivery of digital data from the sea floor to shore (Figure 2.1). The DMON was housed in open cell foam and a urethane fairing and affixed to a bottom-mounted aluminum frame called the multi-function node (MFN), which in turn was attached to the surface buoy by stretch hoses. These hoses can stretch to nearly twice their relaxed length (Paul &amp; Bocconcelli, 1994), thereby absorbing the motion of the buoy in rough wave conditions and keeping the MFN acoustically quiet. The hoses also contain helically wound conductors that allow power and data to be delivered between the buoy and the DMON. The surface buoy contains a platform computer, Iridium and global positioning satellite (GPS) antennas, and a 450-Ahr battery pack to power all system components. The platform computer receives and stores DMON/LFDCS data sent in real-time via the stretch hoses, and once every 2 hours, transmits these stored data to shore via an Iridium satellite modem (Figure 2.2). The buoy was designed to operate at sea for at least one year.</em></p>
+</blockquote>
+</section>
+<section id="v.-navy-awareness-of-pam-deployments-on-the-atlantic-ocs" class="level2">
+<h2 class="anchored" data-anchor-id="v.-navy-awareness-of-pam-deployments-on-the-atlantic-ocs">V. Navy Awareness of PAM deployments on the Atlantic OCS</h2>
+<p>The purpose of the following steps is to ensure that the US Navy is aware of and can provide feedback on the precise location of bottom-mounted archival passive acoustic monitoring equipment on the Atlantic OCS. The Navy is requesting that all individuals consider the following steps prior to deployment. Developers may be subject to additional requirements under the BOEM issued permits.</p>
+<ol type="1">
+<li><p>Ensure Navy awareness - 45 days prior to deployment Submit Passive Acoustic Monitoring (PAM) and/or Distributed Acoustic Sensing (DAS) plan to Navy (latitude/longitude, type, make and model of sensor, water depth, sample rate, time frame, deployment duration etc.). Email Beth Levy: beth.m.levy2.ctr@us.navy.mil</p></li>
+<li><p>Navy evaluation and response This step applies to PAM data in all locations, not just BOEM lease areas. Provide at least 30 days for Navy to evaluate the plan from an operational and acoustic security perspective.</p>
+<ul>
+<li><p><u>Navy Concurs</u> - The Fleet is able to operate with the proposed plan as is. No data screening is needed.</p></li>
+<li><p><u>Navy Concurs with requested conditions</u></p>
+<ul>
+<li><p>Request Alternative Sensor Location: Navy proposes alternative locations that will still allow for original monitoring objectives, while maintaining National Security, Navy training and readiness.</p></li>
+<li><p>Request Data Screening: Navy would request the ability to screen data from selected sensors and redact potentially sensitive data. The screened data set will be returned to the owner/collector for their unrestricted use and dissemination.</p></li>
+</ul></li>
+</ul></li>
+<li><p>Operator confirms sensor deployment locations</p>
+<ul>
+<li>After actual sensor deployment, provide precise metadata to Navy within 7 days.</li>
+</ul></li>
+<li><p>Operator data retrieval</p>
+<ul>
+<li><p>If sensor is not identified for screening, operator can proceed with QA/QC and data analysis.</p></li>
+<li><p>If sensor is identified for requested screening, load data onto hard drives, record metadata about location, water depth, etc.</p>
+<ul>
+<li><p>BEFORE an analyst does any QA/QC, follow existing Navy data handling and secure storage procedures (a detailed document will be provided during step 2 above).</p></li>
+<li><p>Data will be sent to Navy for screening.</p></li>
+<li><p>Navy will review and return a redacted data set within 90 days. o Operator can proceed with analysis on the redacted dataset.</p></li>
+</ul></li>
+</ul></li>
+<li><p>Instrument recovery/redeployment Operator will notify Navy if instruments are recovered, and/or redeployed in the same location, or if settings or location have changed, will restart with step 1 above.</p></li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./deployment-data.html" class="pagination-link">
+        <span class="nav-page-text">Deployment &amp; Data Collection</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">© CC-By RWSC Marine Mammal Subcommittee, 2022</div>   
+    <div class="nav-footer-right">🐋</div>
+  </div>
+</footer>
+
+
+
+</body></html>

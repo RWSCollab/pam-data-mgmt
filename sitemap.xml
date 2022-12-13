@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
-    <lastmod>2022-12-13T17:14:23.155Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/quarto-workflows/jupyter.html</loc>
+    <lastmod>2022-12-13T21:35:03.781Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
-    <lastmod>2022-12-13T17:14:24.663Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/quarto-workflows/rstudio.html</loc>
+    <lastmod>2022-12-13T21:35:05.913Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/index.html</loc>
-    <lastmod>2022-12-13T17:14:25.547Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/quarto-workflows/index.html</loc>
+    <lastmod>2022-12-13T21:35:06.297Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/browser.html</loc>
-    <lastmod>2022-12-13T17:14:25.907Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/quarto-workflows/browser.html</loc>
+    <lastmod>2022-12-13T21:35:06.657Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-12-13T17:14:26.363Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/learning-more.html</loc>
+    <lastmod>2022-12-13T21:35:06.993Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/learning-more.html</loc>
-    <lastmod>2022-12-13T17:14:26.695Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/planning.html</loc>
+    <lastmod>2022-12-13T21:35:07.477Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2022-12-13T17:14:27.087Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/index.html</loc>
+    <lastmod>2022-12-13T21:35:07.865Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/explore.html</loc>
-    <lastmod>2022-12-13T17:14:27.551Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/deployment-data.html</loc>
+    <lastmod>2022-12-13T21:35:08.337Z</lastmod>
   </url>
 </urlset>
