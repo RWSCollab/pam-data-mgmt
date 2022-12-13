@@ -1,45 +1,35 @@
 ---
-title: "Making shareable documents with Quarto"
-subtitle: "Create open-source tutorials, onboarding docs, and much more"
+title: "Long-term and Archival Passive Acoustic Monitoring (PAM) Data"
+subtitle: "Data Management & Storage Best Practices"
 ---
 
-## Welcome {#welcome}
+## Introduction {#intro}
 
-It's possible to create beautiful documentation to share online with [Quarto](https://quarto.org) that auto-updates with [GitHub](http://github.com). This is very new and incredibly cool. This tutorial is an example of a quarto website --- it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.
+This document was compiled by RWSC Staff at the request of the Marine Mammal Subcommittee with the assistance and input of a PAM Data Management Work Group. Work Group members and reviewers of this document included: **Melinda Rekdahl (Wildlife Conservation Society); Anita Murray (Wildlife Conservation Society; now Maine Department of Marine Resources); Erin Meyer-Gutbrod (University of South Carolina); Erica Staaterman (BOEM); Genevieve Davis (NOAA NEFSC Passive Acoustics Research Group); Jordan Carduner (Equinor), Laura Morse (Orsted; now Mainstream Renewables); Scott Carr (JASCO); Aaron Rice (Cornell University); Joel Bell (US Navy); Carrie Wall Bell (NOAA National Centers for Environmental Information (NCEI)).**
 
-Creating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that's where we'll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout.
+------------------------------------------------------------------------
 
-## What is Quarto?
+This document is also responsive to the needs and priorities expressed at recent workshops and expert working group proceedings, including:
 
-Quarto helps you have your ideas and your code in one place, and present it in a beautiful way. 
+-   "Standards for PAM reporting" was identified as a Potential Research Idea and Priority during the [New York Bight Passive Acoustic Monitoring Workshop in March 2021](https://www.nyetwg.com/_files/ugd/78f0c4_d276f672901b4f3f874f73a49c5872a4.pdf)
 
-**Quarto unifies and extends the RMarkdown ecosystem** - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it's for people who have never used RMarkdown. 
- 
+-   The need and foundation for the following best practices document was discussed at the June 2021 BOEM/NOAA workshop [Improving Monitoring, Data Consistency, Archiving, and Access for Improved Regional Integration of Renewable Energy Science: Passive Acoustic Monitoring and Marine Mammals](https://www.boem.gov/sites/default/files/documents/BOEM_PAM_Workshop1_2021_078.pdf)
 
-The ability for Quarto to streamline collaboration has been so cool and important for our [NASA Openscapes](https://nasa-openscapes.github.io/) project. Quarto has been a common place for us to collaborate - across R and Python languages and coding expertise. 
+-   The specific components and building blocks for the following best practices were discussed and many Subcommittee members participated in the March 2022 BOEM/NOAA workshop I[mproving Monitoring, Data Consistency, Archiving, and Access for Improved Regional Integration of Renewable Energy Science: Passive Acoustic Monitoring Data Standards and Management](https://www.boem.gov/sites/default/files/documents/renewable-energy/studies/PAM2-Workshop-BOE-2022-055.pdf)
 
-## What is this tutorial?
+The purpose of this document is to address the data collection, management, and storage phases of a long-term/archival PAM project to ensure that while numerous individual entities may be deployment, collecting, and analyzing PAM data, the infrastructure and information exists to facilitate future meta-analyses and syntheses of PAM data across the U.S. Atlantic Outer Continental Shelf (OCS). For specific guidance and information regarding PAM systems and their deployment and the PAM capabilities and techniques needed to promote efficient, consistent, and meaningful data collection efforts on local and regional scales, please see the minimum recommendations for PAM usage in offshore wind energy research developed by NOAA and BOEM (Van Parijs et al. 2021). This PAM data management and storage best practices document incorporates by reference many of the specifications and recommendations of Van Parijs et al. 20215. In addition, the multi-year and multi-sector Atlantic Deepwater Ecosystem Observatory Network for the US Mid- and South Atlantic Outer Continental Shelf (ADEON) project developed several standardized measurement and processing methods to ensure that the underwater acoustic measurements made over the course of its project can be compared with other monitoring programs' data. ADEON data guides and specifications are incorporated by reference throughout this document as well.
 
-This is a 1-hour tutorial that can be used to teach or as self-paced learning. 
+This document does not directly address or recommend best practices for deploying PAM for real-time detection of marine mammals for mitigation purposes (Table 1). U.S. federal agencies may provide requirements or guidance for the deployment, interpretation, reporting, and management of real-time mitigation PAM data in association with offshore wind (or other activities/uses) permitting. The data generated from real-time systems used for mitigation (I.e., species detections) may be integrated into PAM data products as part of the final step of the workflow described below, with additional considerations for differences in study design, collection methods, and other data analysis steps.
 
-We introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.
+| Purpose                                                             | Real-time PAM | Archival PAM | Considerations for deployment and best practices for data management included in this document? |
+|---------------------------------------------------------------------|---------------|--------------|-------------------------------------------------------------------------------------------------|
+| Mitigation during pile driving or other noise-generating activities | x             |              | No                                                                                              |
+| Vessel strike avoidance                                             | x             |              | No                                                                                              |
+| Ambient noise monitoring                                            | x             | x            | Yes                                                                                             |
+| Long-term wildlife monitoring                                       |               | x            | Yes                                                                                             |
 
-We'll start off from the browser so you don't need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don't already have a workflow to edit files and sync to GitHub from your computer, I recommend RStudio. You don't need to know R to use RStudio, and it has powerful editor features that make for happy workflows.
+: Table 1. Various purposes for deploying PAM and relevance to this document
 
-[Quarto.org](https://quarto.org) is the go-to place for full documentation and more tutorials! 
+The document is separated into three sections that correspond to a generic workflow for planning, deploying, and analyzing/interpreting long-term archival PAM data, primarily for the purposes of detecting cetaceans. Each section contains several detailed steps that were identified by the RWSC Marine Mammal Subcommittee.
 
-## Example Quarto sites
-
-A few Quarto websites from Openscapes - so far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.
-
--   [Champions Lessons Series](https://openscapes.github.io/series)
--   [Openscapes Approach Guide](https://openscapes.github.io/approach-guide/)\
--   [2021 NASA Cloud Hackathon](https://nasa-openscapes.github.io/2021-Cloud-Hackathon/)
--   [Faylab Lab Manual](https://thefaylab.github.io/lab-manual/)
--   [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), by Mine Çetinkaya-Rundel
-
-## About
-
-[Openscapes](https://openscapes.org) is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.
-
-We're developing this tutorial to help folks with different levels of technical skills use [Quarto](https://quarto.org) for documentation and tutorial building. This tutorial was originally created for several different audiences: [NASA-Openscapes](https://nasa-openscapes.github.io) researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We're hoping it's useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking "Edit this page" or "Report an issue" at the upper right side of any page.
+![](images/steps.png){fig-align="center" width="600"}

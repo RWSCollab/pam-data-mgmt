@@ -9,10 +9,15 @@ website:
   repo-actions: [edit, issue]
   
   page-footer:
-    right: 
-    left: "images/RWSC_Logo_Typography.png" "&copy; CC-By RWSC, 2022"
+    left: "&copy; CC-By RWSC Marine Mammal Subcommittee, 2022"
+    right: 🐋
+  
+  search:
+    location: sidebar
+    type: textbox
     
   sidebar:
+    title: PAM Data Management Best Practices
     logo: "images/MM.png"
     pinned: true
     align: center
@@ -29,16 +34,11 @@ website:
     collapse-level: 1
     contents:
       - href: index.qmd
-        text: Welcome
-      - explore.qmd
-      - section: quarto-workflows/index.qmd
-        contents: 
-          - quarto-workflows/browser.md
-          - quarto-workflows/rstudio.qmd
-          - quarto-workflows/jupyter.md 
-      - learning-more.qmd
-      - href: transition-from-rmarkdown.qmd
-        text: Transition from Rmd
+        text: Introduction
+      - href: planning.qmd
+        text: Planning Steps
+      - href: deployment-data.qmd
+        text: Deployment & Data Collection
 
 
 format:

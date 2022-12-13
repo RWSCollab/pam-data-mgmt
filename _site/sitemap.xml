@@ -1,35 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-07-08T00:04:57.906Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/transition-from-rmarkdown.html</loc>
+    <lastmod>2022-12-13T17:29:51.235Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2022-07-08T00:04:58.299Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/index.html</loc>
+    <lastmod>2022-12-13T21:03:11.059Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/learning-more.html</loc>
-    <lastmod>2022-07-08T00:04:58.634Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/learning-more.html</loc>
+    <lastmod>2022-12-13T17:29:52.097Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/explore.html</loc>
-    <lastmod>2022-07-08T00:04:59.049Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/explore.html</loc>
+    <lastmod>2022-12-13T17:29:52.618Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/browser.html</loc>
-    <lastmod>2022-07-08T00:04:59.372Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/quarto-workflows/browser.html</loc>
+    <lastmod>2022-12-13T17:29:53.012Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
-    <lastmod>2022-07-08T00:04:59.806Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/quarto-workflows/jupyter.html</loc>
+    <lastmod>2022-12-13T17:29:53.531Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/index.html</loc>
-    <lastmod>2022-07-08T00:05:00.127Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/quarto-workflows/index.html</loc>
+    <lastmod>2022-12-13T17:29:53.948Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
-    <lastmod>2022-07-08T00:05:00.487Z</lastmod>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/quarto-workflows/rstudio.html</loc>
+    <lastmod>2022-12-13T17:29:54.322Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/planning.html</loc>
+    <lastmod>2022-12-13T21:17:12.658Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rwscollab.github.io/pam-data-mgmt/deployment-data.html</loc>
+    <lastmod>2022-12-13T21:33:27.845Z</lastmod>
   </url>
 </urlset>
