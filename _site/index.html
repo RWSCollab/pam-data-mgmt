@@ -213,6 +213,16 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html#appendixa" class="sidebar-item-text sidebar-link">Appendix A</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html#appendixb" class="sidebar-item-text sidebar-link">Appendix B</a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -223,12 +233,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro">Introduction</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><img src="images/steps.png" class="img-fluid" data-fig-align="center" width="600"></a></li>
   <li><a href="#planning" id="toc-planning" class="nav-link" data-scroll-target="#planning">1. Planning Steps</a>
   <ul class="collapse">
   <li><a href="#engage" id="toc-engage" class="nav-link" data-scroll-target="#engage">I. Engage with the RWSC Marine Mammal Subcommittee</a></li>
   <li><a href="#codeploy" id="toc-codeploy" class="nav-link" data-scroll-target="#codeploy">II. Codeployment of other sensors</a></li>
-  <li><a href="#bottom" id="toc-bottom" class="nav-link" data-scroll-target="#bottom">III.Best practices to minimize bottom disturbance from underwater mooring systems</a></li>
+  <li><a href="#bottom" id="toc-bottom" class="nav-link" data-scroll-target="#bottom">III. Best practices to minimize bottom disturbance from underwater mooring systems</a></li>
   <li><a href="#noise" id="toc-noise" class="nav-link" data-scroll-target="#noise">IV. Best practices to minimize self-noise from underwater mooring systems</a></li>
   <li><a href="#v.-navy-awareness-of-pam-deployments-on-the-atlantic-ocs" id="toc-v.-navy-awareness-of-pam-deployments-on-the-atlantic-ocs" class="nav-link" data-scroll-target="#v.-navy-awareness-of-pam-deployments-on-the-atlantic-ocs">V. Navy awareness of PAM deployments on the Atlantic OCS</a></li>
   </ul></li>
@@ -242,9 +251,10 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">IX. Analysis of species detections and ambient noise metrics</a></li>
   <li><a href="#nefsc" id="toc-nefsc" class="nav-link" data-scroll-target="#nefsc">X. Reporting to NOAA NEFSC Passive Acoustics Research Group</a></li>
-  <li><a href="#archive" id="toc-archive" class="nav-link" data-scroll-target="#archive">XI. Archiving and access at NCEI Passive Acoustic Data Archive</a></li>
   <li><a href="#visual" id="toc-visual" class="nav-link" data-scroll-target="#visual">XII. Visualizing species detection data</a></li>
   </ul></li>
+  <li><a href="#appendixa" id="toc-appendixa" class="nav-link" data-scroll-target="#appendixa">Appendix A: Examples of PAM species detection data visualizations</a></li>
+  <li><a href="#appendixb" id="toc-appendixb" class="nav-link" data-scroll-target="#appendixb">Appendix B: NOAA-NEFSC species codes</a></li>
   </ul>
 </nav>
     </div>
@@ -264,10 +274,10 @@ ul.task-list li input[type="checkbox"] {
 <li><p>The need and foundation for the following best practices document was discussed at the June 2021 BOEM/NOAA workshop <a href="https://www.boem.gov/sites/default/files/documents/BOEM_PAM_Workshop1_2021_078.pdf">Improving Monitoring, Data Consistency, Archiving, and Access for Improved Regional Integration of Renewable Energy Science: Passive Acoustic Monitoring and Marine Mammals</a></p></li>
 <li><p>The specific components and building blocks for the following best practices were discussed and many Subcommittee members participated in the March 2022 BOEM/NOAA workshop <a href="https://www.boem.gov/sites/default/files/documents/renewable-energy/studies/PAM2-Workshop-BOE-2022-055.pdf">Improving Monitoring, Data Consistency, Archiving, and Access for Improved Regional Integration of Renewable Energy Science: Passive Acoustic Monitoring Data Standards and Management</a></p></li>
 </ul>
-<p>The purpose of this document is to address the data collection, management, and storage phases of a long-term/archival PAM project to ensure that while numerous individual entities may be deployment, collecting, and analyzing PAM data, the infrastructure and information exists to facilitate future meta-analyses and syntheses of PAM data across the U.S. Atlantic Outer Continental Shelf (OCS). For specific guidance and information regarding PAM systems and their deployment and the PAM capabilities and techniques needed to promote efficient, consistent, and meaningful data collection efforts on local and regional scales, please see the minimum recommendations for PAM usage in offshore wind energy research developed by NOAA and BOEM (Van Parijs et al.&nbsp;2021). This PAM data management and storage best practices document incorporates by reference many of the specifications and recommendations of Van Parijs et al.&nbsp;20215. In addition, the multi-year and multi-sector Atlantic Deepwater Ecosystem Observatory Network for the US Mid- and South Atlantic Outer Continental Shelf (ADEON) project developed several standardized measurement and processing methods to ensure that the underwater acoustic measurements made over the course of its project can be compared with other monitoring programs’ data. ADEON data guides and specifications are incorporated by reference throughout this document as well.</p>
-<p>This document does not directly address or recommend best practices for deploying PAM for real-time detection of marine mammals for mitigation purposes (<strong>?@tbl-types</strong>). U.S. federal agencies may provide requirements or guidance for the deployment, interpretation, reporting, and management of real-time mitigation PAM data in association with offshore wind (or other activities/uses) permitting. The data generated from real-time systems used for mitigation (I.e., species detections) may be integrated into PAM data products as part of the final step of the workflow described below, with additional considerations for differences in study design, collection methods, and other data analysis steps.</p>
+<p>The purpose of this document is to address the data collection, management, and storage phases of a long-term/archival PAM project to ensure that while numerous individual entities may be deployment, collecting, and analyzing PAM data, the infrastructure and information exists to facilitate future meta-analyses and syntheses of PAM data across the U.S. Atlantic Outer Continental Shelf (OCS). For specific guidance and information regarding PAM systems and their deployment and the PAM capabilities and techniques needed to promote efficient, consistent, and meaningful data collection efforts on local and regional scales, please see the minimum recommendations for PAM usage in offshore wind energy research developed by NOAA and BOEM (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a>). This PAM data management and storage best practices document incorporates by reference many of the specifications and recommendations of <a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a>. In addition, the multi-year and multi-sector <a href="https://adeon.unh.edu/">Atlantic Deepwater Ecosystem Observatory Network for the US Mid- and South Atlantic Outer Continental Shelf (ADEON) project</a> developed several standardized measurement and processing methods to ensure that the underwater acoustic measurements made over the course of its project can be compared with other monitoring programs’ data. <a href="https://adeon.unh.edu/standards">ADEON data guides and specifications</a> are incorporated by reference throughout this document as well.</p>
+<p>This document does not directly address or recommend best practices for deploying PAM for real-time detection of marine mammals for mitigation purposes (Table 1). U.S. federal agencies may provide requirements or guidance for the deployment, interpretation, reporting, and management of real-time mitigation PAM data in association with offshore wind (or other activities/uses) permitting. The data generated from real-time systems used for mitigation (i.e., species detections) may be integrated into PAM data products as part of the final step of the workflow described below, with additional considerations for differences in study design, collection methods, and other data analysis steps.</p>
 <table class="table">
-<caption>Table 1. Various purposes for deploying PAM and relevance to this document {tbl-types}</caption>
+<caption>Table 1. Various purposes for deploying PAM and relevance to this document</caption>
 <colgroup>
 <col style="width: 34%">
 <col style="width: 7%">
@@ -310,16 +320,24 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p>The document is separated into three sections that correspond to a generic workflow for planning, deploying, and analyzing/interpreting long-term archival PAM data, primarily for the purposes of detecting cetaceans. Each section contains several detailed steps that were identified by the RWSC Marine Mammal Subcommittee.</p>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"><img src="images/steps.png" class="img-fluid" data-fig-align="center" width="600"></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/steps.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
 </section>
 <section id="planning" class="level2">
 <h2 class="anchored" data-anchor-id="planning">1. Planning Steps</h2>
 <p>Planning steps include pre-deployment coordination and communication best practices that help ensure that any new deployments are responsive to PAM data gaps and needs in the region (to the extent practicable), and that individuals or entities responsible for deployments and data are connected to the existing network of experts and can benefit from lessons learned and other existing bodies of knowledge.</p>
 <section id="engage" class="level3">
 <h3 class="anchored" data-anchor-id="engage">I. Engage with the RWSC Marine Mammal Subcommittee</h3>
-<p>Groups or individuals planning to deploy PAM devices on the Atlantic OCS for the purposes of detecting cetaceans or characterizing ocean noise are encouraged to attend RWSC Marine Mammal Subcommittee meetings to introduce their project, discuss their deployment plan with experts, and receive input on optimal location and other considerations (visit https://rwsc.org/events to view the Subcommittee meeting schedule). In collaboration with the NOAA Passive Acoustics Research Group, the Subcommittee is maintaining an understanding of PAM devices deployed on the Atlantic OCS and periodically updating maps that show current deployments on the Northeast Ocean Data Portal and Mid-Atlantic Ocean Data Portal (see figure below).</p>
+<p>Groups or individuals planning to deploy PAM devices on the Atlantic OCS for the purposes of detecting cetaceans or characterizing ocean noise are encouraged to attend RWSC Marine Mammal Subcommittee meetings to introduce their project, discuss their deployment plan with experts, and receive input on optimal location and other considerations (visit <a href="https://rwsc.org/events" class="uri">https://rwsc.org/events</a> to view the Subcommittee meeting schedule). In collaboration with the NOAA Passive Acoustics Research Group, the Subcommittee is maintaining an understanding of PAM devices deployed on the Atlantic OCS and periodically updating maps that show current deployments on the <a href="https://www.northeastoceandata.org/f9rktu14">Northeast Ocean Data Portal</a> and <a href="https://bit.ly/3AYeNUS">Mid-Atlantic Ocean Data Portal</a> (see figure below).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/portal-pam.png" class="img-fluid figure-img" width="600"></p>
+<p></p><figcaption class="figure-caption">Figure 1. The map shows the current PAM deployments in the Atlantic that correspond to the proposed 40km and 20km grid cells that form a potential organizing framework for a regional network (as of August 2022). Grid cells are colored purple if at least one device is located somewhere in the cell. Caveats: there may be more than one device in each cell; there may be devices located outside of the grid cell boundaries.</figcaption><p></p>
+</figure>
+</div>
 <p>The Portal maps are developed from location and deployment information shared with NOAA. The following best practices ensure that information about new and completed deployments is shared with NOAA so that the Portal maps maintain their accuracy and relevance.</p>
 <p>The Portals also contain data products that may assist funders and researchers in selecting locations for PAM deployment. For example, the Portals contain data products representing monthly and annual vessel traffic for several classes of vessels; commercial fishing activity; offshore wind planning and leasing areas; bathymetry and seafloor composition information; and monthly density model outputs for 29 cetacean species/guilds. The Subcommittee encourages users to examine these data to inform PAM deployment site selection.</p>
 <hr>
@@ -332,8 +350,8 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="bottom" class="level3">
-<h3 class="anchored" data-anchor-id="bottom">III.Best practices to minimize bottom disturbance from underwater mooring systems</h3>
-<p>Participants in the June 2021 BOEM/NOAA Workshop “Improving Monitoring, Data Consistency, Archiving, and Access for Improved Regional Integration of Renewable Energy Science” recommended that best management practices (BMPs) be developed for any moored or bottom-mounted equipment used for mitigation, monitoring, and regional science associated with offshore wind development. These recommended BMPs are intended to address identified issues but are voluntary and should be considered supplemental to any other requirements that may be included under federal or state permits and authorizations. The purpose of the following BMPs is to provide reasonable conditions to avoid ocean use conflicts and minimize any potential environmental impacts associated with scientific devices on or attached to the seafloor.</p>
+<h3 class="anchored" data-anchor-id="bottom">III. Best practices to minimize bottom disturbance from underwater mooring systems</h3>
+<p>Participants in the June 2021 BOEM/NOAA Workshop <a href="https://www.boem.gov/sites/default/files/documents/BOEM_PAM_Workshop1_2021_078.pdf">“Improving Monitoring, Data Consistency, Archiving, and Access for Improved Regional Integration of Renewable Energy Science”</a> recommended that best management practices (BMPs) be developed for any moored or bottom-mounted equipment used for mitigation, monitoring, and regional science associated with offshore wind development. These recommended BMPs are intended to address identified issues but are voluntary and should be considered supplemental to any other requirements that may be included under federal or state permits and authorizations. The purpose of the following BMPs is to provide reasonable conditions to avoid ocean use conflicts and minimize any potential environmental impacts associated with scientific devices on or attached to the seafloor.</p>
 <ol type="1">
 <li>Review information in ocean data portals and confer with offshore wind developers to ensure device deployment areas do not conflict with existing or planned cable locations, rights of way, or foundation locations.</li>
 <li>Properly label all buoys and devices with the responsible operator name and contact information.</li>
@@ -347,7 +365,7 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p><u>Utilize ocean data portals and coordinate with offshore wind developers.</u> To the greatest reasonable extent practicable, deployment locations should be deconflicted prior to deploying any research or monitoring equipment on the seafloor. Coordination should occur with offshore leaseholders within lease boundaries and cable rights of way to ensure current or planned development activities do not conflict with the deployment or operation of the device.</p>
 <p><u>Properly label all equipment with the responsible operator name and contact information.</u> Including identification information on equipment will assist with identifying the responsible parties for any equipment that is lost, damaged, or otherwise recovered that is separated from its moorings.</p>
-<p><u>Avoid UXO.</u> Avoidance should be the primary strategy to ensure potential locations of UXO are not interacted with during the deployment, maintenance, and recovery of scientific devices. Information for known ordnance areas are available at https://marinecadastre.gov/data/ and should be checked when identifying potential device locations and prior to equipment re-deployment. New potential UXO may also be identified by geophysical and magnetometer surveys associated with offshore wind data collection.</p>
+<p><u>Avoid UXO.</u> Avoidance should be the primary strategy to ensure potential locations of UXO are not interacted with during the deployment, maintenance, and recovery of scientific devices. Information for known ordnance areas are available at <a href="https://marinecadastre.gov/data/" class="uri">https://marinecadastre.gov/data/</a> and should be checked when identifying potential device locations and prior to equipment re-deployment. New potential UXO may also be identified by geophysical and magnetometer surveys associated with offshore wind data collection.</p>
 <p><u>Avoid known Historical and archeaological sites.</u> If the mooring system, anchoring, or equipment (any portion of bottom disturbance) is to be placed in an area known to be clear or otherwise was previously surveyed and cleared, then no additional surveys are required. If the area was previously surveyed and the equipment is associated with proposed actions under an OCS lease, the lessee should coordinate with BOEM on any necessary requirements under a lease or approval conditions of plans.</p>
 <p><u>Avoid live-bottom features.</u> Mooring systems or equipment sleds should occur at least 150 m from any known locations of threatened or endangered coral species. All sensitive live bottom habitats (eelgrass, cold-water corals, etc.) should be avoided as practicable. Hard-bottom features including pavement, scarp walls, and deep/cold-water coral reefs and shallow/mesophotic reefs as defined in the CMECS Geologic Substrate Classifications) should also be avoided.</p>
 <p><u>Reduce entanglement and entrapment risk.</u> Mooring or retrieval systems should have a discountable risk of entangling or entrapping any marine protected species. Operators should ensure that any buoys attached to the seafloor use the best available mooring systems. Buoys, lines (chains, cables, or coated rope systems), swivels, shackles, and anchor designs should prevent any potential entanglement of listed species while ensuring the purpose, safety, and integrity of the structure or device. All mooring lines and ancillary attachment lines should use one or more of the following measures to reduce entanglement risk: shortest practicable line length, rubber sleeves, weak-links, chains, cables, or similar equipment types that prevent lines from looping, wrapping, or entrapping protected species. Any equipment should be attached by a line within a rubber sleeve for rigidity. The length of the line should be as short as necessary to meet its intended purpose.</p>
@@ -355,9 +373,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="noise" class="level3">
 <h3 class="anchored" data-anchor-id="noise">IV. Best practices to minimize self-noise from underwater mooring systems</h3>
-<p>Precautions should be taken to avoid interference of self-noise caused by current flow around the hydrophone and movement of the device and its components. This is especially important in areas with currents greater than 0.1 m/s; to estimate bottom currents for a potential site use the HYCOM model provided by NOAA (https://coastwatch.pfeg.noaa.gov/erddap/griddap/). Flow shields and/or wraps that protect hydrophones and other device components can also be used to decrease self-noise by disrupting the turbulent boundary layers (ADEON Hardware Specification ). An example of quiet mooring design is described in Baumgartner 2019:</p>
+<p>Precautions should be taken to avoid interference of self-noise caused by current flow around the hydrophone and movement of the device and its components. This is especially important in areas with currents greater than 0.1 m/s; to estimate bottom currents for a potential site use the HYCOM model provided by NOAA (<a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/" class="uri">https://coastwatch.pfeg.noaa.gov/erddap/griddap/</a>). Flow shields and/or wraps that protect hydrophones and other device components can also be used to decrease self-noise by disrupting the turbulent boundary layers (<a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON%20Hardware%20Specification%20VERSION%202.3%20_final%20submission.pdf">ADEON Hardware Specification</a>). An example of quiet mooring design is described in <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13244">Baumgartner 2019</a>:</p>
 <blockquote class="blockquote">
-<p><em>We utilized a mature mooring design that allowed both quiet operation as well as delivery of digital data from the sea floor to shore (Figure 2.1). The DMON was housed in open cell foam and a urethane fairing and affixed to a bottom-mounted aluminum frame called the multi-function node (MFN), which in turn was attached to the surface buoy by stretch hoses. These hoses can stretch to nearly twice their relaxed length (Paul &amp; Bocconcelli, 1994), thereby absorbing the motion of the buoy in rough wave conditions and keeping the MFN acoustically quiet. The hoses also contain helically wound conductors that allow power and data to be delivered between the buoy and the DMON. The surface buoy contains a platform computer, Iridium and global positioning satellite (GPS) antennas, and a 450-Ahr battery pack to power all system components. The platform computer receives and stores DMON/LFDCS data sent in real-time via the stretch hoses, and once every 2 hours, transmits these stored data to shore via an Iridium satellite modem (Figure 2.2). The buoy was designed to operate at sea for at least one year.</em></p>
+<p><em>We utilized a mature mooring design that allowed both quiet operation as well as delivery of digital data from the sea floor to shore (Figure 2.1). The DMON was housed in open cell foam and a urethane fairing and affixed to a bottom-mounted aluminum frame called the multi-function node (MFN), which in turn was attached to the surface buoy by stretch hoses. These hoses can stretch to nearly twice their relaxed length (Paul &amp; Bocconcelli, 1994), thereby absorbing the motion of the buoy in rough wave conditions and keeping the MFN acoustically quiet. The hoses also contain helically wound conductors that allow power and data to be delivered between the buoy and the DMON. The surface buoy contains a platform computer, Iridium and global positioning satellite (GPS) antennas, and a 450-Ahr battery pack to power all system components. The platform computer receives and stores DMON/LFDCS data sent in real-time via the stretch hoses, and once every 2 hours, transmits these stored data to shore via an Iridium satellite modem (Figure 2). The buoy was designed to operate at sea for at least one year.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/baumgartner2019.jpg" class="img-fluid figure-img" width="600"></p>
+<p></p><figcaption class="figure-caption">Figure 2 from Baumgartner 2019.</figcaption><p></p>
+</figure>
+</div>
 </blockquote>
 <hr>
 </section>
@@ -401,9 +425,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="define" class="level3">
 <h3 class="anchored" data-anchor-id="define">VI. Definitions for raw, processed, cleaned, and analyzed data</h3>
 <p>It is expected that PAM data are collected to obtain (either or both) species detection information (e.g., cetacean calls) and ambient or other noise information (e.g., ship detections, construction noise, etc.).</p>
-<p>The following data levels (see <strong>?@tbl-2</strong> corresponding to the levels described in ADEON’s Data Processing Specification document) apply to both types of information and will be used to define what type of data are being referred to in each of the subsequent sections. These levels correspond to a workflow beginning with raw data downloaded directly from the instrument, to processed, cleaned, and/or analyzed data that have been interpreted to develop data products. There are different specifications and data management steps associated with different parts of the workflow. The grouped levels below are a reflection of when similar specifications and data management steps can be applied.</p>
+<p>The following data levels (corresponding to the levels described in <a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON_Data%20Processing_Specification_FINAL.pdf">ADEON’s Data Processing Specification</a> document) apply to both types of information and will be used to define what type of data are being referred to in each of the subsequent sections. These levels correspond to a workflow beginning with raw data downloaded directly from the instrument, to processed, cleaned, and/or analyzed data that have been interpreted to develop data products. There are different specifications and data management steps associated with different parts of the workflow. The grouped levels below are a reflection of when similar specifications and data management steps can be applied.</p>
 <table class="table">
-<caption>Table 2. Data levels adapted from ADEON. {tbl-2}</caption>
+<caption>Table 2. Data levels adapted from ADEON.</caption>
 <colgroup>
 <col style="width: 4%">
 <col style="width: 95%">
@@ -437,7 +461,19 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>The following flow chart was also adapted from ADEON’s Data Processing Specification document to depict the basic sequence of data analysis and reporting suggested for each data level. The rest of this document provides detailed steps and templates for each part of the workflow.</p>
+<p>The following flow chart was also adapted from <a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON_Data%20Processing_Specification_FINAL.pdf">ADEON’s Data Processing Specification</a> document to depict the basic sequence of data analysis and reporting suggested for each data level. The rest of this document provides detailed steps and templates for each part of the workflow.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/flowchart1.png" class="img-fluid figure-img" width="600"></p>
+<p></p><figcaption class="figure-caption">Figure 2. Flow chart for species detection data.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/flowchart2.png" class="img-fluid figure-img" width="600"></p>
+<p></p><figcaption class="figure-caption">Figure 3. Flow chart for ambient noise metrics and soundscape characterization.</figcaption><p></p>
+</figure>
+</div>
 <hr>
 </section>
 <section id="hardware" class="level3">
@@ -445,8 +481,8 @@ ul.task-list li input[type="checkbox"] {
 <p>The following steps pertain to pre-deployment best practices for Level 0 data to Level 1 data.</p>
 <section id="calibration-process" class="level4">
 <h4 class="anchored" data-anchor-id="calibration-process">Calibration process</h4>
-<p>For specific examples and details about PAM hardware calibration, refer to ADEON Calibration and Deployment Good Practice Guide, which, while limited to the specific instruments used in the ADEON project, is useful regardless of the system being used.</p>
-<p>The following text was taken from NOAA and BOEM Minimum Recommendations for Use of Passive Acoustic Listening Systems in Offshore Wind Energy Development Monitoring and Mitigation Programs (Van Parijs et al., 2021) and refers to specific recommended calibration steps.</p>
+<p>For specific examples and details about PAM hardware calibration, refer to the <a href="https://adeon.unh.edu/sites/default/files/user-uploads/Calibration%20Deployment%20Guide_FINAL_submission.pdf">ADEON Calibration and Deployment Good Practice Guide</a>, which, while limited to the specific instruments used in the ADEON project, is useful regardless of the system being used.</p>
+<p>The following text was taken from NOAA and BOEM Minimum Recommendations for Use of Passive Acoustic Listening Systems in Offshore Wind Energy Development Monitoring and Mitigation Programs (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a>) and refers to specific recommended calibration steps.</p>
 <blockquote class="blockquote">
 <p><em>For all PAM technologies, the hydrophones and related hardware need to be calibrated (every 3 to 5 years) and their performance systematically measured and optimized within frequency bandwidths of interest for the particular activity, species, and environment.</em></p>
 <p><em>All hardware should be tested and optimized for low self-noise, including the mooring system. In addition to calibration, the system should be fully tested to ensure adequate sensitivity in the area where it will be deployed and with the type of signals it would receive. Additional environmental data will need to be collected to allow for adequate system evaluation. If this cannot be done at the project site, the system should be fully tested in a comparable location (i.e., an area exhibiting similar depth, temperature, substrate, current, acoustic propagation, and ambient noise, with relevant sound sources).</em></p>
@@ -455,9 +491,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="calibration-data-and-metadata" class="level4">
 <h4 class="anchored" data-anchor-id="calibration-data-and-metadata">Calibration data and metadata</h4>
-<p>From NOAA and BOEM Minimum Recommendations for Use of Passive Acoustic Listening Systems in Offshore Wind Energy Development Monitoring and Mitigation Programs (Van Parijs et al., 2021):</p>
+<p>From NOAA and BOEM Minimum Recommendations for Use of Passive Acoustic Listening Systems in Offshore Wind Energy Development Monitoring and Mitigation Programs (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a>):</p>
 <blockquote class="blockquote">
-<p><em>Calibration data, and relevant settings and sensitivities should be noted for all hardware used in recording/monitoring to ensure consistency among measurements for particular hardware and software [more detail can be found in Biber et al.&nbsp;(2018) ]. Array synchronization information (where relevant) should also be documented. This information should be permanently associated with the recordings as metadata.</em></p>
+<p><em>Calibration data, and relevant settings and sensitivities should be noted for all hardware used in recording/monitoring to ensure consistency among measurements for particular hardware and software [more detail can be found in <a href="https://acta.imeko.org/index.php/acta-imeko/article/view/IMEKO-ACTA-07%20%282018%29-02-06/pdf">Biber et al., 2018]</a>. Array synchronization information (where relevant) should also be documented. This information should be permanently associated with the recordings as metadata.</em></p>
 <p><em>At a minimum, the following specifications should be measured and reported on:</em></p>
 <ul>
 <li><p><em>Bandwidth and frequency response (i.e., 10 to 200 kHz)</em></p></li>
@@ -478,7 +514,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Once hardware is deployed and data are collected, Quality Assurance/Quality Control steps should be taken to ensure integrity of the data. This step is further split into two separate procedures to include actions that should be taken to properly download and check the data from a PAM device as well as the process to QA/QC the data after being downloaded.</p>
 <section id="before-downloading-data-from-the-recorder---level-0-data" class="level4">
 <h4 class="anchored" data-anchor-id="before-downloading-data-from-the-recorder---level-0-data">Before downloading data from the recorder - (Level 0 data)</h4>
-<p>For each PAM deployment there should be an associated deployment information file that contains the recording metadata and calibration information as described above in Section VII. Ensure that these data and the acoustic data files match up and are collated correctly prior to deleting any information off of the actual device. For additional detail on post-retrieval field calibration and data handling best practices, refer to the ADEON Calibration and Deployment Good Practice Guide .</p>
+<p>For each PAM deployment there should be an associated deployment information file that contains the recording metadata and calibration information as described above in Section VII. Ensure that these data and the acoustic data files match up and are collated correctly prior to deleting any information off of the actual device. For additional detail on post-retrieval field calibration and data handling best practices, refer to the <a href="https://adeon.unh.edu/sites/default/files/user-uploads/Calibration%20Deployment%20Guide_FINAL_submission.pdf">ADEON Calibration and Deployment Good Practice Guide</a>.</p>
 </section>
 <section id="after-downloading-data-from-the-recorder---converting-level-0-data-to-level-1-data" class="level4">
 <h4 class="anchored" data-anchor-id="after-downloading-data-from-the-recorder---converting-level-0-data-to-level-1-data">After downloading data from the recorder - (Converting Level 0 data to Level 1 data)</h4>
@@ -554,17 +590,19 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="analysis">IX. Analysis of species detections and ambient noise metrics</h3>
 <section id="level-2-3-data" class="level5">
 <h5 class="anchored" data-anchor-id="level-2-3-data">(Level 2-3 data)</h5>
-<p>During this step, Level 1 audio files are interpreted/analyzed and converted into a time series of species detections and/or ambient noise metrics. Van Parijs et al.&nbsp;2021 provide a comprehensive overview of the hardware and automated software needed for analysis of cetacean calls (species detections) and ambient noise metric measurement.</p>
+<p>During this step, Level 1 audio files are interpreted/analyzed and converted into a time series of species detections and/or ambient noise metrics. <a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a> provide a comprehensive overview of the hardware and automated software needed for analysis of cetacean calls (species detections) and ambient noise metric measurement.</p>
 </section>
 <section id="species-detections" class="level4">
 <h4 class="anchored" data-anchor-id="species-detections">Species detections</h4>
-<p>Analyzing calibrated data to derive species detections may be done manually (visually) or using automated software. Standard performance metrics, such as precision, recall, and accuracy, as well as false detection, false positive, false omission and missed detection rates should be provided in the metadata accompanying species detections (Van Parijs et al.&nbsp;2021 ). The subcommittee and other entities (i.e., North Atlantic Right Whale Consortium &amp; NOAA) have identified the need to developed a minimum requirement for the performance statistics to ensure sufficient quality data in these shared resources. However, with those standards still being determined, the following are examples of suggested performance metrics to report for specific project goals: Baumgartner et al.&nbsp;2021 ; Kirsebom et al.&nbsp;2020 ; Madhusudhana et al.&nbsp;2020 ; Gervaise et al.&nbsp;2021 ; Kowarski et al.&nbsp;2020 ; Kowarski et al.&nbsp;2021 . The ADEON Data Processing Specification also contains a suggested equation for validation of automated detectors and a discussion of how to apply it.</p>
+<p>Analyzing calibrated data to derive species detections may be done manually (visually) or using automated software. Standard performance metrics, such as precision, recall, and accuracy, as well as false detection, false positive, false omission and missed detection rates should be provided in the metadata accompanying species detections (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a>). The Subcommittee and other entities (i.e., North Atlantic Right Whale Consortium, NOAA) have identified the need to developed a minimum requirement for the performance statistics to ensure sufficient quality data in these shared resources. However, with those standards still being determined, the following are examples of suggested performance metrics to report for specific project goals: <a href="https://asa.scitation.org/doi/full/10.1121/10.0004817">Baumgartner et al., 2021</a>; <a href="https://asa.scitation.org/doi/full/10.1121/10.0001132">Kirsebom et al., 2020</a>; <a href="https://asa.scitation.org/doi/full/10.1121/10.0001108">Madhusudhana et al., 2020</a>; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0003682X21000426">Gervaise et al., 2021</a>; <a href="https://asa.scitation.org/doi/full/10.1121/10.0001811">Kowarski et al., 2020</a>; <a href="https://asa.scitation.org/doi/full/10.1121/10.0004851">Kowarski et al., 2021</a>. The <a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON_Data%20Processing_Specification_FINAL.pdf">ADEON Data Processing Specification</a> also contains a suggested equation for validation of automated detectors and a discussion of how to apply it.</p>
 </section>
 <section id="ambient-noise-metrics" class="level4">
 <h4 class="anchored" data-anchor-id="ambient-noise-metrics">Ambient noise metrics</h4>
-<p>The ADEON Project uses the word “soundscape” to characterize the ambient sound in terms of its spatial, temporal, and frequency attributes and the types of sources contributing to the sound field. The ADEON Underwater Soundscape and Modeling Metadata Standard suggests several quantitative and qualitative metrics guided by input from the project’s agency sponsors and an international soundscapes workshop.</p>
-<p>The following text was taken from NOAA and BOEM Minimum Recommendations for Use of Passive Acoustic Listening Systems in Offshore Wind Energy Development Monitoring and Mitigation Programs (Van Parjis et al., 2021):</p>
-<p>Measurements of ambient noise metrics can be carried out using a number of open-source programs such as PAMGUIDE or MANTA. These programs provide a standard series of measurements at the decidecadal level that can be replicated across projects. An ongoing framework inventory on existing standards for observations of sound in the ocean can be found in the Ocean Best Practices Repository.</p>
+<p>The ADEON Project uses the word “soundscape” to characterize the ambient sound in terms of its spatial, temporal, and frequency attributes and the types of sources contributing to the sound field. The <a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON%20Soundscape%20Specification%20Deliverable%20v1.0%20FINAL%20Submission.pdf">ADEON Underwater Soundscape and Modeling Metadata Standard</a> suggests several quantitative and qualitative metrics guided by input from the project’s agency sponsors and an international soundscapes workshop.</p>
+<p>The following text was taken from NOAA and BOEM Minimum Recommendations for Use of Passive Acoustic Listening Systems in Offshore Wind Energy Development Monitoring and Mitigation Programs (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parjis et al., 2021</a>):</p>
+<blockquote class="blockquote">
+<p><em>Measurements of ambient noise metrics can be carried out using a number of open-source programs such as <a href="https://sourceforge.net/projects/pamguide/">PAMGUIDE</a> or <a href="https://bitbucket.org/CLO-BRP/manta-wiki/wiki/Home">MANTA</a>. These programs provide a standard series of measurements at the decidecadal level that can be replicated across projects. An ongoing framework inventory on existing standards for observations of sound in the ocean can be found in the <a href="https://www.oceanbestpractices.org/">Ocean Best Practices Repository</a>.</em></p>
+</blockquote>
 <hr>
 </section>
 </section>
@@ -572,41 +610,52 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="nefsc">X. Reporting to NOAA NEFSC Passive Acoustics Research Group</h3>
 <section id="level-2-3-data-1" class="level5">
 <h5 class="anchored" data-anchor-id="level-2-3-data-1">(Level 2-3 data)</h5>
-<p>Species detection data should be sent to the NOAA Passive Acoustics Research Group using their latest templates for passive acoustic data reporting (current version: 5/25/22) which are based on International Organization for Standardization (ISO) specifications and current research goals. From NOAA and BOEM Minimum Recommendations for Use of Passive Acoustic Listening Systems in Offshore Wind Energy Development Monitoring and Mitigation Programs (Van Parjis et al., 2021 ):</p>
-<p>All confirmed passive acoustic detections of target species/species, whether from archival or real-time data, are archived in a publicly accessible location. For the U.S. East Coast, all species detection data and ambient noise metrics should be reported to the Northeast Passive Acoustic Reporting System via nmfs.pacmdata@noaa.gov. Formatted spreadsheets30 that follow ISO standards with required detection, measurement, and metadata information are available for submission purposes28. When PAM is used for long-term monitoring, all data (detection data, metadata, GPS data, and ambient noise data) should be provided via the formatted spreadsheets30 and uploaded within 90 days of the retrieval of the recorder or data collection. For further assistance, contact nmfs.pacmdata@noaa.gov.</p>
+<p>Species detection data should be sent to the NOAA Passive Acoustics Research Group using their latest <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">templates for passive acoustic data reporting</a> (current version: 5/25/22) which are based on International Organization for Standardization (ISO) specifications and current research goals. From NOAA and BOEM Minimum Recommendations for Use of Passive Acoustic Listening Systems in Offshore Wind Energy Development Monitoring and Mitigation Programs (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parjis et al., 2021</a>):</p>
+<p>All confirmed passive acoustic detections of target species/species, whether from archival or real-time data, are archived in a publicly accessible location. For the U.S. East Coast, all species detection data and ambient noise metrics should be reported to the Northeast Passive Acoustic Reporting System via <a href="mailto:nmfs.pacmdata@noaa.gov">nmfs.pacmdata@noaa.gov</a>. <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">Formatted spreadsheets</a> that follow ISO standards with required detection, measurement, and metadata information are available for submission purposes. When PAM is used for long-term monitoring, all data (detection data, metadata, GPS data, and ambient noise data) should be provided via the <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">formatted spreadsheets</a> and uploaded within 90 days of the retrieval of the recorder or data collection. For further assistance, contact <a href="mailto:nmfs.pacmdata@noaa.gov">nmfs.pacmdata@noaa.gov</a>.</p>
 </section>
 <section id="submission-instructions" class="level4">
 <h4 class="anchored" data-anchor-id="submission-instructions">Submission Instructions</h4>
-<p>There are three separate files available via the NOAA Passive Acoustics Research Group. Each file contains a template sheet with example data, a sheet with field definitions, and file naming directions: 1. The NEFSC PACM Metadata template30 (METADATA) can be used for all data collection efforts (species detections and ambient noise metrics) to ensure consistent data reporting and proper documentation for archival needs. 2. The NEFSC PACM Detection template30 (DETECTIONDATA) should be used for PAM systems that contain species occurrence information, and should be accompanied by the associated PACM METADATA deployment template. This ensures that the deployment locations and occurrence information can be displayed on the Passive Acoustic Cetacean Map (which also feeds into the Northeast and Mid-Atlantic Ocean Data Portals). This template also includes a sheet with standardized species codes to use (also included in this document’s Appendix B). 3. The NEFSC PACM GPS template30 (GPSDATA) should only be used when collecting data via a mobile platform such as Electric-gliders, wave-gliders, towed-arrays, linear-arrays, drifting-buoys, and tags.</p>
+<p>There are three separate files available via the NOAA Passive Acoustics Research Group. Each file contains a template sheet with example data, a sheet with field definitions, and file naming directions:</p>
+<ol type="1">
+<li><p>The <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">NEFSC PACM Metadata template (METADATA)</a> can be used for all data collection efforts (species detections and ambient noise metrics) to ensure consistent data reporting and proper documentation for archival needs.</p></li>
+<li><p>The <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">NEFSC PACM Detection template (DETECTIONDATA)</a> should be used for PAM systems that contain species occurrence information, and should be accompanied by the associated PACM METADATA deployment template. This ensures that the deployment locations and occurrence information can be displayed on the Passive Acoustic Cetacean Map (which also feeds into the Northeast and Mid-Atlantic Ocean Data Portals). This template also includes a sheet with standardized species codes to use (also included in this document’s Appendix B).</p></li>
+<li><p>The <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">NEFSC PACM GPS template (GPSDATA)</a> should only be used when collecting data via a mobile platform such as Electric-gliders, wave-gliders, towed-arrays, linear-arrays, drifting-buoys, and tags.</p></li>
+</ol>
 </section>
 <section id="important-notes" class="level4">
-<h4 class="anchored" data-anchor-id="important-notes">Important Notes</h4>
-<p>All DATETIME entries should be in the ISO8601 format (YYYY-MM-DDThh:mm:ssZ). The “Z” refers to date time stamps in UTC time zone. See https://en.wikipedia.org/wiki/ISO_8601 for further information on ISO8601 formats and time zones.</p>
-<p>In order for the data to be read correctly in the databases, do not use any commas (“,”) in any fields. If there is a need for multiple values (cases explained in field definitions), use a semicolon (“;”). If a comma is necessary, enclose the entire field entry in quotations (“example entry”).</p>
-<p>Use of the Species Codes found in Appendix B is strongly encouraged. Contact Passive Acoustics Research Group staff for species codes crosswalk information.</p>
-<p>Once formatted and saved as a .csv file the metadata and datasheets should be sent to nmfs.pacmdata@noaa.gov. These data will be displayed on the Passive Acoustic Cetacean Map , and the location information will be shared with the Northeast and Mid-Atlantic Ocean Data Portals. By following these standards, any data collection will also be compatible for NCEI data storage and archival (discussed further below).</p>
+<h4 class="anchored">Important Notes</h4>
+<ul>
+<li><p>All DATETIME entries should be in the ISO8601 format (YYYY-MM-DDThh:mm:ssZ). The “Z” refers to date time stamps in UTC time zone. See <a href="https://en.wikipedia.org/wiki/ISO_8601" class="uri">https://en.wikipedia.org/wiki/ISO_8601</a> for further information on ISO8601 formats and time zones.</p></li>
+<li><p>In order for the data to be read correctly in the databases, do not use any commas (“,”) in any fields. If there is a need for multiple values (cases explained in field definitions), use a semicolon (“;”). If a comma is necessary, enclose the entire field entry in quotations (“example entry”).</p></li>
+<li><p>Use of the Species Codes found in Appendix B is strongly encouraged. Contact Passive Acoustics Research Group staff for species codes crosswalk information.</p></li>
+<li><p>Once formatted and saved as a .csv file the metadata and datasheets should be sent to <a href="mailto:nmfs.pacmdata@noaa.gov">nmfs.pacmdata@noaa.gov</a>. These data will be displayed on the <a href="https://apps-nefsc.fisheries.noaa.gov/pacm/">Passive Acoustic Cetacean Map</a>, and the location information will be shared with the Northeast and Mid-Atlantic Ocean Data Portals. <strong>By following these standards, any data collection will also be compatible for NCEI data storage and archival (discussed further below).</strong></p>
 <hr>
-</section>
-</section>
-<section id="archive" class="level3">
-<h3 class="anchored" data-anchor-id="archive">XI. Archiving and access at NCEI Passive Acoustic Data Archive</h3>
+<h3 id="archive" class="anchored" data-anchor-id="important-notes">XI. Archiving and access at NCEI Passive Acoustic Data Archive</h3></li>
+</ul>
 <section id="level-1-3-data" class="level5">
 <h5 class="anchored" data-anchor-id="level-1-3-data">(Level 1-3 data)</h5>
-<p>The NOAA National Centers for Environmental Information (NCEI) Passive Acoustic Data Archive hosts over 200TB of audio files and data products and is growing quickly. The archive team developed the PassivePacker software tool to simplify data submission to the archive. The software packages the data into standardized structures and creates machine-parsable JavaScript Object Notation (JSON) metadata records. Data providers then send these data packages to NCEI. There is a ~$145/TB cost associated with archiving data at NCEI to support long-term data stewardship that meets the National Archives and Records Administration standards. Quality control and proprietary procedures are dependent on the source of the data and are detailed here.</p>
-<p>Archived passive acoustic datasets are made publicly available for search, discovery, and access through a web-based map viewer. Contact pad.info@noaa.gov for information about data archiving, archive costs (which are subject to change), the submission process, and data access.</p>
+<p>The NOAA National Centers for Environmental Information (NCEI) <a href="https://www.ncei.noaa.gov/products/passive-acoustic-data">Passive Acoustic Data Archive</a> hosts over 200TB of audio files and data products and is growing quickly. The archive team developed the <a href="https://www.ncei.noaa.gov/products/passivepacker">PassivePacker</a> software tool to simplify data submission to the archive. The software packages the data into standardized structures and creates machine-parsable JavaScript Object Notation (JSON) metadata records. Data providers then send these data packages to NCEI. There is a ~$145/TB cost associated with archiving data at NCEI to support long-term data stewardship that meets the National Archives and Records Administration standards. Quality control and proprietary procedures are dependent on the source of the data and are detailed on the <a href="https://www.ncei.noaa.gov/archive">NCEI Archive page</a>.</p>
+<p>Archived passive acoustic datasets are made publicly available for search, discovery, and access through a <a href="https://www.ncei.noaa.gov/maps/passive_acoustic_data/">web-based map viewer</a>. Contact <a href="mailto:pad.info@noaa.gov">pad.info@noaa.gov</a> for information about data archiving, archive costs (which are subject to change), the submission process, and data access.</p>
+</section>
 </section>
 <section id="submission-instructions-1" class="level4">
 <h4 class="anchored" data-anchor-id="submission-instructions-1">Submission Instructions</h4>
 <p>Raw and calibrated PAM data should be archived at NCEI (Level 1 data). All of the species detection/occurrence data and information submitted to the NOAA Passive Acoustics Research Group and as described in the previous Section X are also compatible for submission to the NCEI passive acoustic data archive (Level 2-3 data). In addition, ambient noise metrics data especially should be archived at NCEI (Level 2-3 data).</p>
-<p>Please reference the PassivePacker webpage31, including a manual found under ‘Help’, for comprehensive data submission guidance specific to passive acoustic data. In order to ensure the most up-to-date records, it is requested that data be sent to NCEI within a year of retrieval. If an embargo is needed past that time to delay public access until after publication, NCEI may be able to provide that service. These exceptions are dealt with on a case-by-case basis.</p>
+<p>Please reference the <a href="https://www.ncei.noaa.gov/products/passivepacker">PassivePacker webpage</a>, including a manual found under ‘Help’, for comprehensive data submission guidance specific to passive acoustic data. In order to ensure the most up-to-date records, <strong>it is requested that data be sent to NCEI within a year of retrieval</strong>. If an embargo is needed past that time to delay public access until after publication, NCEI may be able to provide that service. These exceptions are dealt with on a case-by-case basis.</p>
 </section>
 <section id="important-notes-1" class="level4">
 <h4 class="anchored" data-anchor-id="important-notes-1">Important Notes</h4>
 <p>Storage at NCEI requires the archiving of several items:</p>
 <ul>
 <li><p>The acoustic sound recordings, which are the .wav sound recordings (i.e., Level 1 data) made using the PAM technology, should be compressed into a standardized lossless format such as FLAC for archiving.</p></li>
-<li><p>The associated metadata, which is the information associated with the deployment and retrieval of the PAM technology at sea (e.g., recorder type, depth, location, and functionality) and information on the recording settings, such as the sampling rate and recording schedule. The NEFSC PACM Metadata template can be used to organize this information, and PassivePacker contains an interface for entering the various Deployment Information, Instrument type and ID, Sampling, Data Quality, and Sensor Details to generate a metadata record which is also exportable (see the PassivePacker user manual ). The figure below lists the types of metadata that should be recorded, entered, and transmitted to NCEI via PassivePacker for each step of a PAM Project.</p></li>
+<li><p>The associated metadata, which is the information associated with the deployment and retrieval of the PAM technology at sea (e.g., recorder type, depth, location, and functionality) and information on the recording settings, such as the sampling rate and recording schedule. The <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">NEFSC PACM Metadata template</a> can be used to organize this information, and PassivePacker contains an interface for entering the various Deployment Information, Instrument type and ID, Sampling, Data Quality, and Sensor Details to generate a metadata record which is also exportable (see the <a href="https://www.ncei.noaa.gov/sites/default/files/2022-03/packager_manual_08.pdf">PassivePacker user manual</a>). The figure below lists the types of metadata that should be recorded, entered, and transmitted to NCEI via PassivePacker for each step of a PAM Project.</p></li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/metadata.png" class="img-fluid figure-img" width="600"></p>
+<p></p><figcaption class="figure-caption">Figure 4. The types of metadata that should be recorded, entered, and transmitted to NCEI via PassivePacker for each step of a PAM project.</figcaption><p></p>
+</figure>
+</div>
 <hr>
 </section>
 </section>
@@ -615,15 +664,300 @@ ul.task-list li input[type="checkbox"] {
 <section id="level-4-5-data" class="level5">
 <h5 class="anchored" data-anchor-id="level-4-5-data">(Level 4-5 data)</h5>
 <p>To be meaningful for assessing patterns and changes over time, species detection data usually needs to be further summarized beyond a simple time series of detections and locations described previously. Summary metrics can be presented as time series via graphs or other plots, or as maps. Some common summary metrics include:</p>
-<p>Percent of each day with species detected or possibly detected (graphed over entire monitoring period)</p>
-<p>Proportion of total days monitored with species detected or possibly detected (mapped in geographic space or graphed over time)</p>
-<p>See examples of visualizations of these and other metrics in Appendix A.</p>
-<p>The Subcommittee encourages PAM detections to be shared across widely used and recognized platforms and regional web portals. Some of these efforts on the U.S. Atlantic coast include the Passive Acoustic Cetacean Map (described throughout this document), WhaleMap , and WhaleAlert .</p>
+<ul>
+<li><p>Percent of each day with species detected or possibly detected (graphed over entire monitoring period)</p></li>
+<li><p>Proportion of total days monitored with species detected or possibly detected (mapped in geographic space or graphed over time)</p></li>
+</ul>
+<p>See examples of visualizations of these and other metrics in <a href="Appendix A">@appendixa</a>.</p>
+<p>The Subcommittee encourages PAM detections to be shared across widely used and recognized platforms and regional web portals. Some of these efforts on the U.S. Atlantic coast include the <a href="https://apps-nefsc.fisheries.noaa.gov/pacm">Passive Acoustic Cetacean Map</a> (described throughout this document), <a href="https://whalemap.org/">WhaleMap</a>, and <a href="http://www.whalealert.org/">WhaleAlert</a>.</p>
 <p>As data are collected, analyzed, and interpreted, the Subcommittee may recommend the development of a standard set of spatial PAM data products to be updated regularly, used to assess changes in detection over time, and disseminated via the appropriate data portals.</p>
-
-
+<hr>
 </section>
 </section>
+</section>
+<section id="appendixa" class="level2">
+<h2 class="anchored" data-anchor-id="appendixa">Appendix A: Examples of PAM species detection data visualizations</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pacm.png" class="img-fluid figure-img" width="800"></p>
+<p></p><figcaption class="figure-caption">North Atlantic Right Whale detections on the Passive Acoustic Cetacean Map from the NOAA NEFSC Passive Acoustics Research Group – accessed 12/14/22; https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw.</figcaption><p></p>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/delarue.png" class="img-fluid figure-img" width="800"></p>
+<p></p><figcaption class="figure-caption">Delarue, Julien J-Y., et al.&nbsp;“Acoustic occurrence of baleen whales, particularly blue, fin, and humpback whales, off eastern Canada, 2015-2017.” Endangered Species Research47 (2022): 265-289.</figcaption><p></p>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/baumgartner2019-a.png" class="img-fluid figure-img" width="800"></p>
+<p></p><figcaption class="figure-caption">Baumgartner, Mark F., et al.&nbsp;“Persistent near real‐time passive acoustic monitoring for baleen whales from a moored buoy: System description and evaluation.” Methods in Ecology and Evolution 10.9 (2019): 1476-1489.</figcaption><p></p>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/whalemap.png" class="img-fluid figure-img" width="800"></p>
+<p></p><figcaption class="figure-caption">Whalemap, https://whalemap.org/WhaleMap</figcaption><p></p>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/davis.png" class="img-fluid figure-img" width="800"></p>
+<p></p><figcaption class="figure-caption">Davis, Genevieve E., et al.&nbsp;“Long-term passive acoustic recordings track the changing distribution of North Atlantic right whales (Eubalaena glacialis) from 2004 to 2014.” Scientific reports 7.1 (2017): 1-12.</figcaption><p></p>
+</figure>
+</div>
+<p>---</p>
+</section>
+<section id="appendixb" class="level2">
+<h2 class="anchored" data-anchor-id="appendixb">Appendix B: NOAA-NEFSC species codes</h2>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 25%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>** COMMON NAME **</th>
+<th>** SCIENTIFIC NAME **</th>
+<th>** SPECIES CODE **</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Atlantic spotted dolphin</td>
+<td>Stenella frontalis</td>
+<td>ASDO</td>
+</tr>
+<tr class="even">
+<td>Atlantic white-sided dolphin</td>
+<td>Lagenorhynchus acutus</td>
+<td>WSDO</td>
+</tr>
+<tr class="odd">
+<td>Beluga whale</td>
+<td>Delphinapterus leucas</td>
+<td>BELU</td>
+</tr>
+<tr class="even">
+<td>Blainville’s beaked whale</td>
+<td>Mesoplodon densirostris</td>
+<td>BLBW</td>
+</tr>
+<tr class="odd">
+<td>Blue whale</td>
+<td>Balaenoptera musculus</td>
+<td>BLWH</td>
+</tr>
+<tr class="even">
+<td>Bottlenose dolphin</td>
+<td>Tursiops truncatus</td>
+<td>BODO</td>
+</tr>
+<tr class="odd">
+<td>Bowhead whale</td>
+<td>Balaena mysticetus</td>
+<td>BOWH</td>
+</tr>
+<tr class="even">
+<td>Bryde’s whale (includes Eden’s whale)</td>
+<td>Balaenoptera edeni</td>
+<td>BRWH</td>
+</tr>
+<tr class="odd">
+<td>Clymene dolphin</td>
+<td>Stenella clymene</td>
+<td>CLDO</td>
+</tr>
+<tr class="even">
+<td>Cuvier’s beaked whale</td>
+<td>Ziphius cavirostris</td>
+<td>GOBW</td>
+</tr>
+<tr class="odd">
+<td>Dwarf sperm whale</td>
+<td>Kogia sima</td>
+<td>DSWH</td>
+</tr>
+<tr class="even">
+<td>False killer whale</td>
+<td>Pseudorca crassidens</td>
+<td>FKWH</td>
+</tr>
+<tr class="odd">
+<td>Fin whale</td>
+<td>Balaenoptera physalus</td>
+<td>FIWH</td>
+</tr>
+<tr class="even">
+<td>Fraser’s dolphin</td>
+<td>Lagenodelphis hosei</td>
+<td>FRDO</td>
+</tr>
+<tr class="odd">
+<td>Gervais’ beaked whale</td>
+<td>Mesoplodon europaeus</td>
+<td>GEBW</td>
+</tr>
+<tr class="even">
+<td>Gray whale</td>
+<td>Eschrichtius robustus</td>
+<td>GRWH</td>
+</tr>
+<tr class="odd">
+<td>Harbor porpoise</td>
+<td>Phocoena phocoena</td>
+<td>HAPO</td>
+</tr>
+<tr class="even">
+<td>Humpback whale</td>
+<td>Megaptera novaeangliae</td>
+<td>HUWH</td>
+</tr>
+<tr class="odd">
+<td>Killer whale</td>
+<td>Orcinus orca</td>
+<td>KIWH</td>
+</tr>
+<tr class="even">
+<td>Melon-headed whale</td>
+<td>Peponocephala electra</td>
+<td>MHWH</td>
+</tr>
+<tr class="odd">
+<td>Minke whale (common)</td>
+<td>Balaenoptera acutorostrata</td>
+<td>MIWH</td>
+</tr>
+<tr class="even">
+<td>North Atlantic right whale</td>
+<td>Eubalaena glacialis</td>
+<td>RIWH</td>
+</tr>
+<tr class="odd">
+<td>Northern bottlenose whale</td>
+<td>Hyperoodon ampullatus</td>
+<td>NBWH</td>
+</tr>
+<tr class="even">
+<td>Offshore bottlenose dolphin</td>
+<td>Tursiops truncatus</td>
+<td>OBDO</td>
+</tr>
+<tr class="odd">
+<td>Pantropical spotted dolphin</td>
+<td>Stenella attenuata</td>
+<td>PSDO</td>
+</tr>
+<tr class="even">
+<td>Pilot whale (long-finned)</td>
+<td>Globicephala melas</td>
+<td>LFPW</td>
+</tr>
+<tr class="odd">
+<td>Pilot whale (short-finned)</td>
+<td>Globicephala macrorhynchus</td>
+<td>SFPW</td>
+</tr>
+<tr class="even">
+<td>Pygmy killer whale</td>
+<td>Feresa attenuata</td>
+<td>PYKW</td>
+</tr>
+<tr class="odd">
+<td>Pygmy sperm whale</td>
+<td>Kogia breviceps</td>
+<td>PSWH</td>
+</tr>
+<tr class="even">
+<td>Risso’s dolphin</td>
+<td>Grampus griseus</td>
+<td>GRAM</td>
+</tr>
+<tr class="odd">
+<td>Rough-toothed dolphin</td>
+<td>Steno bredanensis</td>
+<td>RTDO</td>
+</tr>
+<tr class="even">
+<td>Sei whale</td>
+<td>Balaenoptera borealis</td>
+<td>SEWH</td>
+</tr>
+<tr class="odd">
+<td>Short-beaked common dolphin</td>
+<td>Delphinus delphis</td>
+<td>SADO</td>
+</tr>
+<tr class="even">
+<td>Southern right whale</td>
+<td>Eubalaena australis</td>
+<td>SRWH</td>
+</tr>
+<tr class="odd">
+<td>Sowerby’s beaked whale</td>
+<td>Mesoplodon bidens</td>
+<td>SOBW</td>
+</tr>
+<tr class="even">
+<td>Sperm whale</td>
+<td>Physeter macrocephalus</td>
+<td>SPWH</td>
+</tr>
+<tr class="odd">
+<td>Spinner dolphin</td>
+<td>Stenella longirostris</td>
+<td>SNDO</td>
+</tr>
+<tr class="even">
+<td>Spotted dolphin (includes Pantropical spotted dolphin)</td>
+<td>Stenella attenuata</td>
+<td>SPDO</td>
+</tr>
+<tr class="odd">
+<td>Striped dolphin</td>
+<td>Stenella coeruleoalba</td>
+<td>STDO</td>
+</tr>
+<tr class="even">
+<td>True’s beaked whale</td>
+<td>Mesoplodon mirus</td>
+<td>TRBW</td>
+</tr>
+<tr class="odd">
+<td>Unid ziphiidae</td>
+<td>Ziphiidae sp.</td>
+<td>UNBW</td>
+</tr>
+<tr class="even">
+<td>Unid mesoplodont</td>
+<td>Mesoplodon sp.</td>
+<td>BEWH</td>
+</tr>
+<tr class="odd">
+<td>Unid pilot whale</td>
+<td>Globicephala sp.</td>
+<td>PIWH</td>
+</tr>
+<tr class="even">
+<td>Unid Pygmy/Dwarf sperm whale</td>
+<td>Kogia sp.</td>
+<td>UNKO</td>
+</tr>
+<tr class="odd">
+<td>White beaked dolphin</td>
+<td>Lagenorhynchus albirostris</td>
+<td>WBDO</td>
+</tr>
+</tbody>
+</table>
+
+
 </section>
 
 </main> <!-- /main -->

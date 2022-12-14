@@ -1,2 +1,2 @@
-# quarto-site-template
-Example quarto site without R or Python!
+# pam-data-mgmt-site
+Collaborative best practices document for archival PAM

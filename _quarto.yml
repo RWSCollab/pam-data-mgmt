@@ -79,6 +79,11 @@ website:
             
           - href: index.qmd#visual
             text: XII. Visualizing species detection data
+            
+      - href: index.qmd#appendixa
+        text: Appendix A
+      - href: index.qmd#appendixb
+        text: Appendix B
 
 
 format:
