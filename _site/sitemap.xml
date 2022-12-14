@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rwscollab.github.io/pam-data-mgmt/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-12-13T17:29:51.235Z</lastmod>
-  </url>
-  <url>
     <loc>https://rwscollab.github.io/pam-data-mgmt/index.html</loc>
-    <lastmod>2022-12-13T21:03:11.059Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rwscollab.github.io/pam-data-mgmt/learning-more.html</loc>
-    <lastmod>2022-12-13T17:29:52.097Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rwscollab.github.io/pam-data-mgmt/explore.html</loc>
-    <lastmod>2022-12-13T17:29:52.618Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rwscollab.github.io/pam-data-mgmt/quarto-workflows/browser.html</loc>
-    <lastmod>2022-12-13T17:29:53.012Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rwscollab.github.io/pam-data-mgmt/quarto-workflows/jupyter.html</loc>
-    <lastmod>2022-12-13T17:29:53.531Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rwscollab.github.io/pam-data-mgmt/quarto-workflows/index.html</loc>
-    <lastmod>2022-12-13T17:29:53.948Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rwscollab.github.io/pam-data-mgmt/quarto-workflows/rstudio.html</loc>
-    <lastmod>2022-12-13T17:29:54.322Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rwscollab.github.io/pam-data-mgmt/planning.html</loc>
-    <lastmod>2022-12-13T21:17:12.658Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rwscollab.github.io/pam-data-mgmt/deployment-data.html</loc>
-    <lastmod>2022-12-13T21:33:27.845Z</lastmod>
+    <lastmod>2022-12-14T20:36:10.529Z</lastmod>
   </url>
 </urlset>

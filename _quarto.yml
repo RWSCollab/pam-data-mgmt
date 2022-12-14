@@ -6,7 +6,6 @@ website:
   title: "Data Management & Storage Best Practices for Long-term and Archival Passive Acoustic Monitoring (PAM) Data" 
   site-url: "https://rwscollab.github.io/pam-data-mgmt/" 
   repo-url: https://github.com/RWSCollab/pam-data-mgmt 
-  repo-actions: [edit, issue]
   
   page-footer:
     left: "&copy; CC-By RWSC Marine Mammal Subcommittee, 2022"
@@ -35,10 +34,51 @@ website:
     contents:
       - href: index.qmd
         text: Introduction
-      - href: planning.qmd
-        text: Planning Steps
-      - href: deployment-data.qmd
-        text: Deployment & Data Collection
+        
+      - section: 1. Planning Steps
+        href: index.qmd#planning
+        contents:
+          - href: index.qmd#engage
+            text: I. Engage with the RWSC Marine Mammal Subcommittee
+            
+          - href: index.qmd#codeploy
+            text: II. Codeployment of other sensors
+            
+          - href: index.qmd#bottom
+            text: III. Best practices to minimize bottom disturbance from underwater mooring systems
+            
+          - href: index.qmd#noise
+            text: IV. Best practices to minimize self-noise from underwater mooring systems
+            
+          - href: index.qmd#navy
+            text: V. Navy awareness of PAM deployments on the Atlantic OCS
+            
+      - section: 2. Deployment & Data Collection
+        href: index.qmd#deploy
+        contents: 
+          - href: index.qmd#define
+            text: VI. Definitions for raw, processed, cleaned, and analyzed data
+            
+          - href: index.qmd#hardware
+            text: VII. PAM hardware calibration best practices and minimum specifications
+            
+          - href: index.qmd#qa
+            text: VIII. Best practices for PAM data QA/QC
+      
+      - section: 3. Analysis, Reporting, & Visualization
+        href: index.qmd#arv
+        contents:
+          - href: index.qmd#analysis
+            text: IX. Analysis of species detections and ambient noise metrics
+            
+          - href: index.qmd#nefsc
+            text: X. Reporting to NOAA NEFSC Passive Acoustics Research Group
+            
+          - href: index.qmd#archive
+            text: XI. Archiving and access at NCEI Passive Acoustic Data Archive
+            
+          - href: index.qmd#visual
+            text: XII. Visualizing species detection data
 
 
 format:
