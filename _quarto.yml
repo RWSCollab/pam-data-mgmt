@@ -28,7 +28,7 @@ website:
         href: https://github.com/RWSCollab/pam-data-mgmt
         text: "github"
       - icon: cloud-download
-        href: https://rwsc.org
+        href: https://rwsc.org/wp-content/uploads/2022/12/RWSC-PAM-Data-Management-Storage-Best-Practices.pdf
         text: "download pdf"
 
     style: "floating"
@@ -100,7 +100,6 @@ website:
       - href: index.qmd#appendixb
         text: Appendix B
 
-
 format:
   html:
     theme: cosmo
@@ -108,8 +107,6 @@ format:
     code-overflow: wrap
     toc: true
     link-external-newwindow: true
-
-css: styles.css
 
 filters:
   - include-files.lua

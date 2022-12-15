@@ -142,7 +142,7 @@ D.  If sensor is identified for requested screening, load data onto hard drives,
 
         -   Operator can proceed with analysis on the redacted dataset.
 
-#### 5. Instrument recovery/redeployment 
+#### 5. Instrument recovery/redeployment
 
 Operator will notify Navy if instruments are recovered, and/or redeployed in the same location, or if settings or location have changed, will restart with step 1 above.
 
@@ -530,6 +530,6 @@ As data are collected, analyzed, and interpreted, the Subcommittee may recommend
 | White beaked dolphin                                   | Lagenorhynchus albirostris | WBDO         |
 +--------------------------------------------------------+----------------------------+--------------+
 
----
+------------------------------------------------------------------------
 
 ## ![](images/RWSC_Logo_Typography.png)
