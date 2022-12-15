@@ -109,6 +109,7 @@ format:
     toc: true
     link-external-newwindow: true
 
+css: styles.css
 
 filters:
   - include-files.lua
