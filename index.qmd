@@ -1,7 +1,10 @@
 ---
 title: "Long-term and Archival Passive Acoustic Monitoring (PAM) Data"
 subtitle: "Data Management & Storage Best Practices"
-title-block-banner: true
+title-block-banner: "#64C5CC"
+date: 2022-12-14
+date-format: short
+author: RWSC Marine Mammal Subcommittee
 ---
 
 ## Introduction {#intro}
@@ -149,25 +152,25 @@ It is expected that PAM data are collected to obtain (either or both) species de
 
 The following data levels (corresponding to the levels described in [ADEON's Data Processing Specification](https://adeon.unh.edu/sites/default/files/user-uploads/ADEON_Data%20Processing_Specification_FINAL.pdf) document) apply to both types of information and will be used to define what type of data are being referred to in each of the subsequent sections. These levels correspond to a workflow beginning with raw data downloaded directly from the instrument, to processed, cleaned, and/or analyzed data that have been interpreted to develop data products. There are different specifications and data management steps associated with different parts of the workflow. The grouped levels below are a reflection of when similar specifications and data management steps can be applied.
 
-+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Level   | Meaning                                                                                                                                                                                                               |
-+=========+=======================================================================================================================================================================================================================+
-| 0       | Raw, uncalibrated data; compressed, unpacked data                                                                                                                                                                     |
-|         |                                                                                                                                                                                                                       |
-|         | [Examples:]{.underline} binary files (e.g., BIN, DAT) and SUD compressed files; before the calibration information is applied                                                                                         |
-+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 1       | Calibrated time series data                                                                                                                                                                                           |
-|         |                                                                                                                                                                                                                       |
-|         | [Examples:]{.underline} .wav files (e.g., WAVE, AIFF, FLAC); data processed using software, after calibration is applied; sound pressure on a stationary or moving platform                                           |
-+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 2-3     | Processed data from the calibrated data (quantitative and qualitative). Quantitative processing (temporal or spatial)                                                                                                 |
-|         |                                                                                                                                                                                                                       |
-|         | [Examples:]{.underline} decidecade levels; SEL; depth-integrated data; beamformed data; whale or ship detections/observations; products related to classification of signals; products related to signal localization |
-+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 4-5     | Synthesized products related to soundscape models/maps and predictive habitat modeling. Requires additional information (e.g., AIS, source model)                                                                     |
-|         |                                                                                                                                                                                                                       |
-|         | [Examples:]{.underline} interpolated products; marine mammal density estimation                                                                                                                                       |
-+---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Level    | Meaning                                                                                                                                                                                                               |
++==========+=======================================================================================================================================================================================================================+
+| 0        | Raw, uncalibrated data; compressed, unpacked data                                                                                                                                                                     |
+|          |                                                                                                                                                                                                                       |
+|          | [Examples:]{.underline} binary files (e.g., BIN, DAT) and SUD compressed files; before the calibration information is applied                                                                                         |
++----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1        | Calibrated time series data                                                                                                                                                                                           |
+|          |                                                                                                                                                                                                                       |
+|          | [Examples:]{.underline} .wav files (e.g., WAVE, AIFF, FLAC); data processed using software, after calibration is applied; sound pressure on a stationary or moving platform                                           |
++----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2-3      | Processed data from the calibrated data (quantitative and qualitative). Quantitative processing (temporal or spatial)                                                                                                 |
+|          |                                                                                                                                                                                                                       |
+|          | [Examples:]{.underline} decidecade levels; SEL; depth-integrated data; beamformed data; whale or ship detections/observations; products related to classification of signals; products related to signal localization |
++----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 4-5      | Synthesized products related to soundscape models/maps and predictive habitat modeling. Requires additional information (e.g., AIS, source model)                                                                     |
+|          |                                                                                                                                                                                                                       |
+|          | [Examples:]{.underline} interpolated products; marine mammal density estimation                                                                                                                                       |
++----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 : Table 2. Data levels adapted from ADEON.
 
@@ -403,7 +406,7 @@ As data are collected, analyzed, and interpreted, the Subcommittee may recommend
 
 ## Appendix A: Examples of PAM species detection data visualizations {#appendixa}
 
-![North Atlantic Right Whale detections on the Passive Acoustic Cetacean Map from the NOAA NEFSC Passive Acoustics Research Group -- accessed 12/14/22; https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw.](images/pacm.png){fig-align="center" width="800"}
+![North Atlantic Right Whale detections on the Passive Acoustic Cetacean Map from the NOAA NEFSC Passive Acoustics Research Group -- accessed 12/14/22; <https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw>.](images/pacm.png){fig-align="center" width="800"}
 
 ------------------------------------------------------------------------
 
@@ -415,106 +418,106 @@ As data are collected, analyzed, and interpreted, the Subcommittee may recommend
 
 ------------------------------------------------------------------------
 
-![Whalemap, https://whalemap.org/WhaleMap](images/whalemap.png){fig-align="center" width="800"}
+![Whalemap, <https://whalemap.org/WhaleMap>](images/whalemap.png){fig-align="center" width="800"}
 
 ------------------------------------------------------------------------
 
 ![Davis, Genevieve E., et al. "Long-term passive acoustic recordings track the changing distribution of North Atlantic right whales (Eubalaena glacialis) from 2004 to 2014." Scientific reports 7.1 (2017): 1-12.](images/davis.png){fig-align="center" width="800"}
 
-\-\--
+------------------------------------------------------------------------
 
 ## Appendix B: NOAA-NEFSC species codes {#appendixb}
 
-+--------------------------------------------------------+----------------------------+------------------------+
-| \*\* COMMON NAME \*\*                                  | \*\* SCIENTIFIC NAME \*\*  | \*\* SPECIES CODE \*\* |
-+========================================================+============================+========================+
-| Atlantic spotted dolphin                               | Stenella frontalis         | ASDO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Atlantic white-sided dolphin                           | Lagenorhynchus acutus      | WSDO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Beluga whale                                           | Delphinapterus leucas      | BELU                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Blainville's beaked whale                              | Mesoplodon densirostris    | BLBW                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Blue whale                                             | Balaenoptera musculus      | BLWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Bottlenose dolphin                                     | Tursiops truncatus         | BODO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Bowhead whale                                          | Balaena mysticetus         | BOWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Bryde's whale (includes Eden's whale)                  | Balaenoptera edeni         | BRWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Clymene dolphin                                        | Stenella clymene           | CLDO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Cuvier's beaked whale                                  | Ziphius cavirostris        | GOBW                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Dwarf sperm whale                                      | Kogia sima                 | DSWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| False killer whale                                     | Pseudorca crassidens       | FKWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Fin whale                                              | Balaenoptera physalus      | FIWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Fraser's dolphin                                       | Lagenodelphis hosei        | FRDO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Gervais' beaked whale                                  | Mesoplodon europaeus       | GEBW                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Gray whale                                             | Eschrichtius robustus      | GRWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Harbor porpoise                                        | Phocoena phocoena          | HAPO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Humpback whale                                         | Megaptera novaeangliae     | HUWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Killer whale                                           | Orcinus orca               | KIWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Melon-headed whale                                     | Peponocephala electra      | MHWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Minke whale (common)                                   | Balaenoptera acutorostrata | MIWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| North Atlantic right whale                             | Eubalaena glacialis        | RIWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Northern bottlenose whale                              | Hyperoodon ampullatus      | NBWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Offshore bottlenose dolphin                            | Tursiops truncatus         | OBDO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Pantropical spotted dolphin                            | Stenella attenuata         | PSDO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Pilot whale (long-finned)                              | Globicephala melas         | LFPW                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Pilot whale (short-finned)                             | Globicephala macrorhynchus | SFPW                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Pygmy killer whale                                     | Feresa attenuata           | PYKW                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Pygmy sperm whale                                      | Kogia breviceps            | PSWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Risso's dolphin                                        | Grampus griseus            | GRAM                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Rough-toothed dolphin                                  | Steno bredanensis          | RTDO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Sei whale                                              | Balaenoptera borealis      | SEWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Short-beaked common dolphin                            | Delphinus delphis          | SADO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Southern right whale                                   | Eubalaena australis        | SRWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Sowerby's beaked whale                                 | Mesoplodon bidens          | SOBW                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Sperm whale                                            | Physeter macrocephalus     | SPWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Spinner dolphin                                        | Stenella longirostris      | SNDO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Spotted dolphin (includes Pantropical spotted dolphin) | Stenella attenuata         | SPDO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Striped dolphin                                        | Stenella coeruleoalba      | STDO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| True's beaked whale                                    | Mesoplodon mirus           | TRBW                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Unid ziphiidae                                         | Ziphiidae sp.              | UNBW                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Unid mesoplodont                                       | Mesoplodon sp.             | BEWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Unid pilot whale                                       | Globicephala sp.           | PIWH                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| Unid Pygmy/Dwarf sperm whale                           | Kogia sp.                  | UNKO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
-| White beaked dolphin                                   | Lagenorhynchus albirostris | WBDO                   |
-+--------------------------------------------------------+----------------------------+------------------------+
++--------------------------------------------------------+----------------------------+--------------+
+| COMMON NAME                                            | SCIENTIFIC NAME            | SPECIES CODE |
++========================================================+============================+==============+
+| Atlantic spotted dolphin                               | Stenella frontalis         | ASDO         |
++--------------------------------------------------------+----------------------------+--------------+
+| Atlantic white-sided dolphin                           | Lagenorhynchus acutus      | WSDO         |
++--------------------------------------------------------+----------------------------+--------------+
+| Beluga whale                                           | Delphinapterus leucas      | BELU         |
++--------------------------------------------------------+----------------------------+--------------+
+| Blainville's beaked whale                              | Mesoplodon densirostris    | BLBW         |
++--------------------------------------------------------+----------------------------+--------------+
+| Blue whale                                             | Balaenoptera musculus      | BLWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Bottlenose dolphin                                     | Tursiops truncatus         | BODO         |
++--------------------------------------------------------+----------------------------+--------------+
+| Bowhead whale                                          | Balaena mysticetus         | BOWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Bryde's whale (includes Eden's whale)                  | Balaenoptera edeni         | BRWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Clymene dolphin                                        | Stenella clymene           | CLDO         |
++--------------------------------------------------------+----------------------------+--------------+
+| Cuvier's beaked whale                                  | Ziphius cavirostris        | GOBW         |
++--------------------------------------------------------+----------------------------+--------------+
+| Dwarf sperm whale                                      | Kogia sima                 | DSWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| False killer whale                                     | Pseudorca crassidens       | FKWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Fin whale                                              | Balaenoptera physalus      | FIWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Fraser's dolphin                                       | Lagenodelphis hosei        | FRDO         |
++--------------------------------------------------------+----------------------------+--------------+
+| Gervais' beaked whale                                  | Mesoplodon europaeus       | GEBW         |
++--------------------------------------------------------+----------------------------+--------------+
+| Gray whale                                             | Eschrichtius robustus      | GRWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Harbor porpoise                                        | Phocoena phocoena          | HAPO         |
++--------------------------------------------------------+----------------------------+--------------+
+| Humpback whale                                         | Megaptera novaeangliae     | HUWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Killer whale                                           | Orcinus orca               | KIWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Melon-headed whale                                     | Peponocephala electra      | MHWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Minke whale (common)                                   | Balaenoptera acutorostrata | MIWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| North Atlantic right whale                             | Eubalaena glacialis        | RIWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Northern bottlenose whale                              | Hyperoodon ampullatus      | NBWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Offshore bottlenose dolphin                            | Tursiops truncatus         | OBDO         |
++--------------------------------------------------------+----------------------------+--------------+
+| Pantropical spotted dolphin                            | Stenella attenuata         | PSDO         |
++--------------------------------------------------------+----------------------------+--------------+
+| Pilot whale (long-finned)                              | Globicephala melas         | LFPW         |
++--------------------------------------------------------+----------------------------+--------------+
+| Pilot whale (short-finned)                             | Globicephala macrorhynchus | SFPW         |
++--------------------------------------------------------+----------------------------+--------------+
+| Pygmy killer whale                                     | Feresa attenuata           | PYKW         |
++--------------------------------------------------------+----------------------------+--------------+
+| Pygmy sperm whale                                      | Kogia breviceps            | PSWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Risso's dolphin                                        | Grampus griseus            | GRAM         |
++--------------------------------------------------------+----------------------------+--------------+
+| Rough-toothed dolphin                                  | Steno bredanensis          | RTDO         |
++--------------------------------------------------------+----------------------------+--------------+
+| Sei whale                                              | Balaenoptera borealis      | SEWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Short-beaked common dolphin                            | Delphinus delphis          | SADO         |
++--------------------------------------------------------+----------------------------+--------------+
+| Southern right whale                                   | Eubalaena australis        | SRWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Sowerby's beaked whale                                 | Mesoplodon bidens          | SOBW         |
++--------------------------------------------------------+----------------------------+--------------+
+| Sperm whale                                            | Physeter macrocephalus     | SPWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Spinner dolphin                                        | Stenella longirostris      | SNDO         |
++--------------------------------------------------------+----------------------------+--------------+
+| Spotted dolphin (includes Pantropical spotted dolphin) | Stenella attenuata         | SPDO         |
++--------------------------------------------------------+----------------------------+--------------+
+| Striped dolphin                                        | Stenella coeruleoalba      | STDO         |
++--------------------------------------------------------+----------------------------+--------------+
+| True's beaked whale                                    | Mesoplodon mirus           | TRBW         |
++--------------------------------------------------------+----------------------------+--------------+
+| Unid ziphiidae                                         | Ziphiidae sp.              | UNBW         |
++--------------------------------------------------------+----------------------------+--------------+
+| Unid mesoplodont                                       | Mesoplodon sp.             | BEWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Unid pilot whale                                       | Globicephala sp.           | PIWH         |
++--------------------------------------------------------+----------------------------+--------------+
+| Unid Pygmy/Dwarf sperm whale                           | Kogia sp.                  | UNKO         |
++--------------------------------------------------------+----------------------------+--------------+
+| White beaked dolphin                                   | Lagenorhynchus albirostris | WBDO         |
++--------------------------------------------------------+----------------------------+--------------+

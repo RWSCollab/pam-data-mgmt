@@ -19,21 +19,27 @@ website:
     title: PAM Data Management Best Practices
     logo: "images/MM.png"
     pinned: true
-    align: center
+    align: "center"
     tools: 
       - icon: globe
         href: https://rwsc.org
         text: "rwsc.org"
       - icon: github
         href: https://github.com/RWSCollab/pam-data-mgmt
-        text: "PAM Data Management"
+        text: "github"
+      - icon: cloud-download
+        href: https://rwsc.org
+        text: "download pdf"
 
-    style: "docked"
+    style: "floating"
     search: true
     collapse-level: 1
+    
     contents:
       - href: index.qmd
         text: Introduction
+      
+      - text: "---"
         
       - section: 1. Planning Steps
         href: index.qmd#planning
@@ -53,6 +59,8 @@ website:
           - href: index.qmd#navy
             text: V. Navy awareness of PAM deployments on the Atlantic OCS
             
+      - text: "---"
+      
       - section: 2. Deployment & Data Collection
         href: index.qmd#deploy
         contents: 
@@ -64,6 +72,8 @@ website:
             
           - href: index.qmd#qa
             text: VIII. Best practices for PAM data QA/QC
+      
+      - text: "---"
       
       - section: 3. Analysis, Reporting, & Visualization
         href: index.qmd#arv
@@ -79,21 +89,25 @@ website:
             
           - href: index.qmd#visual
             text: XII. Visualizing species detection data
-            
+      
+      - text: "---"      
+      
       - href: index.qmd#appendixa
         text: Appendix A
+      
+      - text: "---"
+      
       - href: index.qmd#appendixb
         text: Appendix B
 
 
 format:
   html:
-    theme:
-      light: [cosmo, theme.scss] # from https://github.com/sta210-s22/website/blob/main/_quarto.yml
-      dark: [cosmo, theme-dark.scss]
+    theme: cosmo
     code-copy: true
     code-overflow: wrap
     toc: true
+    link-external-newwindow: true
 
 
 filters:
