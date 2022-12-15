@@ -104,39 +104,47 @@ Precautions should be taken to avoid interference of self-noise caused by curren
 
 ------------------------------------------------------------------------
 
-### V. Navy awareness of PAM deployments on the Atlantic OCS
+### V. Navy awareness of PAM deployments on the Atlantic OCS {navy}
 
 The purpose of the following steps is to ensure that the US Navy is aware of and can provide feedback on the precise location of bottom-mounted archival passive acoustic monitoring equipment on the Atlantic OCS. The Navy is requesting that all individuals consider the following steps prior to deployment. Developers may be subject to additional requirements under the BOEM issued permits.
 
-1.  Ensure Navy awareness - 45 days prior to deployment Submit Passive Acoustic Monitoring (PAM) and/or Distributed Acoustic Sensing (DAS) plan to Navy (latitude/longitude, type, make and model of sensor, water depth, sample rate, time frame, deployment duration etc.). Email Beth Levy: [beth.m.levy2.ctr\@us.navy.mil](mailto:beth.m.levy2.ctr@us.navy.mil)
+#### 1. Ensure Navy awareness - 45 days prior to deployment
 
-2.  Navy evaluation and response This step applies to PAM data in all locations, not just BOEM lease areas. Provide at least 30 days for Navy to evaluate the plan from an operational and acoustic security perspective.
+Submit Passive Acoustic Monitoring (PAM) and/or Distributed Acoustic Sensing (DAS) plan to Navy (latitude/longitude, type, make and model of sensor, water depth, sample rate, time frame, deployment duration etc.). Email Beth Levy: [beth.m.levy2.ctr\@us.navy.mil](mailto:beth.m.levy2.ctr@us.navy.mil)
 
-    -   [Navy Concurs]{.underline} - The Fleet is able to operate with the proposed plan as is. No data screening is needed.
+#### 2. Navy evaluation and response
 
-    -   [Navy Concurs with requested conditions]{.underline}
+This step applies to PAM data in all locations, not just BOEM lease areas. Provide at least 30 days for Navy to evaluate the plan from an operational and acoustic security perspective.
 
-        -   Request Alternative Sensor Location: Navy proposes alternative locations that will still allow for original monitoring objectives, while maintaining National Security, Navy training and readiness.
+A.  [Navy Concurs]{.underline} - The Fleet is able to operate with the proposed plan as is. No data screening is needed.
 
-        -   Request Data Screening: Navy would request the ability to screen data from selected sensors and redact potentially sensitive data. The screened data set will be returned to the owner/collector for their unrestricted use and dissemination.
+B.  Navy Concurs with requested conditions
 
-3.  Operator confirms sensor deployment locations
+    -   [Request Alternative Sensor Location:]{.underline} Navy proposes alternative locations that will still allow for original monitoring objectives, while maintaining National Security, Navy training and readiness.
 
-    -   After actual sensor deployment, provide precise metadata to Navy within 7 days.
+    -   [Request Data Screening:]{.underline} Navy would request the ability to screen data from selected sensors and redact potentially sensitive data. The screened data set will be returned to the owner/collector for their unrestricted use and dissemination.
 
-4.  Operator data retrieval
+#### 3. Operator confirms sensor deployment locations
 
-    -   If sensor is not identified for screening, operator can proceed with QA/QC and data analysis.
+After actual sensor deployment, provide precise metadata to Navy within 7 days.
 
-    -   If sensor is identified for requested screening, load data onto hard drives, record metadata about location, water depth, etc.
+#### 4. Operator data retrieval
 
-        -   BEFORE an analyst does any QA/QC, follow existing Navy data handling and secure storage procedures (a detailed document will be provided during step 2 above).
+C.  If sensor is not identified for screening, operator can proceed with QA/QC and data analysis.
 
-        -   Data will be sent to Navy for screening.
+D.  If sensor is identified for requested screening, load data onto hard drives, record metadata about location, water depth, etc.
 
-        -   Navy will review and return a redacted data set within 90 days. o Operator can proceed with analysis on the redacted dataset.
+    -   BEFORE an analyst does any QA/QC, follow existing Navy data handling and secure storage procedures (a detailed document will be provided during step 2 above).
 
-5.  Instrument recovery/redeployment Operator will notify Navy if instruments are recovered, and/or redeployed in the same location, or if settings or location have changed, will restart with step 1 above.
+    -   Data will be sent to Navy for screening.
+
+    -   Navy will review and return a redacted data set within 90 days.
+
+        -   Operator can proceed with analysis on the redacted dataset.
+
+#### 5. Instrument recovery/redeployment 
+
+Operator will notify Navy if instruments are recovered, and/or redeployed in the same location, or if settings or location have changed, will restart with step 1 above.
 
 ------------------------------------------------------------------------
 
@@ -152,25 +160,25 @@ It is expected that PAM data are collected to obtain (either or both) species de
 
 The following data levels (corresponding to the levels described in [ADEON's Data Processing Specification](https://adeon.unh.edu/sites/default/files/user-uploads/ADEON_Data%20Processing_Specification_FINAL.pdf) document) apply to both types of information and will be used to define what type of data are being referred to in each of the subsequent sections. These levels correspond to a workflow beginning with raw data downloaded directly from the instrument, to processed, cleaned, and/or analyzed data that have been interpreted to develop data products. There are different specifications and data management steps associated with different parts of the workflow. The grouped levels below are a reflection of when similar specifications and data management steps can be applied.
 
-+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Level    | Meaning                                                                                                                                                                                                               |
-+==========+=======================================================================================================================================================================================================================+
-| 0        | Raw, uncalibrated data; compressed, unpacked data                                                                                                                                                                     |
-|          |                                                                                                                                                                                                                       |
-|          | [Examples:]{.underline} binary files (e.g., BIN, DAT) and SUD compressed files; before the calibration information is applied                                                                                         |
-+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 1        | Calibrated time series data                                                                                                                                                                                           |
-|          |                                                                                                                                                                                                                       |
-|          | [Examples:]{.underline} .wav files (e.g., WAVE, AIFF, FLAC); data processed using software, after calibration is applied; sound pressure on a stationary or moving platform                                           |
-+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 2-3      | Processed data from the calibrated data (quantitative and qualitative). Quantitative processing (temporal or spatial)                                                                                                 |
-|          |                                                                                                                                                                                                                       |
-|          | [Examples:]{.underline} decidecade levels; SEL; depth-integrated data; beamformed data; whale or ship detections/observations; products related to classification of signals; products related to signal localization |
-+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 4-5      | Synthesized products related to soundscape models/maps and predictive habitat modeling. Requires additional information (e.g., AIS, source model)                                                                     |
-|          |                                                                                                                                                                                                                       |
-|          | [Examples:]{.underline} interpolated products; marine mammal density estimation                                                                                                                                       |
-+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Level   | Meaning                                                                                                                                                                                                               |
++=========+=======================================================================================================================================================================================================================+
+| 0       | Raw, uncalibrated data; compressed, unpacked data                                                                                                                                                                     |
+|         |                                                                                                                                                                                                                       |
+|         | [Examples:]{.underline} binary files (e.g., BIN, DAT) and SUD compressed files; before the calibration information is applied                                                                                         |
++---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 1       | Calibrated time series data                                                                                                                                                                                           |
+|         |                                                                                                                                                                                                                       |
+|         | [Examples:]{.underline} .wav files (e.g., WAVE, AIFF, FLAC); data processed using software, after calibration is applied; sound pressure on a stationary or moving platform                                           |
++---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2-3     | Processed data from the calibrated data (quantitative and qualitative). Quantitative processing (temporal or spatial)                                                                                                 |
+|         |                                                                                                                                                                                                                       |
+|         | [Examples:]{.underline} decidecade levels; SEL; depth-integrated data; beamformed data; whale or ship detections/observations; products related to classification of signals; products related to signal localization |
++---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 4-5     | Synthesized products related to soundscape models/maps and predictive habitat modeling. Requires additional information (e.g., AIS, source model)                                                                     |
+|         |                                                                                                                                                                                                                       |
+|         | [Examples:]{.underline} interpolated products; marine mammal density estimation                                                                                                                                       |
++---------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 : Table 2. Data levels adapted from ADEON.
 
