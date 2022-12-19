@@ -11,6 +11,8 @@ author: RWSC Marine Mammal Subcommittee
 
 This document was compiled by RWSC Staff at the request of the Marine Mammal Subcommittee with the assistance and input of a PAM Data Management Work Group. WTork Group members and reviewers of this document included: **Melinda Rekdahl (Wildlife Conservation Society); Anita Murray (Wildlife Conservation Society; now Maine Department of Marine Resources); Erin Meyer-Gutbrod (University of South Carolina); Erica Staaterman (BOEM); Genevieve Davis (NOAA NEFSC Passive Acoustics Research Group); Jordan Carduner (Equinor), Laura Morse (Orsted; now Mainstream Renewables); Scott Carr (JASCO); Aaron Rice (Cornell University); Joel Bell (US Navy); Carrie Wall Bell (NOAA National Centers for Environmental Information (NCEI)).**
 
+This is a living document that will be updated by the Subcommittee as practices and technologies advance.
+
 ------------------------------------------------------------------------
 
 This document is also responsive to the needs and priorities expressed at recent workshops and expert working group proceedings, including:
@@ -104,7 +106,7 @@ Precautions should be taken to avoid interference of self-noise caused by curren
 
 ------------------------------------------------------------------------
 
-### V. Navy awareness of PAM deployments on the Atlantic OCS {navy}
+### V. Navy awareness of PAM deployments on the Atlantic OCS {#navy}
 
 The purpose of the following steps is to ensure that the US Navy is aware of and can provide feedback on the precise location of bottom-mounted archival passive acoustic monitoring equipment on the Atlantic OCS. The Navy is requesting that all individuals consider the following steps prior to deployment. Developers may be subject to additional requirements under the BOEM issued permits.
 
