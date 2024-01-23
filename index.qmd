@@ -9,7 +9,7 @@ author: RWSC Marine Mammal Subcommittee
 
 ## Introduction {#intro}
 
-This document was compiled by RWSC Staff at the request of the Marine Mammal Subcommittee with the assistance and input of a PAM Data Management Work Group. WTork Group members and reviewers of this document included: **Melinda Rekdahl (Wildlife Conservation Society); Anita Murray (Wildlife Conservation Society; now Maine Department of Marine Resources); Erin Meyer-Gutbrod (University of South Carolina); Erica Staaterman (BOEM); Genevieve Davis (NOAA NEFSC Passive Acoustics Research Group); Jordan Carduner (Equinor), Laura Morse (Orsted; now Mainstream Renewables); Scott Carr (JASCO); Aaron Rice (Cornell University); Joel Bell (US Navy); Carrie Wall Bell (NOAA National Centers for Environmental Information (NCEI)).**
+This document was compiled by RWSC Staff at the request of the Marine Mammal Subcommittee with the assistance and input of a PAM Data Management Work Group. Work Group members and reviewers of this document included: **Melinda Rekdahl (Wildlife Conservation Society); Anita Murray (Wildlife Conservation Society; now Maine Department of Marine Resources); Erin Meyer-Gutbrod (University of South Carolina); Erica Staaterman (BOEM); Genevieve Davis (NOAA NEFSC Passive Acoustics Research Group); Jordan Carduner (Equinor), Laura Morse (Orsted; now Mainstream Renewables); Scott Carr (JASCO); Aaron Rice (Cornell University); Joel Bell (US Navy); Carrie Wall Bell (NOAA National Centers for Environmental Information (NCEI)).**
 
 This is a living document that will be updated by the Subcommittee as practices and technologies advance.
 
@@ -533,5 +533,3 @@ As data are collected, analyzed, and interpreted, the Subcommittee may recommend
 +--------------------------------------------------------+----------------------------+--------------+
 
 ------------------------------------------------------------------------
-
-## ![](images/RWSC_Logo_Typography.png)
