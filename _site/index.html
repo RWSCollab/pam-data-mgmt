@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,7 +19,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -56,14 +56,16 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <style>
-    .quarto-title-block .quarto-title-banner {
-      background: #64C5CC;
-    }
-    </style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: #64C5CC;
+      }
+</style>
 
 
 </head>
@@ -72,11 +74,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Long-term and Archival Passive Acoustic Monitoring (PAM) Data</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -85,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block">Long-term and Archival Passive Acoustic Monitoring (PAM) Data</h1>
+      <h1 class="title">Long-term and Archival Passive Acoustic Monitoring (PAM) Data</h1>
             <p class="subtitle lead">Data Management &amp; Storage Best Practices</p>
                       </div>
   </div>
@@ -113,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./images/MM.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -121,56 +128,63 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">PAM Data Management Best Practices</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://rwsc.org" title="rwsc.org" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/RWSCollab/pam-data-mgmt" title="github" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="https://rwsc.org/wp-content/uploads/2022/12/RWSC-PAM-Data-Management-Storage-Best-Practices.pdf" title="download pdf" class="sidebar-tool px-1"><i class="bi bi-cloud-download"></i></a>
+    <a href="https://rwsc.org" rel="" title="rwsc.org" class="quarto-navigation-tool px-1" aria-label="rwsc.org"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/RWSCollab/pam-data-mgmt" rel="" title="github" class="quarto-navigation-tool px-1" aria-label="github"><i class="bi bi-github"></i></a>
+    <a href="https://rwsc.org/wp-content/uploads/2022/12/RWSC-PAM-Data-Management-Storage-Best-Practices.pdf" rel="" title="download pdf" class="quarto-navigation-tool px-1" aria-label="download pdf"><i class="bi bi-cloud-download"></i></a>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Introduction</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./index.html#planning" class="sidebar-item-text sidebar-link">1. Planning Steps</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a href="./index.html#planning" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Planning Steps</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#engage" class="sidebar-item-text sidebar-link">I. Engage with the RWSC Marine Mammal Subcommittee</a>
+  <a href="./index.html#engage" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">I. Engage with the RWSC Marine Mammal Subcommittee</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#codeploy" class="sidebar-item-text sidebar-link">II. Codeployment of other sensors</a>
+  <a href="./index.html#codeploy" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">II. Codeployment of other sensors</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#bottom" class="sidebar-item-text sidebar-link">III. Best practices to minimize bottom disturbance from underwater mooring systems</a>
+  <a href="./index.html#bottom" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">III. Best practices to minimize bottom disturbance from underwater mooring systems</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#noise" class="sidebar-item-text sidebar-link">IV. Best practices to minimize self-noise from underwater mooring systems</a>
+  <a href="./index.html#noise" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IV. Best practices to minimize self-noise from underwater mooring systems</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#navy" class="sidebar-item-text sidebar-link">V. Navy awareness of PAM deployments on the Atlantic OCS</a>
+  <a href="./index.html#navy" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">V. Navy awareness of PAM deployments on the Atlantic OCS</span></a>
   </div>
 </li>
       </ul>
@@ -178,25 +192,29 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./index.html#deploy" class="sidebar-item-text sidebar-link">2. Deployment &amp; Data Collection</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <a href="./index.html#deploy" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Deployment &amp; Data Collection</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#define" class="sidebar-item-text sidebar-link">VI. Definitions for raw, processed, cleaned, and analyzed data</a>
+  <a href="./index.html#define" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VI. Definitions for raw, processed, cleaned, and analyzed data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#hardware" class="sidebar-item-text sidebar-link">VII. PAM hardware calibration best practices and minimum specifications</a>
+  <a href="./index.html#hardware" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VII. PAM hardware calibration best practices and minimum specifications</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#qa" class="sidebar-item-text sidebar-link">VIII. Best practices for PAM data QA/QC</a>
+  <a href="./index.html#qa" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VIII. Best practices for PAM data QA/QC</span></a>
   </div>
 </li>
       </ul>
@@ -204,30 +222,35 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./index.html#arv" class="sidebar-item-text sidebar-link">3. Analysis, Reporting, &amp; Visualization</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a href="./index.html#arv" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Analysis, Reporting, &amp; Visualization</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#analysis" class="sidebar-item-text sidebar-link">IX. Analysis of species detections and ambient noise metrics</a>
+  <a href="./index.html#analysis" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IX. Analysis of species detections and ambient noise metrics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#nefsc" class="sidebar-item-text sidebar-link">X. Reporting to NOAA NEFSC Passive Acoustics Research Group</a>
+  <a href="./index.html#nefsc" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">X. Reporting to NOAA NEFSC Passive Acoustics Research Group</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#archive" class="sidebar-item-text sidebar-link">XI. Archiving and access at NCEI Passive Acoustic Data Archive</a>
+  <a href="./index.html#archive" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">XI. Archiving and access at NCEI Passive Acoustic Data Archive</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#visual" class="sidebar-item-text sidebar-link">XII. Visualizing species detection data</a>
+  <a href="./index.html#visual" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">XII. Visualizing species detection data</span></a>
   </div>
 </li>
       </ul>
@@ -235,18 +258,21 @@ ul.task-list li input[type="checkbox"] {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#appendixa" class="sidebar-item-text sidebar-link">Appendix A</a>
+  <a href="./index.html#appendixa" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix A</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#appendixb" class="sidebar-item-text sidebar-link">Appendix B</a>
+  <a href="./index.html#appendixb" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix B</span></a>
   </div>
 </li>
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -358,7 +384,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/portal-pam.png" class="img-fluid figure-img" width="600"></p>
-<p></p><figcaption class="figure-caption">Figure 1. The map shows the current PAM deployments in the Atlantic that correspond to the proposed 40km and 20km grid cells that form a potential organizing framework for a regional network (as of August 2022). Grid cells are colored purple if at least one device is located somewhere in the cell. Caveats: there may be more than one device in each cell; there may be devices located outside of the grid cell boundaries.</figcaption><p></p>
+<figcaption class="figure-caption">Figure 1. The map shows the current PAM deployments in the Atlantic that correspond to the proposed 40km and 20km grid cells that form a potential organizing framework for a regional network (as of August 2022). Grid cells are colored purple if at least one device is located somewhere in the cell. Caveats: there may be more than one device in each cell; there may be devices located outside of the grid cell boundaries.</figcaption>
 </figure>
 </div>
 <p>The Portal maps are developed from location and deployment information shared with NOAA. The following best practices ensure that information about new and completed deployments is shared with NOAA so that the Portal maps maintain their accuracy and relevance.</p>
@@ -399,12 +425,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Precautions should be taken to avoid interference of self-noise caused by current flow around the hydrophone and movement of the device and its components. This is especially important in areas with currents greater than 0.1 m/s; to estimate bottom currents for a potential site use the HYCOM model provided by NOAA (<a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/" class="uri">https://coastwatch.pfeg.noaa.gov/erddap/griddap/</a>). Flow shields and/or wraps that protect hydrophones and other device components can also be used to decrease self-noise by disrupting the turbulent boundary layers (<a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON%20Hardware%20Specification%20VERSION%202.3%20_final%20submission.pdf">ADEON Hardware Specification</a>). An example of quiet mooring design is described in <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13244">Baumgartner 2019</a>:</p>
 <blockquote class="blockquote">
 <p><em>We utilized a mature mooring design that allowed both quiet operation as well as delivery of digital data from the sea floor to shore (Figure 2.1). The DMON was housed in open cell foam and a urethane fairing and affixed to a bottom-mounted aluminum frame called the multi-function node (MFN), which in turn was attached to the surface buoy by stretch hoses. These hoses can stretch to nearly twice their relaxed length (Paul &amp; Bocconcelli, 1994), thereby absorbing the motion of the buoy in rough wave conditions and keeping the MFN acoustically quiet. The hoses also contain helically wound conductors that allow power and data to be delivered between the buoy and the DMON. The surface buoy contains a platform computer, Iridium and global positioning satellite (GPS) antennas, and a 450-Ahr battery pack to power all system components. The platform computer receives and stores DMON/LFDCS data sent in real-time via the stretch hoses, and once every 2 hours, transmits these stored data to shore via an Iridium satellite modem (Figure 2). The buoy was designed to operate at sea for at least one year.</em></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/baumgartner2019.jpg" class="img-fluid figure-img" width="600"></p>
-<p></p><figcaption class="figure-caption">Figure 2 from Baumgartner 2019.</figcaption><p></p>
-</figure>
-</div>
+<img src="images/baumgartner2019.jpg" class="img-fluid" data-fig-align="center" width="600" alt="Figure 2 from Baumgartner 2019.">
 </blockquote>
 <hr>
 </section>
@@ -500,13 +521,13 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/flowchart1.png" class="img-fluid figure-img" width="600"></p>
-<p></p><figcaption class="figure-caption">Figure 2. Flow chart for species detection data.</figcaption><p></p>
+<figcaption class="figure-caption">Figure 2. Flow chart for species detection data.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/flowchart2.png" class="img-fluid figure-img" width="600"></p>
-<p></p><figcaption class="figure-caption">Figure 3. Flow chart for ambient noise metrics and soundscape characterization.</figcaption><p></p>
+<figcaption class="figure-caption">Figure 3. Flow chart for ambient noise metrics and soundscape characterization.</figcaption>
 </figure>
 </div>
 <hr>
@@ -688,7 +709,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/metadata.png" class="img-fluid figure-img" width="600"></p>
-<p></p><figcaption class="figure-caption">Figure 4. The types of metadata that should be recorded, entered, and transmitted to NCEI via PassivePacker for each step of a PAM project.</figcaption><p></p>
+<figcaption class="figure-caption">Figure 4. The types of metadata that should be recorded, entered, and transmitted to NCEI via PassivePacker for each step of a PAM project.</figcaption>
 </figure>
 </div>
 <hr>
@@ -715,35 +736,35 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/pacm.png" class="img-fluid figure-img" width="800"></p>
-<p></p><figcaption class="figure-caption">North Atlantic Right Whale detections on the Passive Acoustic Cetacean Map from the NOAA NEFSC Passive Acoustics Research Group – accessed 12/14/22; <a href="https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw" class="uri">https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw</a>.</figcaption><p></p>
+<figcaption class="figure-caption">North Atlantic Right Whale detections on the Passive Acoustic Cetacean Map from the NOAA NEFSC Passive Acoustics Research Group – accessed 12/14/22; <a href="https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw" class="uri">https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw</a>.</figcaption>
 </figure>
 </div>
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/delarue.png" class="img-fluid figure-img" width="800"></p>
-<p></p><figcaption class="figure-caption">Delarue, Julien J-Y., et al.&nbsp;“Acoustic occurrence of baleen whales, particularly blue, fin, and humpback whales, off eastern Canada, 2015-2017.” Endangered Species Research47 (2022): 265-289.</figcaption><p></p>
+<figcaption class="figure-caption">Delarue, Julien J-Y., et al.&nbsp;“Acoustic occurrence of baleen whales, particularly blue, fin, and humpback whales, off eastern Canada, 2015-2017.” Endangered Species Research47 (2022): 265-289.</figcaption>
 </figure>
 </div>
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/baumgartner2019-a.png" class="img-fluid figure-img" width="800"></p>
-<p></p><figcaption class="figure-caption">Baumgartner, Mark F., et al.&nbsp;“Persistent near real‐time passive acoustic monitoring for baleen whales from a moored buoy: System description and evaluation.” Methods in Ecology and Evolution 10.9 (2019): 1476-1489.</figcaption><p></p>
+<figcaption class="figure-caption">Baumgartner, Mark F., et al.&nbsp;“Persistent near real‐time passive acoustic monitoring for baleen whales from a moored buoy: System description and evaluation.” Methods in Ecology and Evolution 10.9 (2019): 1476-1489.</figcaption>
 </figure>
 </div>
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/whalemap.png" class="img-fluid figure-img" width="800"></p>
-<p></p><figcaption class="figure-caption">Whalemap, <a href="https://whalemap.org/WhaleMap" class="uri">https://whalemap.org/WhaleMap</a></figcaption><p></p>
+<figcaption class="figure-caption">Whalemap, <a href="https://whalemap.org/WhaleMap" class="uri">https://whalemap.org/WhaleMap</a></figcaption>
 </figure>
 </div>
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/davis.png" class="img-fluid figure-img" width="800"></p>
-<p></p><figcaption class="figure-caption">Davis, Genevieve E., et al.&nbsp;“Long-term passive acoustic recordings track the changing distribution of North Atlantic right whales (Eubalaena glacialis) from 2004 to 2014.” Scientific reports 7.1 (2017): 1-12.</figcaption><p></p>
+<figcaption class="figure-caption">Davis, Genevieve E., et al.&nbsp;“Long-term passive acoustic recordings track the changing distribution of North Atlantic right whales (Eubalaena glacialis) from 2004 to 2014.” Scientific reports 7.1 (2017): 1-12.</figcaption>
 </figure>
 </div>
 <hr>
@@ -1027,9 +1048,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1094,6 +1129,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -1132,12 +1253,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/https:\/\/rwscollab\.github\.io\/pam-data-mgmt\//);
+      var filterRegex = new RegExp("https:\/\/rwscollab\.github\.io\/pam-data-mgmt\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -1151,6 +1272,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">© CC-By RWSC Marine Mammal Subcommittee, 2022</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
     <div class="nav-footer-right">🐋</div>
   </div>
 </footer>
