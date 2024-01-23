@@ -1,1 +1,1 @@
-Sitemap: https://rwscollab.github.io/pam-data-mgmt/sitemap.xml
+Sitemap: https://openscapes.github.io/quarto-website-tutorial/sitemap.xml

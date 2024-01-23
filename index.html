@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="RWSC Marine Mammal Subcommittee">
-<meta name="dcterms.date" content="2022-12-14">
 
-<title>Data Management &amp; Storage Best Practices for Long-term and Archival Passive Acoustic Monitoring (PAM) Data - Long-term and Archival Passive Acoustic Monitoring (PAM) Data</title>
+<title>Making sharable documents with Quarto - Making shareable documents with Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,15 +29,18 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./explore.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -60,17 +61,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>
-
-      .quarto-title-block .quarto-title-banner {
-        background: #64C5CC;
-      }
-</style>
 
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -79,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -89,50 +84,19 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Long-term and Archival Passive Acoustic Monitoring (PAM) Data</h1>
-            <p class="subtitle lead">Data Management &amp; Storage Best Practices</p>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>RWSC Marine Mammal Subcommittee </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">12/14/22</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/MM.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <img src="./images/openscapes_hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">PAM Data Management Best Practices</a> 
-        <div class="sidebar-tools-main tools-wide">
-    <a href="https://rwsc.org" rel="" title="rwsc.org" class="quarto-navigation-tool px-1" aria-label="rwsc.org"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/RWSCollab/pam-data-mgmt" rel="" title="github" class="quarto-navigation-tool px-1" aria-label="github"><i class="bi bi-github"></i></a>
-    <a href="https://rwsc.org/wp-content/uploads/2022/12/RWSC-PAM-Data-Management-Storage-Best-Practices.pdf" rel="" title="download pdf" class="quarto-navigation-tool px-1" aria-label="download pdf"><i class="bi bi-cloud-download"></i></a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://openscapes.org" rel="" title="Openscapes.org" class="quarto-navigation-tool px-1" aria-label="Openscapes.org"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/openscapes/quarto-website-tutorial" rel="" title="Quarto website tutorial" class="quarto-navigation-tool px-1" aria-label="Quarto website tutorial"><i class="bi bi-github"></i></a>
+    <a href="https://twitter.com/openscapes" rel="" title="Openscapes Twitter" class="quarto-navigation-tool px-1" aria-label="Openscapes Twitter"><i class="bi bi-twitter"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-    </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -144,14 +108,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text">Welcome</span></a>
   </div>
 </li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./explore.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Explore and setup</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./index.html#planning" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. Planning Steps</span></a>
+            <a href="./quarto-workflows/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto workflows</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -159,114 +128,34 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#engage" class="sidebar-item-text sidebar-link">
- <span class="menu-text">I. Engage with the RWSC Marine Mammal Subcommittee</span></a>
+  <a href="./quarto-workflows/browser.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">From the Browser</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#codeploy" class="sidebar-item-text sidebar-link">
- <span class="menu-text">II. Codeployment of other sensors</span></a>
+  <a href="./quarto-workflows/rstudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">From RStudio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#bottom" class="sidebar-item-text sidebar-link">
- <span class="menu-text">III. Best practices to minimize bottom disturbance from underwater mooring systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html#noise" class="sidebar-item-text sidebar-link">
- <span class="menu-text">IV. Best practices to minimize self-noise from underwater mooring systems</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html#navy" class="sidebar-item-text sidebar-link">
- <span class="menu-text">V. Navy awareness of PAM deployments on the Atlantic OCS</span></a>
+  <a href="./quarto-workflows/jupyter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">From Jupyter</span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./index.html#deploy" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2. Deployment &amp; Data Collection</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html#define" class="sidebar-item-text sidebar-link">
- <span class="menu-text">VI. Definitions for raw, processed, cleaned, and analyzed data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html#hardware" class="sidebar-item-text sidebar-link">
- <span class="menu-text">VII. PAM hardware calibration best practices and minimum specifications</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html#qa" class="sidebar-item-text sidebar-link">
- <span class="menu-text">VIII. Best practices for PAM data QA/QC</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="./index.html#arv" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3. Analysis, Reporting, &amp; Visualization</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html#analysis" class="sidebar-item-text sidebar-link">
- <span class="menu-text">IX. Analysis of species detections and ambient noise metrics</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html#nefsc" class="sidebar-item-text sidebar-link">
- <span class="menu-text">X. Reporting to NOAA NEFSC Passive Acoustics Research Group</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html#archive" class="sidebar-item-text sidebar-link">
- <span class="menu-text">XI. Archiving and access at NCEI Passive Acoustic Data Archive</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html#visual" class="sidebar-item-text sidebar-link">
- <span class="menu-text">XII. Visualizing species detection data</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#appendixa" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Appendix A</span></a>
+  <a href="./learning-more.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Learning more</span></a>
   </div>
 </li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html#appendixb" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Appendix B</span></a>
+  <a href="./transition-from-rmarkdown.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Transition from Rmd</span></a>
   </div>
 </li>
     </ul>
@@ -279,743 +168,69 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro">Introduction</a></li>
-  <li><a href="#planning" id="toc-planning" class="nav-link" data-scroll-target="#planning">1. Planning Steps</a>
-  <ul class="collapse">
-  <li><a href="#engage" id="toc-engage" class="nav-link" data-scroll-target="#engage">I. Engage with the RWSC Marine Mammal Subcommittee</a></li>
-  <li><a href="#codeploy" id="toc-codeploy" class="nav-link" data-scroll-target="#codeploy">II. Codeployment of other sensors</a></li>
-  <li><a href="#bottom" id="toc-bottom" class="nav-link" data-scroll-target="#bottom">III. Best practices to minimize bottom disturbance from underwater mooring systems</a></li>
-  <li><a href="#noise" id="toc-noise" class="nav-link" data-scroll-target="#noise">IV. Best practices to minimize self-noise from underwater mooring systems</a></li>
-  <li><a href="#navy" id="toc-navy" class="nav-link" data-scroll-target="#navy">V. Navy awareness of PAM deployments on the Atlantic OCS</a></li>
-  </ul></li>
-  <li><a href="#deploy" id="toc-deploy" class="nav-link" data-scroll-target="#deploy">2. Deployment &amp; Data Collection</a>
-  <ul class="collapse">
-  <li><a href="#define" id="toc-define" class="nav-link" data-scroll-target="#define">VI. Definitions for raw, processed, cleaned, and analyzed data</a></li>
-  <li><a href="#hardware" id="toc-hardware" class="nav-link" data-scroll-target="#hardware">VII. PAM hardware calibration best practices and minimum specifications</a></li>
-  <li><a href="#qa" id="toc-qa" class="nav-link" data-scroll-target="#qa">VIII. Best practices for PAM data QA/QC - (Level 0 data to Level 1 data)</a></li>
-  </ul></li>
-  <li><a href="#arv" id="toc-arv" class="nav-link" data-scroll-target="#arv">3. Analysis, Reporting, &amp; Visualization</a>
-  <ul class="collapse">
-  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">IX. Analysis of species detections and ambient noise metrics</a></li>
-  <li><a href="#nefsc" id="toc-nefsc" class="nav-link" data-scroll-target="#nefsc">X. Reporting to NOAA NEFSC Passive Acoustics Research Group</a></li>
-  <li><a href="#visual" id="toc-visual" class="nav-link" data-scroll-target="#visual">XII. Visualizing species detection data</a></li>
-  </ul></li>
-  <li><a href="#appendixa" id="toc-appendixa" class="nav-link" data-scroll-target="#appendixa">Appendix A: Examples of PAM species detection data visualizations</a></li>
-  <li><a href="#appendixb" id="toc-appendixb" class="nav-link" data-scroll-target="#appendixb">Appendix B: NOAA-NEFSC species codes</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><img src="images/RWSC_Logo_Typography.png" class="img-fluid"></a></li>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
+  <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link" data-scroll-target="#what-is-quarto">What is Quarto?</a></li>
+  <li><a href="#what-is-this-tutorial" id="toc-what-is-this-tutorial" class="nav-link" data-scroll-target="#what-is-this-tutorial">What is this tutorial?</a></li>
+  <li><a href="#example-quarto-sites" id="toc-example-quarto-sites" class="nav-link" data-scroll-target="#example-quarto-sites">Example Quarto sites</a></li>
+  <li><a href="#about" id="toc-about" class="nav-link" data-scroll-target="#about">About</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/openscapes/quarto-website-tutorial/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/openscapes/quarto-website-tutorial/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Making shareable documents with Quarto</h1>
+<p class="subtitle lead">Create open-source tutorials, onboarding docs, and much more</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="intro" class="level2">
-<h2 class="anchored" data-anchor-id="intro">Introduction</h2>
-<p>This document was compiled by RWSC Staff at the request of the Marine Mammal Subcommittee with the assistance and input of a PAM Data Management Work Group. Work Group members and reviewers of this document included: <strong>Melinda Rekdahl (Wildlife Conservation Society); Anita Murray (Wildlife Conservation Society; now Maine Department of Marine Resources); Erin Meyer-Gutbrod (University of South Carolina); Erica Staaterman (BOEM); Genevieve Davis (NOAA NEFSC Passive Acoustics Research Group); Jordan Carduner (Equinor), Laura Morse (Orsted; now Mainstream Renewables); Scott Carr (JASCO); Aaron Rice (Cornell University); Joel Bell (US Navy); Carrie Wall Bell (NOAA National Centers for Environmental Information (NCEI)).</strong></p>
-<p>This is a living document that will be updated by the Subcommittee as practices and technologies advance.</p>
-<hr>
-<p>This document is also responsive to the needs and priorities expressed at recent workshops and expert working group proceedings, including:</p>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="welcome" class="level2">
+<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
+<p>It’s possible to create beautiful documentation to share online with <a href="https://quarto.org">Quarto</a> that auto-updates with <a href="http://github.com">GitHub</a>. This is very new and incredibly cool. This tutorial is an example of a quarto website — it is a really powerful way to create and share your work. You can communicate about science using the same reproducible workflow you and/or your colleagues use for analyses, whether or not you write code.</p>
+<p>Creating websites with Quarto can be done without knowing R, Python or HTML, CSS, etc, and that’s where we’ll start. However, Quarto integrates with these tools so you can make your websites as complex and beautiful as you like as you see examples and reuse and remix from others in the open community. This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout.</p>
+</section>
+<section id="what-is-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-quarto">What is Quarto?</h2>
+<p>Quarto helps you have your ideas and your code in one place, and present it in a beautiful way.</p>
+<p><strong>Quarto unifies and extends the RMarkdown ecosystem</strong> - it unifies by combining the functionality of R Markdown, bookdown, distill, xaringian, etc into a single consistent system. And it extends in several ways: all features are possible beyond R too, including Python and Javascript. It also has more “guardrails”: accessibility and inclusion are centered in the design. Quarto is for people who love RMarkdown, and it’s for people who have never used RMarkdown.</p>
+<p>The ability for Quarto to streamline collaboration has been so cool and important for our <a href="https://nasa-openscapes.github.io/">NASA Openscapes</a> project. Quarto has been a common place for us to collaborate - across R and Python languages and coding expertise.</p>
+</section>
+<section id="what-is-this-tutorial" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-this-tutorial">What is this tutorial?</h2>
+<p>This is a 1-hour tutorial that can be used to teach or as self-paced learning.</p>
+<p>We introduce Quarto by exploring this tutorial website, and practicing the basic Quarto workflow using different tools (GitHub browser, RStudio, and Jupyter) for editing your website.</p>
+<p>We’ll start off from the browser so you don’t need to install any additional software, however this approach is very limited and you will soon outgrow its capabilities. If you don’t already have a workflow to edit files and sync to GitHub from your computer, I recommend RStudio. You don’t need to know R to use RStudio, and it has powerful editor features that make for happy workflows.</p>
+<p><a href="https://quarto.org">Quarto.org</a> is the go-to place for full documentation and more tutorials!</p>
+</section>
+<section id="example-quarto-sites" class="level2">
+<h2 class="anchored" data-anchor-id="example-quarto-sites">Example Quarto sites</h2>
+<p>A few Quarto websites from Openscapes - so far we have been using Quarto for documentation using Quarto and Markdown files and Jupyter Notebooks.</p>
 <ul>
-<li><p>“Standards for PAM reporting” was identified as a Potential Research Idea and Priority during the <a href="https://www.nyetwg.com/_files/ugd/78f0c4_d276f672901b4f3f874f73a49c5872a4.pdf">New York Bight Passive Acoustic Monitoring Workshop in March 2021</a></p></li>
-<li><p>The need and foundation for the following best practices document was discussed at the June 2021 BOEM/NOAA workshop <a href="https://www.boem.gov/sites/default/files/documents/BOEM_PAM_Workshop1_2021_078.pdf">Improving Monitoring, Data Consistency, Archiving, and Access for Improved Regional Integration of Renewable Energy Science: Passive Acoustic Monitoring and Marine Mammals</a></p></li>
-<li><p>The specific components and building blocks for the following best practices were discussed and many Subcommittee members participated in the March 2022 BOEM/NOAA workshop <a href="https://www.boem.gov/sites/default/files/documents/renewable-energy/studies/PAM2-Workshop-BOE-2022-055.pdf">Improving Monitoring, Data Consistency, Archiving, and Access for Improved Regional Integration of Renewable Energy Science: Passive Acoustic Monitoring Data Standards and Management</a></p></li>
-</ul>
-<p>The purpose of this document is to address the data collection, management, and storage phases of a long-term/archival PAM project to ensure that while numerous individual entities may be deploying, collecting, and analyzing PAM data, the infrastructure and information exists to facilitate future meta-analyses and syntheses of PAM data across the U.S. Atlantic Outer Continental Shelf (OCS). For specific guidance and information regarding PAM systems and their deployment and the PAM capabilities and techniques needed to promote efficient, consistent, and meaningful data collection efforts on local and regional scales, please see the minimum recommendations for PAM usage in offshore wind energy research developed by NOAA and BOEM (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a>). This PAM data management and storage best practices document incorporates by reference many of the specifications and recommendations of <a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a>. In addition, the multi-year and multi-sector <a href="https://adeon.unh.edu/">Atlantic Deepwater Ecosystem Observatory Network for the US Mid- and South Atlantic Outer Continental Shelf (ADEON) project</a> developed several standardized measurement and processing methods to ensure that the underwater acoustic measurements made over the course of its project can be compared with other monitoring programs’ data. <a href="https://adeon.unh.edu/standards">ADEON data guides and specifications</a> are incorporated by reference throughout this document as well.</p>
-<p>This document does not directly address or recommend best practices for deploying PAM for real-time detection of marine mammals for mitigation purposes (Table 1). U.S. federal agencies may provide requirements or guidance for the deployment, interpretation, reporting, and management of real-time mitigation PAM data in association with offshore wind (or other activities/uses) permitting. The data generated from real-time systems used for mitigation (i.e., species detections) may be integrated into PAM data products as part of the final step of the workflow described below, with additional considerations for differences in study design, collection methods, and other data analysis steps.</p>
-<table class="table">
-<caption>Table 1. Various purposes for deploying PAM and relevance to this document</caption>
-<colgroup>
-<col style="width: 34%">
-<col style="width: 7%">
-<col style="width: 7%">
-<col style="width: 48%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Purpose</th>
-<th style="text-align: center;">Real-time PAM</th>
-<th style="text-align: center;">Archival PAM</th>
-<th>Considerations for deployment and best practices for data management included in this document?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Mitigation during pile driving or other noise-generating activities</td>
-<td style="text-align: center;">x</td>
-<td style="text-align: center;"></td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>Vessel strike avoidance</td>
-<td style="text-align: center;">x</td>
-<td style="text-align: center;"></td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>Ambient noise monitoring</td>
-<td style="text-align: center;">x</td>
-<td style="text-align: center;">x</td>
-<td>Yes</td>
-</tr>
-<tr class="even">
-<td>Long-term wildlife monitoring</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">x</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
-<p>The document is separated into three sections that correspond to a generic workflow for planning, deploying, and analyzing/interpreting long-term archival PAM data, primarily for the purposes of detecting cetaceans. Each section contains several detailed steps that were identified by the RWSC Marine Mammal Subcommittee.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/steps.png" class="img-fluid figure-img" width="600"></p>
-</figure>
-</div>
-</section>
-<section id="planning" class="level2">
-<h2 class="anchored" data-anchor-id="planning">1. Planning Steps</h2>
-<p>Planning steps include pre-deployment coordination and communication best practices that help ensure that any new deployments are responsive to PAM data gaps and needs in the region (to the extent practicable), and that individuals or entities responsible for deployments and data are connected to the existing network of experts and can benefit from lessons learned and other existing bodies of knowledge.</p>
-<section id="engage" class="level3">
-<h3 class="anchored" data-anchor-id="engage">I. Engage with the RWSC Marine Mammal Subcommittee</h3>
-<p>Groups or individuals planning to deploy PAM devices on the Atlantic OCS for the purposes of detecting cetaceans or characterizing ocean noise are encouraged to attend RWSC Marine Mammal Subcommittee meetings to introduce their project, discuss their deployment plan with experts, and receive input on optimal location and other considerations (visit <a href="https://rwsc.org/events" class="uri">https://rwsc.org/events</a> to view the Subcommittee meeting schedule). In collaboration with the NOAA Passive Acoustics Research Group, the Subcommittee is maintaining an understanding of PAM devices deployed on the Atlantic OCS and periodically updating maps that show current deployments on the <a href="https://www.northeastoceandata.org/f9rktu14">Northeast Ocean Data Portal</a> and <a href="https://bit.ly/3AYeNUS">Mid-Atlantic Ocean Data Portal</a> (see figure below).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/portal-pam.png" class="img-fluid figure-img" width="600"></p>
-<figcaption class="figure-caption">Figure 1. The map shows the current PAM deployments in the Atlantic that correspond to the proposed 40km and 20km grid cells that form a potential organizing framework for a regional network (as of August 2022). Grid cells are colored purple if at least one device is located somewhere in the cell. Caveats: there may be more than one device in each cell; there may be devices located outside of the grid cell boundaries.</figcaption>
-</figure>
-</div>
-<p>The Portal maps are developed from location and deployment information shared with NOAA. The following best practices ensure that information about new and completed deployments is shared with NOAA so that the Portal maps maintain their accuracy and relevance.</p>
-<p>The Portals also contain data products that may assist funders and researchers in selecting locations for PAM deployment. For example, the Portals contain data products representing monthly and annual vessel traffic for several classes of vessels; commercial fishing activity; offshore wind planning and leasing areas; bathymetry and seafloor composition information; and monthly density model outputs for 29 cetacean species/guilds. The Subcommittee encourages users to examine these data to inform PAM deployment site selection.</p>
-<hr>
-</section>
-<section id="codeploy" class="level3">
-<h3 class="anchored" data-anchor-id="codeploy">II. Codeployment of other sensors</h3>
-<p>Introducing new PAM instruments and moorings into the environment presents an opportunity to co-locate other sensors and equipment. For example, several active and planned PAM deployments include support for VEMCO receivers or other acoustic telemetry receiver devices. This type of co-deployment builds the receiver network for studies of other taxa such as sea turtles and highly migratory fish species, and is strongly encouraged.</p>
-<p>While the location of PAM instruments and moored PAM arrays may not represent ideal receiver locations needed to address research questions answered with acoustic telemetry for other taxa, RWSC and its partners encourage the deployment of multiple sensors per mooring, when practicable, while research questions and best practices for acoustic telemetry are under development.</p>
-<p>In August 2022, the RWSC Sea Turtle Subcommittee recommended that acoustic telemetry receivers be included on each new PAM deployment as the RWSC Marine Mammal Subcommittee considers the design and implementation of a regional PAM network.</p>
-<hr>
-</section>
-<section id="bottom" class="level3">
-<h3 class="anchored" data-anchor-id="bottom">III. Best practices to minimize bottom disturbance from underwater mooring systems</h3>
-<p>Participants in the June 2021 BOEM/NOAA Workshop <a href="https://www.boem.gov/sites/default/files/documents/BOEM_PAM_Workshop1_2021_078.pdf">“Improving Monitoring, Data Consistency, Archiving, and Access for Improved Regional Integration of Renewable Energy Science”</a> recommended that best management practices (BMPs) be developed for any moored or bottom-mounted equipment used for mitigation, monitoring, and regional science associated with offshore wind development. These recommended BMPs are intended to address identified issues but are voluntary and should be considered supplemental to any other requirements that may be included under federal or state permits and authorizations. The purpose of the following BMPs is to provide reasonable conditions to avoid ocean use conflicts and minimize any potential environmental impacts associated with scientific devices on or attached to the seafloor.</p>
-<ol type="1">
-<li>Review information in ocean data portals and confer with offshore wind developers to ensure device deployment areas do not conflict with existing or planned cable locations, rights of way, or foundation locations.</li>
-<li>Properly label all buoys and devices with the responsible operator name and contact information.</li>
-<li>Avoid known locations of possible unexploded ordnance (UXO).<br>
+<li><a href="https://openscapes.github.io/series">Champions Lessons Series</a></li>
+<li><a href="https://openscapes.github.io/approach-guide/">Openscapes Approach Guide</a><br>
 </li>
-<li>Avoid historical or archeological sites.<br>
-</li>
-<li>Avoid known live bottom (corals, seagrasses, etc.) and sensitive hard-bottom features.<br>
-</li>
-<li>Reduce entanglement or entrapment risk to marine protected species.</li>
-</ol>
-<p><u>Utilize ocean data portals and coordinate with offshore wind developers.</u> To the greatest reasonable extent practicable, deployment locations should be deconflicted prior to deploying any research or monitoring equipment on the seafloor. Coordination should occur with offshore leaseholders within lease boundaries and cable rights of way to ensure current or planned development activities do not conflict with the deployment or operation of the device.</p>
-<p><u>Properly label all equipment with the responsible operator name and contact information.</u> Including identification information on equipment will assist with identifying the responsible parties for any equipment that is lost, damaged, or otherwise recovered that is separated from its moorings.</p>
-<p><u>Avoid UXO.</u> Avoidance should be the primary strategy to ensure potential locations of UXO are not interacted with during the deployment, maintenance, and recovery of scientific devices. Information for known ordnance areas are available at <a href="https://marinecadastre.gov/data/" class="uri">https://marinecadastre.gov/data/</a> and should be checked when identifying potential device locations and prior to equipment re-deployment. New potential UXO may also be identified by geophysical and magnetometer surveys associated with offshore wind data collection.</p>
-<p><u>Avoid known Historical and archeaological sites.</u> If the mooring system, anchoring, or equipment (any portion of bottom disturbance) is to be placed in an area known to be clear or otherwise was previously surveyed and cleared, then no additional surveys are required. If the area was previously surveyed and the equipment is associated with proposed actions under an OCS lease, the lessee should coordinate with BOEM on any necessary requirements under a lease or approval conditions of plans.</p>
-<p><u>Avoid live-bottom features.</u> Mooring systems or equipment sleds should occur at least 150 m from any known locations of threatened or endangered coral species. All sensitive live bottom habitats (eelgrass, cold-water corals, etc.) should be avoided as practicable. Hard-bottom features including pavement, scarp walls, and deep/cold-water coral reefs and shallow/mesophotic reefs as defined in the CMECS Geologic Substrate Classifications) should also be avoided.</p>
-<p><u>Reduce entanglement and entrapment risk.</u> Mooring or retrieval systems should have a discountable risk of entangling or entrapping any marine protected species. Operators should ensure that any buoys attached to the seafloor use the best available mooring systems. Buoys, lines (chains, cables, or coated rope systems), swivels, shackles, and anchor designs should prevent any potential entanglement of listed species while ensuring the purpose, safety, and integrity of the structure or device. All mooring lines and ancillary attachment lines should use one or more of the following measures to reduce entanglement risk: shortest practicable line length, rubber sleeves, weak-links, chains, cables, or similar equipment types that prevent lines from looping, wrapping, or entrapping protected species. Any equipment should be attached by a line within a rubber sleeve for rigidity. The length of the line should be as short as necessary to meet its intended purpose.</p>
-<hr>
-</section>
-<section id="noise" class="level3">
-<h3 class="anchored" data-anchor-id="noise">IV. Best practices to minimize self-noise from underwater mooring systems</h3>
-<p>Precautions should be taken to avoid interference of self-noise caused by current flow around the hydrophone and movement of the device and its components. This is especially important in areas with currents greater than 0.1 m/s; to estimate bottom currents for a potential site use the HYCOM model provided by NOAA (<a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/" class="uri">https://coastwatch.pfeg.noaa.gov/erddap/griddap/</a>). Flow shields and/or wraps that protect hydrophones and other device components can also be used to decrease self-noise by disrupting the turbulent boundary layers (<a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON%20Hardware%20Specification%20VERSION%202.3%20_final%20submission.pdf">ADEON Hardware Specification</a>). An example of quiet mooring design is described in <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13244">Baumgartner 2019</a>:</p>
-<blockquote class="blockquote">
-<p><em>We utilized a mature mooring design that allowed both quiet operation as well as delivery of digital data from the sea floor to shore (Figure 2.1). The DMON was housed in open cell foam and a urethane fairing and affixed to a bottom-mounted aluminum frame called the multi-function node (MFN), which in turn was attached to the surface buoy by stretch hoses. These hoses can stretch to nearly twice their relaxed length (Paul &amp; Bocconcelli, 1994), thereby absorbing the motion of the buoy in rough wave conditions and keeping the MFN acoustically quiet. The hoses also contain helically wound conductors that allow power and data to be delivered between the buoy and the DMON. The surface buoy contains a platform computer, Iridium and global positioning satellite (GPS) antennas, and a 450-Ahr battery pack to power all system components. The platform computer receives and stores DMON/LFDCS data sent in real-time via the stretch hoses, and once every 2 hours, transmits these stored data to shore via an Iridium satellite modem (Figure 2). The buoy was designed to operate at sea for at least one year.</em></p>
-<img src="images/baumgartner2019.jpg" class="img-fluid" data-fig-align="center" width="600" alt="Figure 2 from Baumgartner 2019.">
-</blockquote>
-<hr>
-</section>
-<section id="navy" class="level3">
-<h3 class="anchored" data-anchor-id="navy">V. Navy awareness of PAM deployments on the Atlantic OCS</h3>
-<p>The purpose of the following steps is to ensure that the US Navy is aware of and can provide feedback on the precise location of bottom-mounted archival passive acoustic monitoring equipment on the Atlantic OCS. The Navy is requesting that all individuals consider the following steps prior to deployment. Developers may be subject to additional requirements under the BOEM issued permits.</p>
-<section id="ensure-navy-awareness---45-days-prior-to-deployment" class="level4">
-<h4 class="anchored" data-anchor-id="ensure-navy-awareness---45-days-prior-to-deployment">1. Ensure Navy awareness - 45 days prior to deployment</h4>
-<p>Submit Passive Acoustic Monitoring (PAM) and/or Distributed Acoustic Sensing (DAS) plan to Navy (latitude/longitude, type, make and model of sensor, water depth, sample rate, time frame, deployment duration etc.). Email Beth Levy: <a href="mailto:beth.m.levy2.ctr@us.navy.mil">beth.m.levy2.ctr@us.navy.mil</a></p>
-</section>
-<section id="navy-evaluation-and-response" class="level4">
-<h4 class="anchored" data-anchor-id="navy-evaluation-and-response">2. Navy evaluation and response</h4>
-<p>This step applies to PAM data in all locations, not just BOEM lease areas. Provide at least 30 days for Navy to evaluate the plan from an operational and acoustic security perspective.</p>
-<ol type="A">
-<li><p><u>Navy Concurs</u> - The Fleet is able to operate with the proposed plan as is. No data screening is needed.</p></li>
-<li><p>Navy Concurs with requested conditions</p>
-<ul>
-<li><p><u>Request Alternative Sensor Location:</u> Navy proposes alternative locations that will still allow for original monitoring objectives, while maintaining National Security, Navy training and readiness.</p></li>
-<li><p><u>Request Data Screening:</u> Navy would request the ability to screen data from selected sensors and redact potentially sensitive data. The screened data set will be returned to the owner/collector for their unrestricted use and dissemination.</p></li>
-</ul></li>
-</ol>
-</section>
-<section id="operator-confirms-sensor-deployment-locations" class="level4">
-<h4 class="anchored" data-anchor-id="operator-confirms-sensor-deployment-locations">3. Operator confirms sensor deployment locations</h4>
-<p>After actual sensor deployment, provide precise metadata to Navy within 7 days.</p>
-</section>
-<section id="operator-data-retrieval" class="level4">
-<h4 class="anchored" data-anchor-id="operator-data-retrieval">4. Operator data retrieval</h4>
-<ol start="3" type="A">
-<li><p>If sensor is not identified for screening, operator can proceed with QA/QC and data analysis.</p></li>
-<li><p>If sensor is identified for requested screening, load data onto hard drives, record metadata about location, water depth, etc.</p>
-<ul>
-<li><p>BEFORE an analyst does any QA/QC, follow existing Navy data handling and secure storage procedures (a detailed document will be provided during step 2 above).</p></li>
-<li><p>Data will be sent to Navy for screening.</p></li>
-<li><p>Navy will review and return a redacted data set within 90 days.</p>
-<ul>
-<li>Operator can proceed with analysis on the redacted dataset.</li>
-</ul></li>
-</ul></li>
-</ol>
-</section>
-<section id="instrument-recoveryredeployment" class="level4">
-<h4 class="anchored" data-anchor-id="instrument-recoveryredeployment">5. Instrument recovery/redeployment</h4>
-<p>Operator will notify Navy if instruments are recovered, and/or redeployed in the same location, or if settings or location have changed, will restart with step 1 above.</p>
-<hr>
-</section>
-</section>
-</section>
-<section id="deploy" class="level2">
-<h2 class="anchored" data-anchor-id="deploy">2. Deployment &amp; Data Collection</h2>
-<p>The following sections outline steps in the deployment of PAM hardware and the collection and collating of PAM data. Best practices associated with each step are described, and/or existing resources on the topic are referenced.</p>
-<p>This document recognizes that deployment and data collection steps are likely specifically established by entities deploying instruments and collecting data; and in some case these procedures could be proprietary. The following steps outline minimum considerations for ensuring that data being collected by various entities around the region can eventually be collated and analyzed in the future to examine regional-scale questions or issues of interest.</p>
-<section id="define" class="level3">
-<h3 class="anchored" data-anchor-id="define">VI. Definitions for raw, processed, cleaned, and analyzed data</h3>
-<p>It is expected that PAM data are collected to obtain (either or both) species detection information (e.g., cetacean calls) and ambient or other noise information (e.g., ship detections, construction noise, etc.).</p>
-<p>The following data levels (corresponding to the levels described in <a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON_Data%20Processing_Specification_FINAL.pdf">ADEON’s Data Processing Specification</a> document) apply to both types of information and will be used to define what type of data are being referred to in each of the subsequent sections. These levels correspond to a workflow beginning with raw data downloaded directly from the instrument, to processed, cleaned, and/or analyzed data that have been interpreted to develop data products. There are different specifications and data management steps associated with different parts of the workflow. The grouped levels below are a reflection of when similar specifications and data management steps can be applied.</p>
-<table class="table">
-<caption>Table 2. Data levels adapted from ADEON.</caption>
-<colgroup>
-<col style="width: 4%">
-<col style="width: 95%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Level</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0</td>
-<td><p>Raw, uncalibrated data; compressed, unpacked data</p>
-<p><u>Examples:</u> binary files (e.g., BIN, DAT) and SUD compressed files; before the calibration information is applied</p></td>
-</tr>
-<tr class="even">
-<td>1</td>
-<td><p>Calibrated time series data</p>
-<p><u>Examples:</u> .wav files (e.g., WAVE, AIFF, FLAC); data processed using software, after calibration is applied; sound pressure on a stationary or moving platform</p></td>
-</tr>
-<tr class="odd">
-<td>2-3</td>
-<td><p>Processed data from the calibrated data (quantitative and qualitative). Quantitative processing (temporal or spatial)</p>
-<p><u>Examples:</u> decidecade levels; SEL; depth-integrated data; beamformed data; whale or ship detections/observations; products related to classification of signals; products related to signal localization</p></td>
-</tr>
-<tr class="even">
-<td>4-5</td>
-<td><p>Synthesized products related to soundscape models/maps and predictive habitat modeling. Requires additional information (e.g., AIS, source model)</p>
-<p><u>Examples:</u> interpolated products; marine mammal density estimation</p></td>
-</tr>
-</tbody>
-</table>
-<p>The following flow chart was also adapted from <a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON_Data%20Processing_Specification_FINAL.pdf">ADEON’s Data Processing Specification</a> document to depict the basic sequence of data analysis and reporting suggested for each data level. The rest of this document provides detailed steps and templates for each part of the workflow.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/flowchart1.png" class="img-fluid figure-img" width="600"></p>
-<figcaption class="figure-caption">Figure 2. Flow chart for species detection data.</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/flowchart2.png" class="img-fluid figure-img" width="600"></p>
-<figcaption class="figure-caption">Figure 3. Flow chart for ambient noise metrics and soundscape characterization.</figcaption>
-</figure>
-</div>
-<hr>
-</section>
-<section id="hardware" class="level3">
-<h3 class="anchored" data-anchor-id="hardware">VII. PAM hardware calibration best practices and minimum specifications</h3>
-<p>The following steps pertain to pre-deployment best practices for Level 0 data to Level 1 data.</p>
-<section id="calibration-process" class="level4">
-<h4 class="anchored" data-anchor-id="calibration-process">Calibration process</h4>
-<p>For specific examples and details about PAM hardware calibration, refer to the <a href="https://adeon.unh.edu/sites/default/files/user-uploads/Calibration%20Deployment%20Guide_FINAL_submission.pdf">ADEON Calibration and Deployment Good Practice Guide</a>, which, while limited to the specific instruments used in the ADEON project, is useful regardless of the system being used.</p>
-<p>The following text was taken from NOAA and BOEM Minimum Recommendations for Use of Passive Acoustic Listening Systems in Offshore Wind Energy Development Monitoring and Mitigation Programs (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a>) and refers to specific recommended calibration steps.</p>
-<blockquote class="blockquote">
-<p><em>For all PAM technologies, the hydrophones and related hardware need to be calibrated (every 3 to 5 years) and their performance systematically measured and optimized within frequency bandwidths of interest for the particular activity, species, and environment.</em></p>
-<p><em>All hardware should be tested and optimized for low self-noise, including the mooring system. In addition to calibration, the system should be fully tested to ensure adequate sensitivity in the area where it will be deployed and with the type of signals it would receive. Additional environmental data will need to be collected to allow for adequate system evaluation. If this cannot be done at the project site, the system should be fully tested in a comparable location (i.e., an area exhibiting similar depth, temperature, substrate, current, acoustic propagation, and ambient noise, with relevant sound sources).</em></p>
-<p><em>Ideally, the PAM technology used should have been used for the same purpose in other field efforts and have clear and detailed information available about its previous performance and reliability for PAM purposes. If this is not the case, this information needs to be gathered and provided in publicly available documentation as part of the PAM project.</em></p>
-</blockquote>
-</section>
-<section id="calibration-data-and-metadata" class="level4">
-<h4 class="anchored" data-anchor-id="calibration-data-and-metadata">Calibration data and metadata</h4>
-<p>From NOAA and BOEM Minimum Recommendations for Use of Passive Acoustic Listening Systems in Offshore Wind Energy Development Monitoring and Mitigation Programs (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a>):</p>
-<blockquote class="blockquote">
-<p><em>Calibration data, and relevant settings and sensitivities should be noted for all hardware used in recording/monitoring to ensure consistency among measurements for particular hardware and software [more detail can be found in <a href="https://acta.imeko.org/index.php/acta-imeko/article/view/IMEKO-ACTA-07%20%282018%29-02-06/pdf">Biber et al., 2018]</a>. Array synchronization information (where relevant) should also be documented. This information should be permanently associated with the recordings as metadata.</em></p>
-<p><em>At a minimum, the following specifications should be measured and reported on:</em></p>
-<ul>
-<li><p><em>Bandwidth and frequency response (i.e., 10 to 200 kHz)</em></p></li>
-<li><p><em>System sensitivity (i.e., −207 dB re 1 V/μPa @ 1 kHz) and dynamic range (dB)</em></p></li>
-<li><p><em>System self-noise (i.e., the equivalent bandwidth noise pressure level)</em></p></li>
-<li><p><em>Gain (dB)</em></p></li>
-<li><p><em>Directional response (i.e., omnidirectional or angular dependent)</em></p></li>
-<li><p><em>Sample rate (kHz)</em></p></li>
-<li><p><em>Sample resolution (i.e., 12 Bits)</em></p></li>
-<li><p><em>Recording schedule (i.e., recording duration/interval)</em></p></li>
+<li><a href="https://nasa-openscapes.github.io/2021-Cloud-Hackathon/">2021 NASA Cloud Hackathon</a></li>
+<li><a href="https://thefaylab.github.io/lab-manual/">Faylab Lab Manual</a></li>
+<li><a href="https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/">A Quarto tip a day</a>, by Mine Çetinkaya-Rundel</li>
 </ul>
-</blockquote>
-<hr>
 </section>
-</section>
-<section id="qa" class="level3">
-<h3 class="anchored" data-anchor-id="qa">VIII. Best practices for PAM data QA/QC - (Level 0 data to Level 1 data)</h3>
-<p>Once hardware is deployed and data are collected, Quality Assurance/Quality Control steps should be taken to ensure integrity of the data. This step is further split into two separate procedures to include actions that should be taken to properly download and check the data from a PAM device as well as the process to QA/QC the data after being downloaded.</p>
-<section id="before-downloading-data-from-the-recorder---level-0-data" class="level4">
-<h4 class="anchored" data-anchor-id="before-downloading-data-from-the-recorder---level-0-data">Before downloading data from the recorder - (Level 0 data)</h4>
-<p>For each PAM deployment there should be an associated deployment information file that contains the recording metadata and calibration information as described above in Section VII. Ensure that these data and the acoustic data files match up and are collated correctly prior to deleting any information off of the actual device. For additional detail on post-retrieval field calibration and data handling best practices, refer to the <a href="https://adeon.unh.edu/sites/default/files/user-uploads/Calibration%20Deployment%20Guide_FINAL_submission.pdf">ADEON Calibration and Deployment Good Practice Guide</a>.</p>
-</section>
-<section id="after-downloading-data-from-the-recorder---converting-level-0-data-to-level-1-data" class="level4">
-<h4 class="anchored" data-anchor-id="after-downloading-data-from-the-recorder---converting-level-0-data-to-level-1-data">After downloading data from the recorder - (Converting Level 0 data to Level 1 data)</h4>
-<p>The following procedure was provided by NOAA-NEFSC Passive Acoustic Research Group via Genevieve Davis:</p>
-<p>Acoustic Recorders</p>
-<ol type="1">
-<li><p>Create standardized project naming system to separate data from each deployment.</p>
-<ul>
-<li><p>Possible naming structure could be as follows:</p>
-<p><code>[RECORDER_ID]_[RECORDING_LOCATION]_[YYYYMMDD of recording start date]_[SITE_NAME]</code></p></li>
-<li><p>It may be helpful to create folders that separate audio files from other files (i.e., log, xml files or raw, uncompressed files)</p></li>
-</ul></li>
-<li><p>Spot-check sound files:</p>
-<ul>
-<li><p>Load audio files into sound analysis software (i.e., Raven Pro) and check waveform/spectrograms throughout the deployment: at a minimum, beginning, middle, end</p></li>
-<li><p>Take a listen to make sure all looks/sounds ok</p></li>
-</ul></li>
-<li><p>Verify (and/or record) metadata information on sound files in sound analysis software</p>
-<ul>
-<li><p>Check that date/times line up in sound files with what is recorded in metadata sheets for:</p>
-<ul>
-<li><p>Deployment datetime (gmt)</p></li>
-<li><p>Recovery datetime (gmt)</p></li>
-<li><p>Recording start datetime (gmt)</p></li>
-<li><p>Recording end datetime (gmt)</p></li>
-<li><p>Usable start datetime (gmt) (when recorder is on and in the water- might be at the beginning of no vessel noise after deployment)</p></li>
-<li><p>Usable end datetime (gmt) (when recorder is no longer on, in the water- might be the start of recovery vessel noise)</p></li>
-<li><p>Did the recorder stop recording early?</p></li>
-<li><p>Did the data get corrupted at any point during the deployment?</p></li>
-</ul></li>
-</ul></li>
-<li><p>Clip beginning and end of deployment to remove invalid data</p>
-<ul>
-<li>Recordings when recorder is out of water, or corrupted data</li>
-</ul></li>
-<li><p>Check data for gaps:</p>
-<ul>
-<li><p>Run a gap detector analysis to make note of any gaps in data</p>
-<ul>
-<li>Scripts can be written in Matlab, etc., to do this</li>
-</ul></li>
-</ul></li>
-<li><p>Check hydrophone recordings/quality</p>
-<ul>
-<li><p>Was hydrophone working properly the whole time?</p></li>
-<li><p>Good practice to do for all deployments, all recorders. It can help identify instruments that are failing, or data that is corrupted and cannot be used for any or certain analysis such as soundscape metrics, or identify certain frequencies that were compromised by recorder.</p></li>
-<li><p>Done by calculating TOL (third octave level) metrics:</p>
-<ul>
-<li>Example: using scripts (Matlab, etc.) to subsample recordings to look at 1-2 minutes at start of every sound file</li>
-</ul></li>
-<li><p>If there are other issues discovered that should be looked at more closely too</p></li>
-</ul></li>
-</ol>
-<p>Additional Instrument Types (Examples)</p>
-<ul>
-<li><p>Active receivers (ex. VEMCO receivers/acoustic releases)</p>
-<ul>
-<li>Check to see if there are detections using the chart view in Vue (this is specific for VEMCO receivers) software. Zero detections do not always indicate a problem, but are a good start.</li>
-</ul></li>
-<li><p>Temperature loggers (internal within a recorder, or external instruments)</p>
-<ul>
-<li>Plot data output to make sure nothing looks out of the ordinary</li>
-</ul></li>
-</ul>
-<hr>
-</section>
-</section>
-</section>
-<section id="arv" class="level2">
-<h2 class="anchored" data-anchor-id="arv">3. Analysis, Reporting, &amp; Visualization</h2>
-<p>This section provides an overview of steps to ensure consistent analysis of PAM data as well as the data archiving and reporting mechanisms that will be used to maintain a robust centralized archive of PAM data.</p>
-<section id="analysis" class="level3">
-<h3 class="anchored" data-anchor-id="analysis">IX. Analysis of species detections and ambient noise metrics</h3>
-<section id="level-2-3-data" class="level5">
-<h5 class="anchored" data-anchor-id="level-2-3-data">(Level 2-3 data)</h5>
-<p>During this step, Level 1 audio files are interpreted/analyzed and converted into a time series of species detections and/or ambient noise metrics. <a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a> provide a comprehensive overview of the hardware and automated software needed for analysis of cetacean calls (species detections) and ambient noise metric measurement.</p>
-</section>
-<section id="species-detections" class="level4">
-<h4 class="anchored" data-anchor-id="species-detections">Species detections</h4>
-<p>Analyzing calibrated data to derive species detections may be done manually (visually) or using automated software. Standard performance metrics, such as precision, recall, and accuracy, as well as false detection, false positive, false omission and missed detection rates should be provided in the metadata accompanying species detections (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a>). The Subcommittee and other entities (i.e., North Atlantic Right Whale Consortium, NOAA) have identified the need to developed a minimum requirement for the performance statistics to ensure sufficient quality data in these shared resources. However, with those standards still being determined, the following are examples of suggested performance metrics to report for specific project goals: <a href="https://asa.scitation.org/doi/full/10.1121/10.0004817">Baumgartner et al., 2021</a>; <a href="https://asa.scitation.org/doi/full/10.1121/10.0001132">Kirsebom et al., 2020</a>; <a href="https://asa.scitation.org/doi/full/10.1121/10.0001108">Madhusudhana et al., 2020</a>; <a href="https://www.sciencedirect.com/science/article/abs/pii/S0003682X21000426">Gervaise et al., 2021</a>; <a href="https://asa.scitation.org/doi/full/10.1121/10.0001811">Kowarski et al., 2020</a>; <a href="https://asa.scitation.org/doi/full/10.1121/10.0004851">Kowarski et al., 2021</a>. The <a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON_Data%20Processing_Specification_FINAL.pdf">ADEON Data Processing Specification</a> also contains a suggested equation for validation of automated detectors and a discussion of how to apply it.</p>
-</section>
-<section id="ambient-noise-metrics" class="level4">
-<h4 class="anchored" data-anchor-id="ambient-noise-metrics">Ambient noise metrics</h4>
-<p>The ADEON Project uses the word “soundscape” to characterize the ambient sound in terms of its spatial, temporal, and frequency attributes and the types of sources contributing to the sound field. The <a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON%20Soundscape%20Specification%20Deliverable%20v1.0%20FINAL%20Submission.pdf">ADEON Underwater Soundscape and Modeling Metadata Standard</a> suggests several quantitative and qualitative metrics guided by input from the project’s agency sponsors and an international soundscapes workshop.</p>
-<p>The following text was taken from NOAA and BOEM Minimum Recommendations for Use of Passive Acoustic Listening Systems in Offshore Wind Energy Development Monitoring and Mitigation Programs (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parjis et al., 2021</a>):</p>
-<blockquote class="blockquote">
-<p><em>Measurements of ambient noise metrics can be carried out using a number of open-source programs such as <a href="https://sourceforge.net/projects/pamguide/">PAMGUIDE</a> or <a href="https://bitbucket.org/CLO-BRP/manta-wiki/wiki/Home">MANTA</a>. These programs provide a standard series of measurements at the decidecadal level that can be replicated across projects. An ongoing framework inventory on existing standards for observations of sound in the ocean can be found in the <a href="https://www.oceanbestpractices.org/">Ocean Best Practices Repository</a>.</em></p>
-</blockquote>
-<hr>
-</section>
-</section>
-<section id="nefsc" class="level3">
-<h3 class="anchored" data-anchor-id="nefsc">X. Reporting to NOAA NEFSC Passive Acoustics Research Group</h3>
-<section id="level-2-3-data-1" class="level5">
-<h5 class="anchored" data-anchor-id="level-2-3-data-1">(Level 2-3 data)</h5>
-<p>Species detection data should be sent to the NOAA Passive Acoustics Research Group using their latest <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">templates for passive acoustic data reporting</a> (current version: 5/25/22) which are based on International Organization for Standardization (ISO) specifications and current research goals. From NOAA and BOEM Minimum Recommendations for Use of Passive Acoustic Listening Systems in Offshore Wind Energy Development Monitoring and Mitigation Programs (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parjis et al., 2021</a>):</p>
-<p>All confirmed passive acoustic detections of target species/species, whether from archival or real-time data, are archived in a publicly accessible location. For the U.S. East Coast, all species detection data and ambient noise metrics should be reported to the Northeast Passive Acoustic Reporting System via <a href="mailto:nmfs.pacmdata@noaa.gov">nmfs.pacmdata@noaa.gov</a>. <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">Formatted spreadsheets</a> that follow ISO standards with required detection, measurement, and metadata information are available for submission purposes. When PAM is used for long-term monitoring, all data (detection data, metadata, GPS data, and ambient noise data) should be provided via the <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">formatted spreadsheets</a> and uploaded within 90 days of the retrieval of the recorder or data collection. For further assistance, contact <a href="mailto:nmfs.pacmdata@noaa.gov">nmfs.pacmdata@noaa.gov</a>.</p>
-</section>
-<section id="submission-instructions" class="level4">
-<h4 class="anchored" data-anchor-id="submission-instructions">Submission Instructions</h4>
-<p>There are three separate files available via the NOAA Passive Acoustics Research Group. Each file contains a template sheet with example data, a sheet with field definitions, and file naming directions:</p>
-<ol type="1">
-<li><p>The <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">NEFSC PACM Metadata template (METADATA)</a> can be used for all data collection efforts (species detections and ambient noise metrics) to ensure consistent data reporting and proper documentation for archival needs.</p></li>
-<li><p>The <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">NEFSC PACM Detection template (DETECTIONDATA)</a> should be used for PAM systems that contain species occurrence information, and should be accompanied by the associated PACM METADATA deployment template. This ensures that the deployment locations and occurrence information can be displayed on the Passive Acoustic Cetacean Map (which also feeds into the Northeast and Mid-Atlantic Ocean Data Portals). This template also includes a sheet with standardized species codes to use (also included in this document’s Appendix B).</p></li>
-<li><p>The <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">NEFSC PACM GPS template (GPSDATA)</a> should only be used when collecting data via a mobile platform such as Electric-gliders, wave-gliders, towed-arrays, linear-arrays, drifting-buoys, and tags.</p></li>
-</ol>
-</section>
-<section id="important-notes" class="level4">
-<h4 class="anchored">Important Notes</h4>
-<ul>
-<li><p>All DATETIME entries should be in the ISO8601 format (YYYY-MM-DDThh:mm:ssZ). The “Z” refers to date time stamps in UTC time zone. See <a href="https://en.wikipedia.org/wiki/ISO_8601" class="uri">https://en.wikipedia.org/wiki/ISO_8601</a> for further information on ISO8601 formats and time zones.</p></li>
-<li><p>In order for the data to be read correctly in the databases, do not use any commas (“,”) in any fields. If there is a need for multiple values (cases explained in field definitions), use a semicolon (“;”). If a comma is necessary, enclose the entire field entry in quotations (“example entry”).</p></li>
-<li><p>Use of the Species Codes found in Appendix B is strongly encouraged. Contact Passive Acoustics Research Group staff for species codes crosswalk information.</p></li>
-<li><p>Once formatted and saved as a .csv file the metadata and datasheets should be sent to <a href="mailto:nmfs.pacmdata@noaa.gov">nmfs.pacmdata@noaa.gov</a>. These data will be displayed on the <a href="https://apps-nefsc.fisheries.noaa.gov/pacm/">Passive Acoustic Cetacean Map</a>, and the location information will be shared with the Northeast and Mid-Atlantic Ocean Data Portals. <strong>By following these standards, any data collection will also be compatible for NCEI data storage and archival (discussed further below).</strong></p>
-<hr>
-<h3 id="archive" class="anchored" data-anchor-id="important-notes">XI. Archiving and access at NCEI Passive Acoustic Data Archive</h3></li>
-</ul>
-<section id="level-1-3-data" class="level5">
-<h5 class="anchored" data-anchor-id="level-1-3-data">(Level 1-3 data)</h5>
-<p>The NOAA National Centers for Environmental Information (NCEI) <a href="https://www.ncei.noaa.gov/products/passive-acoustic-data">Passive Acoustic Data Archive</a> hosts over 200TB of audio files and data products and is growing quickly. The archive team developed the <a href="https://www.ncei.noaa.gov/products/passivepacker">PassivePacker</a> software tool to simplify data submission to the archive. The software packages the data into standardized structures and creates machine-parsable JavaScript Object Notation (JSON) metadata records. Data providers then send these data packages to NCEI. There is a ~$145/TB cost associated with archiving data at NCEI to support long-term data stewardship that meets the National Archives and Records Administration standards. Quality control and proprietary procedures are dependent on the source of the data and are detailed on the <a href="https://www.ncei.noaa.gov/archive">NCEI Archive page</a>.</p>
-<p>Archived passive acoustic datasets are made publicly available for search, discovery, and access through a <a href="https://www.ncei.noaa.gov/maps/passive_acoustic_data/">web-based map viewer</a>. Contact <a href="mailto:pad.info@noaa.gov">pad.info@noaa.gov</a> for information about data archiving, archive costs (which are subject to change), the submission process, and data access.</p>
-</section>
-</section>
-<section id="submission-instructions-1" class="level4">
-<h4 class="anchored" data-anchor-id="submission-instructions-1">Submission Instructions</h4>
-<p>Raw and calibrated PAM data should be archived at NCEI (Level 1 data). All of the species detection/occurrence data and information submitted to the NOAA Passive Acoustics Research Group and as described in the previous Section X are also compatible for submission to the NCEI passive acoustic data archive (Level 2-3 data). In addition, ambient noise metrics data especially should be archived at NCEI (Level 2-3 data).</p>
-<p>Please reference the <a href="https://www.ncei.noaa.gov/products/passivepacker">PassivePacker webpage</a>, including a manual found under ‘Help’, for comprehensive data submission guidance specific to passive acoustic data. In order to ensure the most up-to-date records, <strong>it is requested that data be sent to NCEI within a year of retrieval</strong>. If an embargo is needed past that time to delay public access until after publication, NCEI may be able to provide that service. These exceptions are dealt with on a case-by-case basis.</p>
-</section>
-<section id="important-notes-1" class="level4">
-<h4 class="anchored" data-anchor-id="important-notes-1">Important Notes</h4>
-<p>Storage at NCEI requires the archiving of several items:</p>
-<ul>
-<li><p>The acoustic sound recordings, which are the .wav sound recordings (i.e., Level 1 data) made using the PAM technology, should be compressed into a standardized lossless format such as FLAC for archiving.</p></li>
-<li><p>The associated metadata, which is the information associated with the deployment and retrieval of the PAM technology at sea (e.g., recorder type, depth, location, and functionality) and information on the recording settings, such as the sampling rate and recording schedule. The <a href="https://www.fisheries.noaa.gov/resource/document/passive-acoustic-reporting-system-templates">NEFSC PACM Metadata template</a> can be used to organize this information, and PassivePacker contains an interface for entering the various Deployment Information, Instrument type and ID, Sampling, Data Quality, and Sensor Details to generate a metadata record which is also exportable (see the <a href="https://www.ncei.noaa.gov/sites/default/files/2022-03/packager_manual_08.pdf">PassivePacker user manual</a>). The figure below lists the types of metadata that should be recorded, entered, and transmitted to NCEI via PassivePacker for each step of a PAM Project.</p></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/metadata.png" class="img-fluid figure-img" width="600"></p>
-<figcaption class="figure-caption">Figure 4. The types of metadata that should be recorded, entered, and transmitted to NCEI via PassivePacker for each step of a PAM project.</figcaption>
-</figure>
-</div>
-<hr>
-</section>
-</section>
-<section id="visual" class="level3">
-<h3 class="anchored" data-anchor-id="visual">XII. Visualizing species detection data</h3>
-<section id="level-4-5-data" class="level5">
-<h5 class="anchored" data-anchor-id="level-4-5-data">(Level 4-5 data)</h5>
-<p>To be meaningful for assessing patterns and changes over time, species detection data usually needs to be further summarized beyond a simple time series of detections and locations described previously. Summary metrics can be presented as time series via graphs or other plots, or as maps. Some common summary metrics include:</p>
-<ul>
-<li><p>Percent of each day with species detected or possibly detected (graphed over entire monitoring period)</p></li>
-<li><p>Proportion of total days monitored with species detected or possibly detected (mapped in geographic space or graphed over time)</p></li>
-</ul>
-<p>See examples of visualizations of these and other metrics in <a href="Appendix A">@appendixa</a>.</p>
-<p>The Subcommittee encourages PAM detections to be shared across widely used and recognized platforms and regional web portals. Some of these efforts on the U.S. Atlantic coast include the <a href="https://apps-nefsc.fisheries.noaa.gov/pacm">Passive Acoustic Cetacean Map</a> (described throughout this document), <a href="https://whalemap.org/">WhaleMap</a>, and <a href="http://www.whalealert.org/">WhaleAlert</a>.</p>
-<p>As data are collected, analyzed, and interpreted, the Subcommittee may recommend the development of a standard set of spatial PAM data products to be updated regularly, used to assess changes in detection over time, and disseminated via the appropriate data portals.</p>
-<hr>
-</section>
-</section>
-</section>
-<section id="appendixa" class="level2">
-<h2 class="anchored" data-anchor-id="appendixa">Appendix A: Examples of PAM species detection data visualizations</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/pacm.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">North Atlantic Right Whale detections on the Passive Acoustic Cetacean Map from the NOAA NEFSC Passive Acoustics Research Group – accessed 12/14/22; <a href="https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw" class="uri">https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw</a>.</figcaption>
-</figure>
-</div>
-<hr>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/delarue.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">Delarue, Julien J-Y., et al.&nbsp;“Acoustic occurrence of baleen whales, particularly blue, fin, and humpback whales, off eastern Canada, 2015-2017.” Endangered Species Research47 (2022): 265-289.</figcaption>
-</figure>
-</div>
-<hr>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/baumgartner2019-a.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">Baumgartner, Mark F., et al.&nbsp;“Persistent near real‐time passive acoustic monitoring for baleen whales from a moored buoy: System description and evaluation.” Methods in Ecology and Evolution 10.9 (2019): 1476-1489.</figcaption>
-</figure>
-</div>
-<hr>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/whalemap.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">Whalemap, <a href="https://whalemap.org/WhaleMap" class="uri">https://whalemap.org/WhaleMap</a></figcaption>
-</figure>
-</div>
-<hr>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/davis.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">Davis, Genevieve E., et al.&nbsp;“Long-term passive acoustic recordings track the changing distribution of North Atlantic right whales (Eubalaena glacialis) from 2004 to 2014.” Scientific reports 7.1 (2017): 1-12.</figcaption>
-</figure>
-</div>
-<hr>
-</section>
-<section id="appendixb" class="level2">
-<h2 class="anchored" data-anchor-id="appendixb">Appendix B: NOAA-NEFSC species codes</h2>
-<table class="table">
-<colgroup>
-<col style="width: 55%">
-<col style="width: 28%">
-<col style="width: 14%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>COMMON NAME</th>
-<th>SCIENTIFIC NAME</th>
-<th>SPECIES CODE</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Atlantic spotted dolphin</td>
-<td>Stenella frontalis</td>
-<td>ASDO</td>
-</tr>
-<tr class="even">
-<td>Atlantic white-sided dolphin</td>
-<td>Lagenorhynchus acutus</td>
-<td>WSDO</td>
-</tr>
-<tr class="odd">
-<td>Beluga whale</td>
-<td>Delphinapterus leucas</td>
-<td>BELU</td>
-</tr>
-<tr class="even">
-<td>Blainville’s beaked whale</td>
-<td>Mesoplodon densirostris</td>
-<td>BLBW</td>
-</tr>
-<tr class="odd">
-<td>Blue whale</td>
-<td>Balaenoptera musculus</td>
-<td>BLWH</td>
-</tr>
-<tr class="even">
-<td>Bottlenose dolphin</td>
-<td>Tursiops truncatus</td>
-<td>BODO</td>
-</tr>
-<tr class="odd">
-<td>Bowhead whale</td>
-<td>Balaena mysticetus</td>
-<td>BOWH</td>
-</tr>
-<tr class="even">
-<td>Bryde’s whale (includes Eden’s whale)</td>
-<td>Balaenoptera edeni</td>
-<td>BRWH</td>
-</tr>
-<tr class="odd">
-<td>Clymene dolphin</td>
-<td>Stenella clymene</td>
-<td>CLDO</td>
-</tr>
-<tr class="even">
-<td>Cuvier’s beaked whale</td>
-<td>Ziphius cavirostris</td>
-<td>GOBW</td>
-</tr>
-<tr class="odd">
-<td>Dwarf sperm whale</td>
-<td>Kogia sima</td>
-<td>DSWH</td>
-</tr>
-<tr class="even">
-<td>False killer whale</td>
-<td>Pseudorca crassidens</td>
-<td>FKWH</td>
-</tr>
-<tr class="odd">
-<td>Fin whale</td>
-<td>Balaenoptera physalus</td>
-<td>FIWH</td>
-</tr>
-<tr class="even">
-<td>Fraser’s dolphin</td>
-<td>Lagenodelphis hosei</td>
-<td>FRDO</td>
-</tr>
-<tr class="odd">
-<td>Gervais’ beaked whale</td>
-<td>Mesoplodon europaeus</td>
-<td>GEBW</td>
-</tr>
-<tr class="even">
-<td>Gray whale</td>
-<td>Eschrichtius robustus</td>
-<td>GRWH</td>
-</tr>
-<tr class="odd">
-<td>Harbor porpoise</td>
-<td>Phocoena phocoena</td>
-<td>HAPO</td>
-</tr>
-<tr class="even">
-<td>Humpback whale</td>
-<td>Megaptera novaeangliae</td>
-<td>HUWH</td>
-</tr>
-<tr class="odd">
-<td>Killer whale</td>
-<td>Orcinus orca</td>
-<td>KIWH</td>
-</tr>
-<tr class="even">
-<td>Melon-headed whale</td>
-<td>Peponocephala electra</td>
-<td>MHWH</td>
-</tr>
-<tr class="odd">
-<td>Minke whale (common)</td>
-<td>Balaenoptera acutorostrata</td>
-<td>MIWH</td>
-</tr>
-<tr class="even">
-<td>North Atlantic right whale</td>
-<td>Eubalaena glacialis</td>
-<td>RIWH</td>
-</tr>
-<tr class="odd">
-<td>Northern bottlenose whale</td>
-<td>Hyperoodon ampullatus</td>
-<td>NBWH</td>
-</tr>
-<tr class="even">
-<td>Offshore bottlenose dolphin</td>
-<td>Tursiops truncatus</td>
-<td>OBDO</td>
-</tr>
-<tr class="odd">
-<td>Pantropical spotted dolphin</td>
-<td>Stenella attenuata</td>
-<td>PSDO</td>
-</tr>
-<tr class="even">
-<td>Pilot whale (long-finned)</td>
-<td>Globicephala melas</td>
-<td>LFPW</td>
-</tr>
-<tr class="odd">
-<td>Pilot whale (short-finned)</td>
-<td>Globicephala macrorhynchus</td>
-<td>SFPW</td>
-</tr>
-<tr class="even">
-<td>Pygmy killer whale</td>
-<td>Feresa attenuata</td>
-<td>PYKW</td>
-</tr>
-<tr class="odd">
-<td>Pygmy sperm whale</td>
-<td>Kogia breviceps</td>
-<td>PSWH</td>
-</tr>
-<tr class="even">
-<td>Risso’s dolphin</td>
-<td>Grampus griseus</td>
-<td>GRAM</td>
-</tr>
-<tr class="odd">
-<td>Rough-toothed dolphin</td>
-<td>Steno bredanensis</td>
-<td>RTDO</td>
-</tr>
-<tr class="even">
-<td>Sei whale</td>
-<td>Balaenoptera borealis</td>
-<td>SEWH</td>
-</tr>
-<tr class="odd">
-<td>Short-beaked common dolphin</td>
-<td>Delphinus delphis</td>
-<td>SADO</td>
-</tr>
-<tr class="even">
-<td>Southern right whale</td>
-<td>Eubalaena australis</td>
-<td>SRWH</td>
-</tr>
-<tr class="odd">
-<td>Sowerby’s beaked whale</td>
-<td>Mesoplodon bidens</td>
-<td>SOBW</td>
-</tr>
-<tr class="even">
-<td>Sperm whale</td>
-<td>Physeter macrocephalus</td>
-<td>SPWH</td>
-</tr>
-<tr class="odd">
-<td>Spinner dolphin</td>
-<td>Stenella longirostris</td>
-<td>SNDO</td>
-</tr>
-<tr class="even">
-<td>Spotted dolphin (includes Pantropical spotted dolphin)</td>
-<td>Stenella attenuata</td>
-<td>SPDO</td>
-</tr>
-<tr class="odd">
-<td>Striped dolphin</td>
-<td>Stenella coeruleoalba</td>
-<td>STDO</td>
-</tr>
-<tr class="even">
-<td>True’s beaked whale</td>
-<td>Mesoplodon mirus</td>
-<td>TRBW</td>
-</tr>
-<tr class="odd">
-<td>Unid ziphiidae</td>
-<td>Ziphiidae sp.</td>
-<td>UNBW</td>
-</tr>
-<tr class="even">
-<td>Unid mesoplodont</td>
-<td>Mesoplodon sp.</td>
-<td>BEWH</td>
-</tr>
-<tr class="odd">
-<td>Unid pilot whale</td>
-<td>Globicephala sp.</td>
-<td>PIWH</td>
-</tr>
-<tr class="even">
-<td>Unid Pygmy/Dwarf sperm whale</td>
-<td>Kogia sp.</td>
-<td>UNKO</td>
-</tr>
-<tr class="odd">
-<td>White beaked dolphin</td>
-<td>Lagenorhynchus albirostris</td>
-<td>WBDO</td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"><img src="images/RWSC_Logo_Typography.png" class="img-fluid"></h2>
+<section id="about" class="level2">
+<h2 class="anchored" data-anchor-id="about">About</h2>
+<p><a href="https://openscapes.org">Openscapes</a> is about better science for future us. We help researchers reimagine data analysis, develop modern skills that are of immediate value to them, and cultivate collaborative and inclusive research teams as part of the broader global open movement.</p>
+<p>We’re developing this tutorial to help folks with different levels of technical skills use <a href="https://quarto.org">Quarto</a> for documentation and tutorial building. This tutorial was originally created for several different audiences: <a href="https://nasa-openscapes.github.io">NASA-Openscapes</a> researcher support engineers using Python, communications directors at organizations promoting open science who do not identify as coders, and fisheries scientists curious about transitioning from RMarkdown. We’re hoping it’s useful to folks with backgrounds as wide as these; if you find it useful or have suggestions for improvement, please let us know by clicking “Edit this page” or “Report an issue” at the upper right side of any page.</p>
 
 
 </section>
@@ -1041,6 +256,121 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -1252,30 +582,25 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("https:\/\/rwscollab\.github\.io\/pam-data-mgmt\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./explore.html" class="pagination-link">
+        <span class="nav-page-text">Explore and setup</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© CC-By RWSC Marine Mammal Subcommittee, 2022</div>   
+    <div class="nav-footer-left">© CC-By Openscapes, 2024</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">🐋</div>
+    <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
 
