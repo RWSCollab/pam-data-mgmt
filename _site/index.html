@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="RWSC Marine Mammal Subcommittee">
 <meta name="dcterms.date" content="2022-12-14">
 
-<title>Data Management &amp; Storage Best Practices for Long-term and Archival Passive Acoustic Monitoring (PAM) Data - Long-term and Archival Passive Acoustic Monitoring (PAM) Data</title>
+<title>Long-term and Archival Passive Acoustic Monitoring (PAM) Data – Data Management &amp; Storage Best Practices for Long-term and Archival Passive Acoustic Monitoring (PAM) Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,17 +36,22 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f867e14b2445548c7e4d9bb4c4012b51.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -55,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -73,12 +79,10 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-<<<<<<< HEAD
-=======
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./RWSC_Logo_notext.png" alt="" class="navbar-logo">
     </a>
@@ -86,20 +90,20 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Data Management &amp; Storage Best Practices for Long-term and Archival Passive Acoustic Monitoring (PAM) Data</span>
     </a>
   </div>
-        <div class="quarto-navbar-tools ms-auto">
+        <div class="quarto-navbar-tools tools-end">
 </div>
+          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
->>>>>>> 8bc38cdab44cca1c50fc4ea0da7d4a93b666fd43
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Introduction</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -137,21 +141,15 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./images/MM.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
-<<<<<<< HEAD
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">PAM Data Management Best Practices</a> 
-        <div class="sidebar-tools-main tools-wide">
-=======
       <div class="sidebar-tools-main tools-wide">
->>>>>>> 8bc38cdab44cca1c50fc4ea0da7d4a93b666fd43
-    <a href="https://rwsc.org" rel="" title="rwsc.org" class="quarto-navigation-tool px-1" aria-label="rwsc.org"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/RWSCollab/pam-data-mgmt" rel="" title="github" class="quarto-navigation-tool px-1" aria-label="github"><i class="bi bi-github"></i></a>
-    <a href="https://rwsc.org/wp-content/uploads/2022/12/RWSC-PAM-Data-Management-Storage-Best-Practices.pdf" rel="" title="download pdf" class="quarto-navigation-tool px-1" aria-label="download pdf"><i class="bi bi-cloud-download"></i></a>
+    <a href="https://rwsc.org" title="rwsc.org" class="quarto-navigation-tool px-1" aria-label="rwsc.org"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/RWSCollab/pam-data-mgmt" title="github" class="quarto-navigation-tool px-1" aria-label="github"><i class="bi bi-github"></i></a>
+    <a href="https://rwsc.org/wp-content/uploads/2022/12/RWSC-PAM-Data-Management-Storage-Best-Practices.pdf" title="download pdf" class="quarto-navigation-tool px-1" aria-label="download pdf"><i class="bi bi-cloud-download"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -172,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./index.html#planning" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1. Planning Steps</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -214,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./index.html#deploy" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. Deployment &amp; Data Collection</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -244,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./index.html#arv" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3. Analysis, Reporting, &amp; Visualization</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -292,7 +290,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -331,6 +329,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
 <section id="intro" class="level2">
 <h2 class="anchored" data-anchor-id="intro">Introduction</h2>
 <p>This document was compiled by RWSC Staff at the request of the Marine Mammal Subcommittee with the assistance and input of a PAM Data Management Work Group. Work Group members and reviewers of this document included: <strong>Melinda Rekdahl (Wildlife Conservation Society); Anita Murray (Wildlife Conservation Society; now Maine Department of Marine Resources); Erin Meyer-Gutbrod (University of South Carolina); Erica Staaterman (BOEM); Genevieve Davis (NOAA NEFSC Passive Acoustics Research Group); Jordan Carduner (Equinor), Laura Morse (Orsted; now Mainstream Renewables); Scott Carr (JASCO); Aaron Rice (Cornell University); Joel Bell (US Navy); Carrie Wall Bell (NOAA National Centers for Environmental Information (NCEI)).</strong></p>
@@ -344,13 +343,13 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>The purpose of this document is to address the data collection, management, and storage phases of a long-term/archival PAM project to ensure that while numerous individual entities may be deploying, collecting, and analyzing PAM data, the infrastructure and information exists to facilitate future meta-analyses and syntheses of PAM data across the U.S. Atlantic Outer Continental Shelf (OCS). For specific guidance and information regarding PAM systems and their deployment and the PAM capabilities and techniques needed to promote efficient, consistent, and meaningful data collection efforts on local and regional scales, please see the minimum recommendations for PAM usage in offshore wind energy research developed by NOAA and BOEM (<a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a>). This PAM data management and storage best practices document incorporates by reference many of the specifications and recommendations of <a href="https://www.frontiersin.org/articles/10.3389/fmars.2021.760840/full">Van Parijs et al., 2021</a>. In addition, the multi-year and multi-sector <a href="https://adeon.unh.edu/">Atlantic Deepwater Ecosystem Observatory Network for the US Mid- and South Atlantic Outer Continental Shelf (ADEON) project</a> developed several standardized measurement and processing methods to ensure that the underwater acoustic measurements made over the course of its project can be compared with other monitoring programs’ data. <a href="https://adeon.unh.edu/standards">ADEON data guides and specifications</a> are incorporated by reference throughout this document as well.</p>
 <p>This document does not directly address or recommend best practices for deploying PAM for real-time detection of marine mammals for mitigation purposes (Table 1). U.S. federal agencies may provide requirements or guidance for the deployment, interpretation, reporting, and management of real-time mitigation PAM data in association with offshore wind (or other activities/uses) permitting. The data generated from real-time systems used for mitigation (i.e., species detections) may be integrated into PAM data products as part of the final step of the workflow described below, with additional considerations for differences in study design, collection methods, and other data analysis steps.</p>
-<table class="table">
+<table class="caption-top table">
 <caption>Table 1. Various purposes for deploying PAM and relevance to this document</caption>
 <colgroup>
-<col style="width: 34%">
+<col style="width: 35%">
 <col style="width: 7%">
 <col style="width: 7%">
-<col style="width: 48%">
+<col style="width: 49%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -390,7 +389,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The document is separated into three sections that correspond to a generic workflow for planning, deploying, and analyzing/interpreting long-term archival PAM data, primarily for the purposes of detecting cetaceans. Each section contains several detailed steps that were identified by the RWSC Marine Mammal Subcommittee.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/steps.png" class="img-fluid figure-img" width="600"></p>
+<p><img src="images/steps.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
 </figure>
 </div>
 </section>
@@ -403,7 +402,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/portal-pam.png" class="img-fluid figure-img" width="600"></p>
-<figcaption class="figure-caption">Figure 1. The map shows the current PAM deployments in the Atlantic that correspond to the proposed 40km and 20km grid cells that form a potential organizing framework for a regional network (as of August 2022). Grid cells are colored purple if at least one device is located somewhere in the cell. Caveats: there may be more than one device in each cell; there may be devices located outside of the grid cell boundaries.</figcaption>
+<figcaption>Figure 1. The map shows the current PAM deployments in the Atlantic that correspond to the proposed 40km and 20km grid cells that form a potential organizing framework for a regional network (as of August 2022). Grid cells are colored purple if at least one device is located somewhere in the cell. Caveats: there may be more than one device in each cell; there may be devices located outside of the grid cell boundaries.</figcaption>
 </figure>
 </div>
 <p>The Portal maps are developed from location and deployment information shared with NOAA. The following best practices ensure that information about new and completed deployments is shared with NOAA so that the Portal maps maintain their accuracy and relevance.</p>
@@ -444,7 +443,12 @@ ul.task-list li input[type="checkbox"] {
 <p>Precautions should be taken to avoid interference of self-noise caused by current flow around the hydrophone and movement of the device and its components. This is especially important in areas with currents greater than 0.1 m/s; to estimate bottom currents for a potential site use the HYCOM model provided by NOAA (<a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/" class="uri">https://coastwatch.pfeg.noaa.gov/erddap/griddap/</a>). Flow shields and/or wraps that protect hydrophones and other device components can also be used to decrease self-noise by disrupting the turbulent boundary layers (<a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON%20Hardware%20Specification%20VERSION%202.3%20_final%20submission.pdf">ADEON Hardware Specification</a>). An example of quiet mooring design is described in <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13244">Baumgartner 2019</a>:</p>
 <blockquote class="blockquote">
 <p><em>We utilized a mature mooring design that allowed both quiet operation as well as delivery of digital data from the sea floor to shore (Figure 2.1). The DMON was housed in open cell foam and a urethane fairing and affixed to a bottom-mounted aluminum frame called the multi-function node (MFN), which in turn was attached to the surface buoy by stretch hoses. These hoses can stretch to nearly twice their relaxed length (Paul &amp; Bocconcelli, 1994), thereby absorbing the motion of the buoy in rough wave conditions and keeping the MFN acoustically quiet. The hoses also contain helically wound conductors that allow power and data to be delivered between the buoy and the DMON. The surface buoy contains a platform computer, Iridium and global positioning satellite (GPS) antennas, and a 450-Ahr battery pack to power all system components. The platform computer receives and stores DMON/LFDCS data sent in real-time via the stretch hoses, and once every 2 hours, transmits these stored data to shore via an Iridium satellite modem (Figure 2). The buoy was designed to operate at sea for at least one year.</em></p>
-<img src="images/baumgartner2019.jpg" class="img-fluid" data-fig-align="center" width="600" alt="Figure 2 from Baumgartner 2019.">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/baumgartner2019.jpg" class="img-fluid figure-img" width="600"></p>
+<figcaption>Figure 2 from Baumgartner 2019.</figcaption>
+</figure>
+</div>
 </blockquote>
 <hr>
 </section>
@@ -453,7 +457,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The purpose of the following steps is to ensure that the US Navy is aware of and can provide feedback on the precise location of bottom-mounted archival passive acoustic monitoring equipment on the Atlantic OCS. The Navy is requesting that all individuals consider the following steps prior to deployment. Developers may be subject to additional requirements under the BOEM issued permits.</p>
 <section id="ensure-navy-awareness---45-days-prior-to-deployment" class="level4">
 <h4 class="anchored" data-anchor-id="ensure-navy-awareness---45-days-prior-to-deployment">1. Ensure Navy awareness - 45 days prior to deployment</h4>
-<p>Submit Passive Acoustic Monitoring (PAM) and/or Distributed Acoustic Sensing (DAS) plan to Navy (latitude/longitude, type, make and model of sensor, water depth, sample rate, time frame, deployment duration etc.). Email Beth Levy: <a href="mailto:beth.m.levy2.ctr@us.navy.mil">beth.m.levy2.ctr@us.navy.mil</a></p>
+<p>Submit Passive Acoustic Monitoring (PAM) and/or Distributed Acoustic Sensing (DAS) plan to Navy (latitude/longitude, type, make and model of sensor, water depth, sample rate, time frame, deployment duration etc.). Email Kelsey Rudes: <a href="mailto:kelsey.a.rudes.civ@us.navy.mil">kelsey.a.rudes.civ@us.navy.mil</a></p>
 </section>
 <section id="navy-evaluation-and-response" class="level4">
 <h4 class="anchored" data-anchor-id="navy-evaluation-and-response">2. Navy evaluation and response</h4>
@@ -501,11 +505,11 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="define">VI. Definitions for raw, processed, cleaned, and analyzed data</h3>
 <p>It is expected that PAM data are collected to obtain (either or both) species detection information (e.g., cetacean calls) and ambient or other noise information (e.g., ship detections, construction noise, etc.).</p>
 <p>The following data levels (corresponding to the levels described in <a href="https://adeon.unh.edu/sites/default/files/user-uploads/ADEON_Data%20Processing_Specification_FINAL.pdf">ADEON’s Data Processing Specification</a> document) apply to both types of information and will be used to define what type of data are being referred to in each of the subsequent sections. These levels correspond to a workflow beginning with raw data downloaded directly from the instrument, to processed, cleaned, and/or analyzed data that have been interpreted to develop data products. There are different specifications and data management steps associated with different parts of the workflow. The grouped levels below are a reflection of when similar specifications and data management steps can be applied.</p>
-<table class="table">
+<table class="caption-top table">
 <caption>Table 2. Data levels adapted from ADEON.</caption>
 <colgroup>
-<col style="width: 4%">
-<col style="width: 95%">
+<col style="width: 3%">
+<col style="width: 96%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -540,13 +544,13 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/flowchart1.png" class="img-fluid figure-img" width="600"></p>
-<figcaption class="figure-caption">Figure 2. Flow chart for species detection data.</figcaption>
+<figcaption>Figure 2. Flow chart for species detection data.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/flowchart2.png" class="img-fluid figure-img" width="600"></p>
-<figcaption class="figure-caption">Figure 3. Flow chart for ambient noise metrics and soundscape characterization.</figcaption>
+<figcaption>Figure 3. Flow chart for ambient noise metrics and soundscape characterization.</figcaption>
 </figure>
 </div>
 <hr>
@@ -728,7 +732,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/metadata.png" class="img-fluid figure-img" width="600"></p>
-<figcaption class="figure-caption">Figure 4. The types of metadata that should be recorded, entered, and transmitted to NCEI via PassivePacker for each step of a PAM project.</figcaption>
+<figcaption>Figure 4. The types of metadata that should be recorded, entered, and transmitted to NCEI via PassivePacker for each step of a PAM project.</figcaption>
 </figure>
 </div>
 <hr>
@@ -755,44 +759,44 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/pacm.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">North Atlantic Right Whale detections on the Passive Acoustic Cetacean Map from the NOAA NEFSC Passive Acoustics Research Group – accessed 12/14/22; <a href="https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw" class="uri">https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw</a>.</figcaption>
+<figcaption>North Atlantic Right Whale detections on the Passive Acoustic Cetacean Map from the NOAA NEFSC Passive Acoustics Research Group – accessed 12/14/22; <a href="https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw" class="uri">https://apps-nefsc.fisheries.noaa.gov/pacm/#/narw</a>.</figcaption>
 </figure>
 </div>
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/delarue.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">Delarue, Julien J-Y., et al.&nbsp;“Acoustic occurrence of baleen whales, particularly blue, fin, and humpback whales, off eastern Canada, 2015-2017.” Endangered Species Research47 (2022): 265-289.</figcaption>
+<figcaption>Delarue, Julien J-Y., et al.&nbsp;“Acoustic occurrence of baleen whales, particularly blue, fin, and humpback whales, off eastern Canada, 2015-2017.” Endangered Species Research47 (2022): 265-289.</figcaption>
 </figure>
 </div>
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/baumgartner2019-a.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">Baumgartner, Mark F., et al.&nbsp;“Persistent near real‐time passive acoustic monitoring for baleen whales from a moored buoy: System description and evaluation.” Methods in Ecology and Evolution 10.9 (2019): 1476-1489.</figcaption>
+<figcaption>Baumgartner, Mark F., et al.&nbsp;“Persistent near real‐time passive acoustic monitoring for baleen whales from a moored buoy: System description and evaluation.” Methods in Ecology and Evolution 10.9 (2019): 1476-1489.</figcaption>
 </figure>
 </div>
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/whalemap.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">Whalemap, <a href="https://whalemap.org/WhaleMap" class="uri">https://whalemap.org/WhaleMap</a></figcaption>
+<figcaption>Whalemap, <a href="https://whalemap.org/WhaleMap" class="uri">https://whalemap.org/WhaleMap</a></figcaption>
 </figure>
 </div>
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/davis.png" class="img-fluid figure-img" width="800"></p>
-<figcaption class="figure-caption">Davis, Genevieve E., et al.&nbsp;“Long-term passive acoustic recordings track the changing distribution of North Atlantic right whales (Eubalaena glacialis) from 2004 to 2014.” Scientific reports 7.1 (2017): 1-12.</figcaption>
+<figcaption>Davis, Genevieve E., et al.&nbsp;“Long-term passive acoustic recordings track the changing distribution of North Atlantic right whales (Eubalaena glacialis) from 2004 to 2014.” Scientific reports 7.1 (2017): 1-12.</figcaption>
 </figure>
 </div>
 <hr>
 </section>
 <section id="appendixb" class="level2">
 <h2 class="anchored" data-anchor-id="appendixb">Appendix B: NOAA-NEFSC species codes</h2>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
-<col style="width: 55%">
+<col style="width: 57%">
 <col style="width: 28%">
 <col style="width: 14%">
 </colgroup>
@@ -1072,18 +1076,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1115,11 +1108,53 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/rwscollab\.github\.io\/pam-data-mgmt\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1129,8 +1164,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1142,7 +1186,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1186,6 +1352,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1211,6 +1378,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1268,32 +1461,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("https:\/\/rwscollab\.github\.io\/pam-data-mgmt\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© CC-By RWSC Marine Mammal Subcommittee, 2022</div>   
+    <div class="nav-footer-left">
+<p>© CC-By RWSC Marine Mammal Subcommittee, 2022</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">🐋</div>
+    <div class="nav-footer-right">
+<p>🐋</p>
+</div>
   </div>
 </footer>
+
 
 
 

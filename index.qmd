@@ -107,7 +107,7 @@ The purpose of the following steps is to ensure that the US Navy is aware of and
 
 #### 1. Ensure Navy awareness - 45 days prior to deployment
 
-Submit Passive Acoustic Monitoring (PAM) and/or Distributed Acoustic Sensing (DAS) plan to Navy (latitude/longitude, type, make and model of sensor, water depth, sample rate, time frame, deployment duration etc.). Email Beth Levy: [beth.m.levy2.ctr\@us.navy.mil](mailto:beth.m.levy2.ctr@us.navy.mil)
+Submit Passive Acoustic Monitoring (PAM) and/or Distributed Acoustic Sensing (DAS) plan to Navy (latitude/longitude, type, make and model of sensor, water depth, sample rate, time frame, deployment duration etc.). Email Kelsey Rudes: [kelsey.a.rudes.civ@us.navy.mil](mailto:kelsey.a.rudes.civ@us.navy.mil)
 
 #### 2. Navy evaluation and response
 
