@@ -1,0 +1,121 @@
+project: 
+  type: website
+  
+website: 
+  page-navigation: true
+  title: "Data Management & Storage Best Practices for Long-term and Archival Passive Acoustic Monitoring (PAM) Data" 
+  site-url: "https://rwscollab.github.io/pam-data-mgmt/" 
+  repo-url: https://github.com/RWSCollab/pam-data-mgmt 
+  
+  navbar:
+    search: true
+    logo: "RWSC_Logo_notext.png"
+  
+  page-footer:
+    left: "&copy; CC-By RWSC Marine Mammal Subcommittee, 2022"
+    right: 🐋
+  
+  search:
+    location: sidebar
+    type: textbox
+    
+  sidebar:
+    title: PAM Data Management Best Practices
+    logo: "images/MM.png"
+    pinned: true
+    align: "center"
+    tools: 
+      - icon: globe
+        href: https://rwsc.org
+        text: "rwsc.org"
+      - icon: github
+        href: https://github.com/RWSCollab/pam-data-mgmt
+        text: "github"
+      - icon: cloud-download
+        href: https://rwsc.org/wp-content/uploads/2022/12/RWSC-PAM-Data-Management-Storage-Best-Practices.pdf
+        text: "download pdf"
+
+    style: "floating"
+    search: true
+    collapse-level: 1
+    
+    contents:
+      - href: index.qmd
+        text: Introduction
+      
+      - text: "---"
+        
+      - section: 1. Planning Steps
+        href: index.qmd#planning
+        contents:
+          - href: index.qmd#engage
+            text: I. Engage with the RWSC Marine Mammal Subcommittee
+            
+          - href: index.qmd#codeploy
+            text: II. Codeployment of other sensors
+            
+          - href: index.qmd#bottom
+            text: III. Best practices to minimize bottom disturbance from underwater mooring systems
+            
+          - href: index.qmd#noise
+            text: IV. Best practices to minimize self-noise from underwater mooring systems
+            
+          - href: index.qmd#navy
+            text: V. Navy awareness of PAM deployments on the Atlantic OCS
+            
+      - text: "---"
+      
+      - section: 2. Deployment & Data Collection
+        href: index.qmd#deploy
+        contents: 
+          - href: index.qmd#define
+            text: VI. Definitions for raw, processed, cleaned, and analyzed data
+            
+          - href: index.qmd#hardware
+            text: VII. PAM hardware calibration best practices and minimum specifications
+            
+          - href: index.qmd#qa
+            text: VIII. Best practices for PAM data QA/QC
+      
+      - text: "---"
+      
+      - section: 3. Analysis, Reporting, & Visualization
+        href: index.qmd#arv
+        contents:
+          - href: index.qmd#analysis
+            text: IX. Analysis of species detections and ambient noise metrics
+            
+          - href: index.qmd#nefsc
+            text: X. Reporting to NOAA NEFSC Passive Acoustics Research Group
+            
+          - href: index.qmd#archive
+            text: XI. Archiving and access at NCEI Passive Acoustic Data Archive
+            
+          - href: index.qmd#visual
+            text: XII. Visualizing species detection data
+      
+      - text: "---"      
+      
+      - href: index.qmd#appendixa
+        text: Appendix A
+      
+      - text: "---"
+      
+      - href: index.qmd#appendixb
+        text: Appendix B
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - rwsc.scss
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    link-external-newwindow: true
+
+filters:
+  - include-files.lua
+  - quarto
+
+  
